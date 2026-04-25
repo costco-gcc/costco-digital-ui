@@ -45,12 +45,7 @@ export default function Page() {
       <h2 className="text-lg font-semibold mt-6">6. Contact</h2>
       <p>
         Reach our Privacy / Data Protection function at{' '}
-        <a className="underline" href="mailto:privacy.india.gcc@costco.example">privacy.india.gcc@costco.example</a>.
-      </p>
-
-      <p className="text-xs text-[color:var(--muted)] mt-8">
-        This is a template notice for an informational static site. Replace placeholders and have it reviewed by your
-        Privacy/Legal team before publishing.
+        <a className="underline" href="mailto:privacy.india@costco.com">privacy.india@costco.com</a>.
       </p>
     </LegalShell>
   );

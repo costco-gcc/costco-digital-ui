@@ -21,7 +21,7 @@ export default function Page() {
 
       <h2 className="text-lg font-semibold mt-6">Found an issue?</h2>
       <p>
-        Email <a className="underline" href="mailto:accessibility.india.gcc@costco.example">accessibility.india.gcc@costco.example</a>.
+        Email <a className="underline" href="mailto:accessibility.india@costco.com">accessibility.india@costco.com</a>.
         We'll respond within a reasonable timeframe and remediate as quickly as possible.
       </p>
     </LegalShell>

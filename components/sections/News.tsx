@@ -2,7 +2,7 @@
 
 import SectionHeader from '@/components/SectionHeader';
 import { motion } from 'framer-motion';
-import { Newspaper, ArrowUpRight, Building, Briefcase, Leaf } from 'lucide-react';
+import { Building, Briefcase, Leaf } from 'lucide-react';
 
 const items = [
   {
@@ -33,7 +33,7 @@ export default function News() {
     <section id="news" className="py-20 sm:py-28 bg-[color:var(--card)]/30 border-y border-[color:var(--line)]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <SectionHeader
-          eyebrow="News &amp; insights"
+          eyebrow="News & insights"
           title="From our teams, to the world."
           description="Announcements, hiring updates, and links to Costco's broader programs."
         />
@@ -58,9 +58,6 @@ export default function News() {
                   </div>
                   <h3 className="mt-2 font-semibold leading-snug">{it.title}</h3>
                   <p className="text-sm text-[color:var(--muted)] mt-2">{it.excerpt}</p>
-                  <a href="#" className="inline-flex items-center gap-1 mt-4 text-sm text-costco-blue hover:underline">
-                    Read more <ArrowUpRight size={14} />
-                  </a>
                 </div>
               </motion.article>
             );

@@ -2,7 +2,7 @@
 
 import SectionHeader from '@/components/SectionHeader';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Phone, Building2, ShieldCheck, ExternalLink, AlertCircle } from 'lucide-react';
+import { Mail, MapPin, Building2, ShieldCheck, ExternalLink, AlertCircle } from 'lucide-react';
 import { useState } from 'react';
 
 type Errors = Partial<Record<'name' | 'email' | 'message' | 'consent', string>>;
@@ -42,7 +42,7 @@ export default function Contact() {
     const topic = String(f.get('topic') || 'General');
     const message = String(f.get('message') || '').trim();
     const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0ATopic: ${topic}%0D%0A%0D%0A${encodeURIComponent(message)}`;
-    window.location.href = `mailto:hello.india.gcc@costco.example?subject=${encodeURIComponent('[Costco India GCC] ' + topic)}&body=${body}`;
+    window.location.href = `mailto:india.gcc@costco.com?subject=${encodeURIComponent('[Costco India GCC] ' + topic)}&body=${body}`;
     setSent(true);
   }
 
@@ -57,8 +57,7 @@ export default function Contact() {
           />
           <div className="space-y-3 text-sm">
             <div className="flex items-start gap-3"><MapPin size={16} className="mt-0.5 text-costco-blue shrink-0" /><div><strong>Capitaland, Madhapur</strong><br />Hyderabad, Telangana, India</div></div>
-            <div className="flex items-start gap-3"><Mail size={16} className="mt-0.5 text-costco-blue shrink-0" /><div>hello.india.gcc@costco.example</div></div>
-            <div className="flex items-start gap-3"><Phone size={16} className="mt-0.5 text-costco-blue shrink-0" /><div>+91 (placeholder)</div></div>
+            <div className="flex items-start gap-3"><Mail size={16} className="mt-0.5 text-costco-blue shrink-0" /><div><a href="mailto:india.gcc@costco.com" className="hover:text-costco-blue">india.gcc@costco.com</a></div></div>
             <div className="flex items-start gap-3"><Building2 size={16} className="mt-0.5 text-costco-blue shrink-0" /><div>Costco Wholesale India Private Limited</div></div>
             <div className="flex items-start gap-3"><ShieldCheck size={16} className="mt-0.5 text-costco-blue shrink-0" /><div>Whistleblower &amp; ethics: <a href="/legal/whistleblower/" className="text-costco-blue underline">Report concern</a></div></div>
           </div>

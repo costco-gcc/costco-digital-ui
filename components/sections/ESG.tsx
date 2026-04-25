@@ -33,7 +33,7 @@ export default function ESG() {
     <section id="esg" className="py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <SectionHeader
-          eyebrow="ESG &amp; CSR"
+          eyebrow="ESG & CSR"
           title="Doing the right thing, the Costco way."
           description="Costco's Climate Action Plan and ESR framework cover climate, food sustainability, natural resources, people, and governance. We extend it locally in India."
         />

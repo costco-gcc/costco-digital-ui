@@ -1,7 +1,7 @@
 'use client';
 
-import Logo, { LogoFull } from './Logo';
-import { Linkedin, Twitter, Youtube, MapPin } from 'lucide-react';
+import { LogoFull } from './Logo';
+import { MapPin } from 'lucide-react';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -20,11 +20,6 @@ export default function Footer() {
             Costco Wholesale India Private Limited — uniting People, Technology, and Process
             to power Costco worldwide.
           </p>
-          <div className="flex items-center gap-3 mt-4">
-            <a aria-label="LinkedIn" href="#" className="p-2 rounded-full hover:bg-[color:var(--line)]"><Linkedin size={18} /></a>
-            <a aria-label="Twitter / X" href="#" className="p-2 rounded-full hover:bg-[color:var(--line)]"><Twitter size={18} /></a>
-            <a aria-label="YouTube" href="#" className="p-2 rounded-full hover:bg-[color:var(--line)]"><Youtube size={18} /></a>
-          </div>
         </div>
 
         <div>

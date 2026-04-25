@@ -45,7 +45,7 @@ export default function Locations() {
               <Feature icon={Building2} title="Modern campus" body="Capitaland, Madhapur — Hyderabad's tech corridor." />
               <Feature icon={Users2} title="Hybrid teams" body="Collaboration spaces, focus zones, war-rooms." />
               <Feature icon={Sparkles} title="Award-aligned" body="Targeting Great Place to Work culture." />
-              <Feature icon={Navigation} title="Connected" body="Close to Hitech City metro &amp; expressways." />
+              <Feature icon={Navigation} title="Connected" body="Close to Hitech City metro & expressways." />
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -72,7 +72,7 @@ function Feature({ icon: Icon, title, body }: { icon: any; title: string; body: 
       <div className="flex items-center gap-2 text-sm font-semibold">
         <Icon size={16} className="text-costco-blue" /> {title}
       </div>
-      <p className="text-xs text-[color:var(--muted)] mt-1" dangerouslySetInnerHTML={{ __html: body }} />
+      <p className="text-xs text-[color:var(--muted)] mt-1">{body}</p>
     </div>
   );
 }

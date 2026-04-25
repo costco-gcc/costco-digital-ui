@@ -22,8 +22,6 @@ const team: Member[] = [
     initials: 'RM',
     tag: 'India',
   },
-  { name: 'Engineering Lead', role: 'VP, Technology & Platforms (placeholder)', bio: 'Owns engineering, platforms, and SRE across India.', initials: 'EL', tag: 'India' },
-  { name: 'Operations Lead', role: 'VP, Operations & Process (placeholder)', bio: 'Owns process excellence and operational delivery.', initials: 'OL', tag: 'India' },
 ];
 
 export default function Leadership() {
@@ -35,7 +33,7 @@ export default function Leadership() {
           title="Operators who lead from the floor."
           description="Costco has had only three CEOs in 40+ years — that's how seriously the company takes principled leadership. Our India team carries that same operating culture."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 gap-5 max-w-3xl">
           {team.map((m, i) => (
             <motion.article
               key={m.name}
@@ -56,20 +54,19 @@ export default function Leadership() {
               <div className="mt-3 font-semibold">{m.name}</div>
               <div className="text-xs text-[color:var(--muted)]">{m.role}</div>
               <p className="text-xs text-[color:var(--muted)] mt-2 leading-relaxed">{m.bio}</p>
-              <a
-                href={m.linkedin ?? '#'}
-                target={m.linkedin ? '_blank' : undefined}
-                rel={m.linkedin ? 'noopener noreferrer' : undefined}
-                className="inline-flex items-center gap-1 mt-3 text-xs text-costco-blue hover:underline"
-              >
-                <Linkedin size={12} /> LinkedIn
-              </a>
+              {m.linkedin && (
+                <a
+                  href={m.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 mt-3 text-xs text-costco-blue hover:underline"
+                >
+                  <Linkedin size={12} /> LinkedIn
+                </a>
+              )}
             </motion.article>
           ))}
         </div>
-        <p className="text-[11px] text-[color:var(--muted)] mt-6">
-          Where roles are still being filled, placeholder cards are shown — replace before publishing.
-        </p>
       </div>
     </section>
   );

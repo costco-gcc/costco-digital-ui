@@ -5,7 +5,7 @@ import { Award, ShieldCheck, Leaf, Star } from 'lucide-react';
 
 const awards = [
   { icon: Award, title: 'Great Place to Work', sub: 'Targeted certification' },
-  { icon: Star, title: 'Top Employer', sub: 'Recognized for culture &amp; benefits' },
+  { icon: Star, title: 'Top Employer', sub: 'Recognized for culture & benefits' },
   { icon: ShieldCheck, title: 'ISO 27001', sub: 'Information security aligned' },
   { icon: Leaf, title: 'Green Campus', sub: 'LEED-aligned workspaces' },
 ];
@@ -26,7 +26,7 @@ export default function Awards() {
             <div className="p-2 rounded-xl bg-costco-blue/10 text-costco-blue"><a.icon size={18} /></div>
             <div>
               <div className="text-sm font-semibold">{a.title}</div>
-              <div className="text-xs text-[color:var(--muted)]" dangerouslySetInnerHTML={{ __html: a.sub }} />
+              <div className="text-xs text-[color:var(--muted)]">{a.sub}</div>
             </div>
           </motion.div>
         ))}
