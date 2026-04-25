@@ -20,18 +20,16 @@ export default function Logo({ className, size = 36, showWordmark = true, ariaLa
       <LogoSymbol size={size} />
       {showWordmark && (
         <div className="leading-tight">
-          {/* Mobile: short wordmark only — keeps the brand name visible
-              without overflowing tight viewports. */}
-          <div className="sm:hidden font-costco text-[14px] leading-none whitespace-nowrap">
-            <span className="text-costco-red">Costco</span>{' '}
-            <span className="text-costco-blue">India</span>
+          {/* Mobile: short wordmark with a 6-stop flowing gradient — keeps
+              the brand name visible while showcasing the full palette. */}
+          <div className="sm:hidden font-costco gradient-text-flow text-[14px] leading-none whitespace-nowrap">
+            Costco India
           </div>
-          {/* sm+: full wordmark + pillar tagline. Each word in its
-              brand-text colour, tuned per palette × mode. */}
+          {/* sm+: full wordmark with the same flowing gradient + pillar
+              tagline (each pillar in its own brand-text colour). */}
           <div className="hidden sm:block">
-            <div className="font-costco text-[16px] md:text-[17px] leading-none whitespace-nowrap">
-              <span className="text-costco-red">Costco Wholesale</span>{' '}
-              <span className="text-costco-blue">India</span>
+            <div className="font-costco gradient-text-flow text-[16px] md:text-[17px] leading-none whitespace-nowrap">
+              Costco Wholesale India
             </div>
             <div className="text-[11px] tracking-[0.01em] mt-0.5 whitespace-nowrap font-semibold">
               <span style={{ color: 'var(--brand-1-text)' }}>People</span>

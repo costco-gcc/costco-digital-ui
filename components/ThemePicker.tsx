@@ -130,6 +130,8 @@ function ModeBtn({ current, value, icon: Icon, label, onClick }: { current: Mode
 function PaletteBtn({ t, active, onClick }: { t: typeof themes[number]; active: boolean; onClick: () => void }) {
   // Swatches show the LIGHT-mode brand colors — that's what users associate
   // with "Costco red" etc., regardless of which mode they're currently in.
+  // Six stripes per palette mirror the six brand tokens each theme defines.
+  const stripes = [t.light.brand1, t.light.brand2, t.light.brand3, t.light.brand4, t.light.brand5, t.light.brand6];
   return (
     <button
       type="button"
@@ -146,9 +148,7 @@ function PaletteBtn({ t, active, onClick }: { t: typeof themes[number]; active: 
       )}
     >
       <span className="flex h-full" aria-hidden>
-        <span style={{ background: t.light.brand1 }} className="flex-1" />
-        <span style={{ background: t.light.brand2 }} className="flex-1" />
-        <span style={{ background: t.light.brand3 }} className="flex-1" />
+        {stripes.map((c, i) => <span key={i} style={{ background: c }} className="flex-1" />)}
       </span>
     </button>
   );
