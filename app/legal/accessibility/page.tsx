@@ -1,6 +1,6 @@
 import LegalShell from '@/components/LegalShell';
 
-export const metadata = { title: 'Accessibility — Costco India GCC' };
+export const metadata = { title: 'Accessibility statement', description: 'Our commitment to WCAG 2.2 AA on the Costco India GCC website, and how to flag issues.' };
 
 export default function Page() {
   return (

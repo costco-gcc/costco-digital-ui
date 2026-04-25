@@ -11,6 +11,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-10">
         <div className="lg:col-span-5">
           <SectionHeader
+            number={1}
             eyebrow={content.eyebrow}
             title={content.title}
             description={content.description}

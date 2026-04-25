@@ -30,6 +30,7 @@ export default function Capabilities() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <SectionHeader
           align="center"
+          number={2}
           eyebrow={content.eyebrow}
           title={content.title}
           description={content.description}

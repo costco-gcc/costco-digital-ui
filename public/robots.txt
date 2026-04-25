@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /portal/
 
-Sitemap: /sitemap.xml
+Sitemap: https://www.costcodigital.com/sitemap.xml

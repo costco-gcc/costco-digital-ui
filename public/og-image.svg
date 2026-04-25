@@ -36,15 +36,17 @@
           fill="#4B5563">COSTCO INDIA · GLOBAL CAPABILITY CENTER</text>
   </g>
 
-  <!-- Headline -->
+  <!-- Headline. Conservative sizing so it survives even when the SVG is
+       rasterised with system-font fallbacks (which run wider than the
+       webfont preview). -->
   <g transform="translate(88 240)">
     <text x="0" y="0"
           font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
-          font-size="96" font-weight="900" letter-spacing="-2"
+          font-size="80" font-weight="900" letter-spacing="-2"
           fill="#0B0F1A">Powering Costco worldwide,</text>
-    <text x="0" y="110"
+    <text x="0" y="96"
           font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
-          font-size="96" font-weight="900" letter-spacing="-2"
+          font-size="80" font-weight="900" letter-spacing="-2"
           fill="url(#accent)">from Hyderabad.</text>
   </g>
 

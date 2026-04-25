@@ -16,6 +16,7 @@ export default function CareersFAQ() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-10">
         <div className="lg:col-span-4">
           <SectionHeader
+            number={8}
             eyebrow={content.eyebrow}
             title={content.title}
             description={content.description}

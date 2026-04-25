@@ -10,6 +10,7 @@ export default function ESG() {
     <section id="esg" className="py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <SectionHeader
+          number={10}
           eyebrow={content.eyebrow}
           title={content.title}
           description={content.description}

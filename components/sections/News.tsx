@@ -10,6 +10,7 @@ export default function News() {
     <section id="news" className="py-20 sm:py-28 bg-[color:var(--card)]/30 border-y border-[color:var(--line)]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <SectionHeader
+          number={9}
           eyebrow={content.eyebrow}
           title={content.title}
           description={content.description}

@@ -40,6 +40,7 @@ export default function Careers() {
         <div className="grid lg:grid-cols-12 gap-10 items-end mb-8">
           <div className="lg:col-span-7">
             <SectionHeader
+              number={7}
               eyebrow={content.eyebrow}
               title={content.titleTemplate.replace('{n}', String(total))}
               description={content.description}

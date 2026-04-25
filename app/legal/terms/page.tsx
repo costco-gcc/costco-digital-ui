@@ -1,6 +1,6 @@
 import LegalShell from '@/components/LegalShell';
 
-export const metadata = { title: 'Terms of use — Costco India GCC' };
+export const metadata = { title: 'Terms of use', description: 'Terms governing use of the Costco India GCC website.' };
 
 export default function Page() {
   return (

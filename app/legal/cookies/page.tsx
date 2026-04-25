@@ -1,6 +1,6 @@
 import LegalShell from '@/components/LegalShell';
 
-export const metadata = { title: 'Cookie policy — Costco India GCC' };
+export const metadata = { title: 'Cookie policy', description: 'How the Costco India GCC website uses cookies and how to control them.' };
 
 export default function Page() {
   return (

@@ -13,6 +13,7 @@ export default function Leadership() {
     <section id="leadership" className="py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <SectionHeader
+          number={6}
           eyebrow={content.eyebrow}
           title={content.title}
           description={content.description}

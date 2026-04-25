@@ -40,6 +40,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_IN',
     images: [
+      // PNG first — Facebook/LinkedIn/Slack/Discord prefer it; X/Twitter
+      // doesn't render SVG cards. SVG kept as a secondary entry for
+      // crawlers that pick the higher-fidelity vector.
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Powering Costco worldwide, from Hyderabad.',
+        type: 'image/png',
+      },
       {
         url: '/og-image.svg',
         width: 1200,
@@ -54,7 +64,7 @@ export const metadata: Metadata = {
     title: 'Costco Wholesale India — Global Capability Center',
     description:
       'People · Technology · Process — Powering Costco worldwide, from Hyderabad.',
-    images: ['/og-image.svg'],
+    images: ['/og-image.png'],
   },
   robots: { index: true, follow: true },
   icons: { icon: '/favicon.svg' },
