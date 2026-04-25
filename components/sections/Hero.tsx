@@ -120,14 +120,14 @@ function Orbital() {
         </defs>
 
         <g transform="translate(200 200)" fill="none" strokeWidth="2">
-          {/* Rings — inner pulled a little farther from the globe pillow,
-              and the gaps between consecutive rings stretched +10% for
-              more breathing room. Each rotates gently in opposing
-              directions. */}
+          {/* Rings — inner pulled a little farther from the globe pillow.
+              Gap between inner and mid trimmed -10% (50→45). Outer ring
+              pulled in by 10% (220→198) so the system feels more
+              compact. Each rotates gently in opposing directions. */}
           {[
             { r: 125, c: 'url(#o1)', dur: 26, dash: '4 6' },
-            { r: 175, c: 'url(#o2)', dur: 34, dash: '6 4' },
-            { r: 220, c: 'url(#o3)', dur: 42, dash: '2 8' },
+            { r: 170, c: 'url(#o2)', dur: 34, dash: '6 4' },
+            { r: 198, c: 'url(#o3)', dur: 42, dash: '2 8' },
           ].map((o, i) => (
             <circle key={i} r={o.r} stroke={o.c} strokeDasharray={o.dash} opacity="0.55">
               {!reduce && (
@@ -150,8 +150,8 @@ function Orbital() {
           {!reduce ? (
             <>
               <PlanetWithLabel radius={125} labelRadius={155} startAngle={0}   dur={22} fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
-              <PlanetWithLabel radius={175} labelRadius={205} startAngle={120} dur={30} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
-              <PlanetWithLabel radius={220} labelRadius={250} startAngle={240} dur={38} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
+              <PlanetWithLabel radius={170} labelRadius={200} startAngle={120} dur={30} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
+              <PlanetWithLabel radius={198} labelRadius={228} startAngle={240} dur={38} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
             </>
           ) : (
             // Static fallback honouring prefers-reduced-motion — same
@@ -160,8 +160,8 @@ function Orbital() {
             // there's no parent rotation).
             <>
               <StaticPlanetWithLabel radius={125} labelRadius={155} angle={0}   fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
-              <StaticPlanetWithLabel radius={175} labelRadius={205} angle={120} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
-              <StaticPlanetWithLabel radius={220} labelRadius={250} angle={240} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
+              <StaticPlanetWithLabel radius={170} labelRadius={200} angle={120} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
+              <StaticPlanetWithLabel radius={198} labelRadius={228} angle={240} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
             </>
           )}
         </g>
