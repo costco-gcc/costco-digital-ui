@@ -99,11 +99,11 @@ function Orbital() {
     <div className="orbital relative aspect-square w-full max-w-[28rem] mx-auto" aria-hidden>
       <div className="absolute inset-0 rounded-full bg-mesh blur-3xl opacity-60" />
 
-      {/* viewBox is padded by 50 on each side so outer-orbit labels at
-          radius 215 stay inside the drawing area at every angle. The SVG
-          is sized to the orbital container, so the visual content is just
-          slightly more zoomed-out than before. */}
-      <svg viewBox="-50 -50 500 500" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid meet">
+      {/* viewBox is padded by 75 on each side so the outer-orbit label at
+          radius 250 stays inside the drawing area at every angle. The SVG
+          is sized to fill the orbital container, so visually the content
+          just sits in a slightly more zoomed-out frame. */}
+      <svg viewBox="-75 -75 550 550" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid meet">
         <defs>
           <linearGradient id="o1" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="var(--brand-1)" />
@@ -120,13 +120,14 @@ function Orbital() {
         </defs>
 
         <g transform="translate(200 200)" fill="none" strokeWidth="2">
-          {/* Rings — inner moved closer to the globe, outer moved closer
-              to the centre, with bigger gaps between rings for breathing
-              room. Each rotates gently in opposing directions. */}
+          {/* Rings — inner pulled a little farther from the globe pillow,
+              and the gaps between consecutive rings stretched +10% for
+              more breathing room. Each rotates gently in opposing
+              directions. */}
           {[
-            { r: 110, c: 'url(#o1)', dur: 26, dash: '4 6' },
-            { r: 155, c: 'url(#o2)', dur: 34, dash: '6 4' },
-            { r: 195, c: 'url(#o3)', dur: 42, dash: '2 8' },
+            { r: 125, c: 'url(#o1)', dur: 26, dash: '4 6' },
+            { r: 175, c: 'url(#o2)', dur: 34, dash: '6 4' },
+            { r: 220, c: 'url(#o3)', dur: 42, dash: '2 8' },
           ].map((o, i) => (
             <circle key={i} r={o.r} stroke={o.c} strokeDasharray={o.dash} opacity="0.55">
               {!reduce && (
@@ -148,9 +149,9 @@ function Orbital() {
               every orbit angle. */}
           {!reduce ? (
             <>
-              <PlanetWithLabel radius={110} labelRadius={140} startAngle={0}   dur={22} fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
-              <PlanetWithLabel radius={155} labelRadius={185} startAngle={120} dur={30} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
-              <PlanetWithLabel radius={195} labelRadius={225} startAngle={240} dur={38} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
+              <PlanetWithLabel radius={125} labelRadius={155} startAngle={0}   dur={22} fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
+              <PlanetWithLabel radius={175} labelRadius={205} startAngle={120} dur={30} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
+              <PlanetWithLabel radius={220} labelRadius={250} startAngle={240} dur={38} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
             </>
           ) : (
             // Static fallback honouring prefers-reduced-motion — same
@@ -158,9 +159,9 @@ function Orbital() {
             // matching angle, upright (no counter-rotation needed because
             // there's no parent rotation).
             <>
-              <StaticPlanetWithLabel radius={110} labelRadius={140} angle={0}   fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
-              <StaticPlanetWithLabel radius={155} labelRadius={185} angle={120} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
-              <StaticPlanetWithLabel radius={195} labelRadius={225} angle={240} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
+              <StaticPlanetWithLabel radius={125} labelRadius={155} angle={0}   fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
+              <StaticPlanetWithLabel radius={175} labelRadius={205} angle={120} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
+              <StaticPlanetWithLabel radius={220} labelRadius={250} angle={240} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
             </>
           )}
         </g>
