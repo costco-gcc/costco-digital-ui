@@ -95,7 +95,7 @@ function Principle({
           <span className="gradient-text">{verb}</span>{' '}
           <span>{rest}</span>
         </p>
-        <p className="mt-3 text-[color:var(--muted)] max-w-2xl text-[15px] sm:text-base leading-relaxed">
+        <p className="prose-justify mt-3 text-[color:var(--muted)] text-[15px] sm:text-base leading-relaxed">
           {note}
         </p>
       </div>

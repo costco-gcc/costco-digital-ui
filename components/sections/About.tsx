@@ -101,7 +101,7 @@ export default function About() {
           <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-[color:var(--muted)]">
             {content.panel.title}
           </p>
-          <p className="prose-justify mt-4 text-base sm:text-lg max-w-4xl text-[color:var(--ink)] leading-relaxed">
+          <p className="prose-justify mt-4 text-base sm:text-lg text-[color:var(--ink)] leading-relaxed">
             {content.panel.body}
           </p>
 

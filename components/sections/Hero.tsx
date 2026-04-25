@@ -48,7 +48,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="prose-justify mt-5 text-base sm:text-lg text-[color:var(--muted)] max-w-2xl"
+              className="prose-justify mt-5 text-base sm:text-lg text-[color:var(--muted)]"
             >
               {content.introLead}{' '}
               <strong className="text-[color:var(--ink)]">{content.introHighlights[0]}</strong>

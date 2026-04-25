@@ -51,7 +51,7 @@ export default function SectionHeader({ eyebrow, number, title, description, ali
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5, delay: 0.1 }}
           className={clsx(
-            'text-[color:var(--muted)] mt-3 text-base sm:text-lg max-w-4xl',
+            'text-[color:var(--muted)] mt-3 text-base sm:text-lg',
             align === 'left' && 'prose-justify',
           )}
         >
