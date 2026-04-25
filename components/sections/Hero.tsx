@@ -6,84 +6,128 @@ import content from '@/data/content/hero.json';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24">
+    <section className="relative overflow-hidden pt-24 pb-10 sm:pt-28 sm:pb-12">
       <div className="absolute inset-0 bg-mesh pointer-events-none" />
       <div className="absolute inset-0 grid-bg opacity-60 pointer-events-none" aria-hidden />
 
-      <div className="relative max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-10 items-center">
-        <div className="lg:col-span-7">
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full px-3 py-1 border border-[color:var(--line)] glass text-xs font-medium"
-          >
+      <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
+        {/* Top rail: eyebrow on the left, live status on the right —
+            anchors both upper corners so the band reads as intentional. */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-wrap items-center justify-between gap-3"
+        >
+          <div className="inline-flex items-center gap-2 rounded-full px-3 py-1 border border-[color:var(--line)] glass text-xs font-medium">
             <Sparkles size={14} className="text-costco-red" aria-hidden />
             {content.eyebrow}
-          </motion.div>
+          </div>
+          <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] font-semibold text-[color:var(--muted)]">
+            <span className="relative inline-flex h-2 w-2">
+              <span className="absolute inset-0 rounded-full bg-costco-red opacity-70 animate-ping" />
+              <span className="relative inline-block h-2 w-2 rounded-full bg-costco-red" />
+            </span>
+            Live · Hiring now
+          </div>
+        </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.05 }}
-            className="mt-5 font-extrabold tracking-tight leading-[1.05] text-[clamp(2.2rem,1.8rem+3vw,4.6rem)]"
-          >
-            {content.headlinePrefix}{' '}
-            <span className="gradient-text">{content.headlineAccent}</span>
-          </motion.h1>
+        <div className="mt-10 grid lg:grid-cols-12 gap-10 items-center">
+          <div className="lg:col-span-7">
+            <motion.h1
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.05 }}
+              className="font-extrabold tracking-tight leading-[1.05] text-[clamp(2.2rem,1.8rem+3vw,4.6rem)]"
+            >
+              {content.headlinePrefix}{' '}
+              <span className="gradient-text">{content.headlineAccent}</span>
+            </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            className="mt-5 text-base sm:text-lg text-[color:var(--muted)] max-w-2xl"
-          >
-            {content.introLead}{' '}
-            <strong className="text-[color:var(--ink)]">{content.introHighlights[0]}</strong>
-            {content.introJoinerA}{' '}
-            <strong className="text-[color:var(--ink)]">{content.introHighlights[1]}</strong>
-            {content.introJoinerB}{' '}
-            <strong className="text-[color:var(--ink)]">{content.introHighlights[2]}</strong>{' '}
-            {content.introTail}
-          </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="mt-5 text-base sm:text-lg text-[color:var(--muted)] max-w-2xl"
+            >
+              {content.introLead}{' '}
+              <strong className="text-[color:var(--ink)]">{content.introHighlights[0]}</strong>
+              {content.introJoinerA}{' '}
+              <strong className="text-[color:var(--ink)]">{content.introHighlights[1]}</strong>
+              {content.introJoinerB}{' '}
+              <strong className="text-[color:var(--ink)]">{content.introHighlights[2]}</strong>{' '}
+              {content.introTail}
+            </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.25 }}
-            className="mt-7 flex flex-wrap items-center gap-3"
-          >
-            <a href={content.ctaPrimary.href} className="btn btn-primary">
-              {content.ctaPrimary.label} <ArrowRight size={16} aria-hidden />
-            </a>
-            <a href={content.ctaSecondary.href} className="btn btn-ghost">
-              {content.ctaSecondary.label}
-            </a>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+              className="mt-7 flex flex-wrap items-center gap-3"
+            >
+              <a href={content.ctaPrimary.href} className="btn btn-primary">
+                {content.ctaPrimary.label} <ArrowRight size={16} aria-hidden />
+              </a>
+              <a href={content.ctaSecondary.href} className="btn btn-ghost">
+                {content.ctaSecondary.label}
+              </a>
+            </motion.div>
+          </div>
 
-          {/* Single-line metadata strip — replaces the prior 3-pillar mini-cards
-              that duplicated the orbital labels. Editorial pacing wins over
-              repetition. */}
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.35 }}
-            className="mt-10 text-xs text-[color:var(--muted)] inline-flex flex-wrap items-center gap-x-4 gap-y-1"
-          >
-            <span>One campus · Hyderabad</span>
-            <span aria-hidden>·</span>
-            <span>~1,000 planned employees</span>
-            <span aria-hidden>·</span>
-            <span>Live roles on Talent500</span>
-          </motion.p>
+          <div className="lg:col-span-5">
+            <Orbital labels={content.orbital.labels} />
+          </div>
         </div>
 
-        <div className="lg:col-span-5">
-          <Orbital labels={content.orbital.labels} />
-        </div>
+        {/* Bottom rail: editorial fact-strip that replaces the thin meta line.
+            Three cells with vertical dividers fill the lower band so the
+            section's ground stops floating. */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+          className="mt-12 sm:mt-16 pt-8 border-t border-[color:var(--line)] grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:divide-x sm:divide-[color:var(--line)]"
+        >
+          <FactCell kicker="Campus" value="Madhapur, Hyderabad" sub="Capitaland · single site" />
+          <FactCell kicker="Team" value="~1,000 planned" sub="Engineering · Data · Ops" className="sm:px-8" />
+          <FactCell
+            kicker="Open roles"
+            value="Live on Talent500"
+            sub="Apply directly"
+            href="#careers"
+            className="sm:px-8 sm:pr-0"
+          />
+        </motion.div>
       </div>
     </section>
   );
+}
+
+function FactCell({
+  kicker, value, sub, href, className = '',
+}: {
+  kicker: string; value: string; sub: string; href?: string; className?: string;
+}) {
+  const body = (
+    <>
+      <div className="text-[11px] uppercase tracking-[0.22em] font-semibold text-[color:var(--muted)]">
+        {kicker}
+      </div>
+      <div className="mt-2 text-lg sm:text-xl font-semibold tracking-tight text-[color:var(--ink)] inline-flex items-center gap-1.5">
+        {value}
+        {href && <ArrowRight size={16} aria-hidden className="opacity-60 transition-transform group-hover:translate-x-0.5" />}
+      </div>
+      <div className="mt-1 text-xs text-[color:var(--muted)]">{sub}</div>
+    </>
+  );
+  if (href) {
+    return (
+      <a href={href} className={`group block ${className}`}>
+        {body}
+      </a>
+    );
+  }
+  return <div className={className}>{body}</div>;
 }
 
 /**
