@@ -9,7 +9,13 @@ export default function Footer() {
     <footer className="border-t border-[color:var(--line)] mt-12">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid gap-10 md:grid-cols-4">
         <div>
-          <LogoFull size={140} />
+          {/* The full lockup PNG has an artwork drop-shadow that reads as a
+              halo on dark backgrounds. Sit it on a white card so it always
+              renders against its intended white canvas (subtle on light
+              mode, becomes a clean badge on dark). */}
+          <div className="inline-block bg-white rounded-xl p-2.5 shadow-sm ring-1 ring-black/5">
+            <LogoFull size={130} />
+          </div>
           <p className="text-sm text-[color:var(--muted)] mt-3 max-w-xs">
             Costco Wholesale India Private Limited — uniting People, Technology, and Process
             to power Costco worldwide.

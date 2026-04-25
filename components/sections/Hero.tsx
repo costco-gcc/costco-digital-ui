@@ -116,12 +116,14 @@ function Orbital() {
         </defs>
 
         <g transform="translate(200 200)" fill="none" strokeWidth="2">
+          {/* Rings — pushed further out to give the central globe real
+              breathing room. Each rotates gently in opposing directions. */}
           {[
-            { r: 110, c: 'url(#o1)', dur: 18, dash: '4 6' },
-            { r: 145, c: 'url(#o2)', dur: 22, dash: '6 4' },
-            { r: 175, c: 'url(#o3)', dur: 28, dash: '2 8' },
+            { r: 130, c: 'url(#o1)', dur: 24, dash: '4 6' },
+            { r: 165, c: 'url(#o2)', dur: 32, dash: '6 4' },
+            { r: 195, c: 'url(#o3)', dur: 40, dash: '2 8' },
           ].map((o, i) => (
-            <circle key={i} r={o.r} stroke={o.c} strokeDasharray={o.dash} opacity="0.7">
+            <circle key={i} r={o.r} stroke={o.c} strokeDasharray={o.dash} opacity="0.55">
               {!reduce && (
                 <animateTransform
                   attributeName="transform"
@@ -135,36 +137,49 @@ function Orbital() {
             </circle>
           ))}
 
-          {/* Pillar dots — labels live as HTML below */}
-          <g>
-            <circle data-pillar="people"  cx="0"   cy="-110" r="11" fill="url(#o1)">
-              {!reduce && <animate attributeName="cy" values="-110;-104;-110" dur="3s" repeatCount="indefinite" />}
-            </circle>
-            <circle data-pillar="tech"    cx="110" cy="50"   r="11" fill="url(#o2)">
-              {!reduce && <animate attributeName="cx" values="110;104;110" dur="3.5s" repeatCount="indefinite" />}
-            </circle>
-            <circle data-pillar="process" cx="-95" cy="80"   r="11" fill="url(#o3)">
-              {!reduce && <animate attributeName="cy" values="80;86;80" dur="4s" repeatCount="indefinite" />}
-            </circle>
-          </g>
+          {/* Planets — each in its own rotating group so it actually orbits
+              the centre instead of just wobbling. Different starting angles
+              (0°, 120°, 240°) keep them spaced; different durations make
+              them feel like distinct bodies in distinct orbits. */}
+          {!reduce ? (
+            <>
+              <g>
+                <animateTransform attributeName="transform" type="rotate" from="0"   to="360" dur="20s" repeatCount="indefinite" />
+                <circle cx="0" cy="-130" r="11" fill="url(#o1)" />
+              </g>
+              <g>
+                <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="28s" repeatCount="indefinite" />
+                <circle cx="0" cy="-165" r="10" fill="url(#o2)" />
+              </g>
+              <g>
+                <animateTransform attributeName="transform" type="rotate" from="240" to="600" dur="36s" repeatCount="indefinite" />
+                <circle cx="0" cy="-195" r="9" fill="url(#o3)" />
+              </g>
+            </>
+          ) : (
+            // Static fallback honouring prefers-reduced-motion
+            <>
+              <circle cx="0"      cy="-130" r="11" fill="url(#o1)" />
+              <circle cx="142.9"  cy="82.5" r="10" fill="url(#o2)" />
+              <circle cx="-168.9" cy="97.5" r="9"  fill="url(#o3)" />
+            </>
+          )}
         </g>
       </svg>
 
-      {/* HTML labels — anchored as % of container so they never clip the SVG. */}
+      {/* HTML labels at fixed compass stations the planets pass through.
+          Kept inside the container at every viewport (verified by UI test). */}
       <PillarLabel
         text="People"
-        // dot at (0,-110) → (50%, 50% - 110/400*100 = 22.5%) → top 22.5%
-        style={{ top: '17%', left: '50%', transform: 'translate(-50%, -100%)' }}
+        style={{ top: '2%', left: '50%', transform: 'translate(-50%, 0)' }}
       />
       <PillarLabel
         text="Technology"
-        // dot at (110,50) → (50%+27.5%, 50%+12.5%) = (77.5%, 62.5%)
-        style={{ top: '62.5%', left: '77.5%', transform: 'translate(-50%, 8px)' }}
+        style={{ top: '78%', left: '82%', transform: 'translate(-50%, 0)' }}
       />
       <PillarLabel
         text="Process"
-        // dot at (-95,80) → (50%-23.75%, 50%+20%) = (26.25%, 70%)
-        style={{ top: '70%', left: '26%', transform: 'translate(-50%, 8px)' }}
+        style={{ top: '78%', left: '18%', transform: 'translate(-50%, 0)' }}
       />
 
       {/* Central globe — the Costco Wholesale GCC sphere logo. The artwork has
@@ -174,7 +189,7 @@ function Orbital() {
           (the lockup itself is a globe) unless the user prefers reduced motion. */}
       <div className="absolute inset-0 grid place-items-center">
         <div
-          className={`rounded-full bg-white grid place-items-center w-[50%] h-[50%] shadow-[0_18px_45px_-18px_rgba(0,0,0,0.45)] ring-1 ring-black/5 ${reduce ? '' : 'orbital-globe-spin'}`}
+          className={`rounded-full bg-white grid place-items-center w-[40%] h-[40%] shadow-[0_18px_45px_-18px_rgba(0,0,0,0.45)] ring-1 ring-black/5 ${reduce ? '' : 'orbital-globe-spin'}`}
         >
           <img
             src={`${basePath}/logo-globe.png`}
