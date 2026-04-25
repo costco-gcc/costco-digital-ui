@@ -172,7 +172,9 @@ async function checkChatbotOpens(page, vp) {
   // Ask a question
   await page.locator('#kirky-input').fill('Who is the CEO?');
   await page.keyboard.press('Enter');
-  await page.waitForTimeout(200);
+  // Kirky has a small think-delay (~280–900ms, proportional to reply length)
+  // so it feels alive — give the answer time to render.
+  await page.locator('text=Ron Vachris').first().waitFor({ state: 'visible', timeout: 4_000 }).catch(() => {});
   const found = await page.locator('text=Ron Vachris').count();
   if (!found) fail(`[${vp.name}] Kirky did not answer "Who is the CEO?" with Ron Vachris`);
   else ok(`[${vp.name}] Kirky answers CEO question correctly`);
