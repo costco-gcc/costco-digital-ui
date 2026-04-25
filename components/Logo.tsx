@@ -19,19 +19,27 @@ export default function Logo({ className, size = 36, showWordmark = true, ariaLa
     <div className={clsx('flex items-center gap-2.5', className)} aria-label={ariaLabel}>
       <LogoSymbol size={size} />
       {showWordmark && (
-        <div className="hidden sm:block leading-tight">
-          <div className="font-costco text-[16px] md:text-[17px] leading-none whitespace-nowrap">
-            <span className="text-costco-red">Costco Wholesale</span>{' '}
+        <div className="leading-tight">
+          {/* Mobile: short wordmark only — keeps the brand name visible
+              without overflowing tight viewports. */}
+          <div className="sm:hidden font-costco text-[14px] leading-none whitespace-nowrap">
+            <span className="text-costco-red">Costco</span>{' '}
             <span className="text-costco-blue">India</span>
           </div>
-          {/* Pillar tagline — each word in its brand-text colour, which is
-              tuned per palette × mode for ≥4.5:1 contrast against the page bg. */}
-          <div className="text-[11px] tracking-[0.01em] mt-0.5 whitespace-nowrap font-semibold">
-            <span style={{ color: 'var(--brand-1-text)' }}>People</span>
-            <span className="text-[color:var(--muted)]"> . </span>
-            <span style={{ color: 'var(--brand-3-text)' }}>Process</span>
-            <span className="text-[color:var(--muted)]"> . </span>
-            <span style={{ color: 'var(--brand-2-text)' }}>Technology</span>
+          {/* sm+: full wordmark + pillar tagline. Each word in its
+              brand-text colour, tuned per palette × mode. */}
+          <div className="hidden sm:block">
+            <div className="font-costco text-[16px] md:text-[17px] leading-none whitespace-nowrap">
+              <span className="text-costco-red">Costco Wholesale</span>{' '}
+              <span className="text-costco-blue">India</span>
+            </div>
+            <div className="text-[11px] tracking-[0.01em] mt-0.5 whitespace-nowrap font-semibold">
+              <span style={{ color: 'var(--brand-1-text)' }}>People</span>
+              <span className="text-[color:var(--muted)]"> . </span>
+              <span style={{ color: 'var(--brand-3-text)' }}>Process</span>
+              <span className="text-[color:var(--muted)]"> . </span>
+              <span style={{ color: 'var(--brand-2-text)' }}>Technology</span>
+            </div>
           </div>
         </div>
       )}
