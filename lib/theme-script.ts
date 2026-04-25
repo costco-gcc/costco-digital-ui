@@ -37,18 +37,21 @@ const DARK: Record<string, string[]> = {
   mono:          ['#F3F4F6','#E5E7EB','#F3F4F6','#D1D5DB','#9CA3AF','#E5E7EB','#6B7280','#D1D5DB','#9CA3AF','#E5E7EB','#4B5563','#9CA3AF','#374151','#D1D5DB'],
 };
 
+// Default theme + mode mirror lib/themes.ts. Costco.com is a light-only
+// site, so first-time visitors land in the costco-web palette + light
+// mode unless they've previously picked something else.
 export const THEME_SCRIPT = `
 (function () {
   try {
     var vars = ${JSON.stringify(VARS)};
     var L = ${JSON.stringify(LIGHT)};
     var D = ${JSON.stringify(DARK)};
-    var t = localStorage.getItem('costco-gcc-theme') || 'costco';
-    var m = localStorage.getItem('costco-gcc-mode') || 'system';
+    var t = localStorage.getItem('costco-gcc-theme') || 'costco-web';
+    var m = localStorage.getItem('costco-gcc-mode') || 'light';
     var r = document.documentElement;
     var dark = m === 'dark' || (m === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
     if (dark) r.classList.add('dark');
-    var p = (dark ? D : L)[t] || (dark ? D.costco : L.costco);
+    var p = (dark ? D : L)[t] || (dark ? D['costco-web'] : L['costco-web']);
     for (var i = 0; i < vars.length; i++) r.style.setProperty(vars[i], p[i]);
     r.dataset.theme = t;
   } catch (e) {}

@@ -10,11 +10,14 @@
   --brand-2-deep: #003B73;
   --brand-3: #F5A623;        /* tertiary (amber) */
 
-  --bg: #FAF7F2;
-  --ink: #0B0F1A;
-  --muted: #4B5563;
-  --line: rgba(11, 15, 26, 0.08);
-  --card: #ffffff;
+  /* Costco.com palette — pure white retail background, near-black ink,
+     thin grey rules. The card surface tints very slightly grey so cards
+     read as inset on white without needing heavy borders. */
+  --bg: #FFFFFF;
+  --ink: #0A0F1A;
+  --muted: #5A6473;
+  --line: rgba(10, 15, 26, 0.10);
+  --card: #F7F8FA;
 
   --shadow-soft: 0 12px 40px -22px rgba(11, 15, 26, 0.25);
   --shadow-strong: 0 24px 60px -28px rgba(11, 15, 26, 0.45);

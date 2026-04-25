@@ -161,7 +161,9 @@ export const themes: Theme[] = [
   },
 ];
 
-export const DEFAULT_THEME: ThemeId = 'costco';
+// Default to the web-flavoured palette (deeper navy, Costco.com yellow,
+// classic red) so first-paint reads as Costco.com proper.
+export const DEFAULT_THEME: ThemeId = 'costco-web';
 export const THEME_KEY = 'costco-gcc-theme';
 export const MODE_KEY = 'costco-gcc-mode';
 
