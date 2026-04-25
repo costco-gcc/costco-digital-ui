@@ -11,25 +11,14 @@ export default function Hero() {
       <div className="absolute inset-0 grid-bg opacity-60 pointer-events-none" aria-hidden />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
-        {/* Top rail: eyebrow on the left, live status on the right —
-            anchors both upper corners so the band reads as intentional. */}
         <m.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-wrap items-center justify-between gap-3"
+          className="inline-flex items-center gap-2 rounded-full px-3 py-1 border border-[color:var(--line)] glass text-xs font-medium"
         >
-          <div className="inline-flex items-center gap-2 rounded-full px-3 py-1 border border-[color:var(--line)] glass text-xs font-medium">
-            <Sparkles size={14} className="text-costco-red" aria-hidden />
-            {content.eyebrow}
-          </div>
-          <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] font-semibold text-[color:var(--muted)]">
-            <span className="relative inline-flex h-2 w-2">
-              <span className="absolute inset-0 rounded-full bg-costco-red opacity-70 animate-ping" />
-              <span className="relative inline-block h-2 w-2 rounded-full bg-costco-red" />
-            </span>
-            Live · Hiring now
-          </div>
+          <Sparkles size={14} className="text-costco-red" aria-hidden />
+          {content.eyebrow}
         </m.div>
 
         <div className="mt-10 grid lg:grid-cols-12 gap-10 items-center">
@@ -78,56 +67,9 @@ export default function Hero() {
             <Orbital labels={content.orbital.labels} />
           </div>
         </div>
-
-        {/* Bottom rail: editorial fact-strip that replaces the thin meta line.
-            Three cells with vertical dividers fill the lower band so the
-            section's ground stops floating. */}
-        <m.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.35 }}
-          className="mt-12 sm:mt-16 pt-8 border-t border-[color:var(--line)] grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:divide-x sm:divide-[color:var(--line)]"
-        >
-          <FactCell kicker="Campus" value="Madhapur, Hyderabad" sub="Capitaland · single site" />
-          <FactCell kicker="Team" value="~1,000 planned" sub="Engineering · Data · Ops" className="sm:px-8" />
-          <FactCell
-            kicker="Open roles"
-            value="Live on Talent500"
-            sub="Apply directly"
-            href="#careers"
-            className="sm:px-8 sm:pr-0"
-          />
-        </m.div>
       </div>
     </section>
   );
-}
-
-function FactCell({
-  kicker, value, sub, href, className = '',
-}: {
-  kicker: string; value: string; sub: string; href?: string; className?: string;
-}) {
-  const body = (
-    <>
-      <div className="text-[11px] uppercase tracking-[0.22em] font-semibold text-[color:var(--muted)]">
-        {kicker}
-      </div>
-      <div className="mt-2 text-lg sm:text-xl font-semibold tracking-tight text-[color:var(--ink)] inline-flex items-center gap-1.5">
-        {value}
-        {href && <ArrowRight size={16} aria-hidden className="opacity-60 transition-transform group-hover:translate-x-0.5" />}
-      </div>
-      <div className="mt-1 text-xs text-[color:var(--muted)]">{sub}</div>
-    </>
-  );
-  if (href) {
-    return (
-      <a href={href} className={`group block ${className}`}>
-        {body}
-      </a>
-    );
-  }
-  return <div className={className}>{body}</div>;
 }
 
 /**
