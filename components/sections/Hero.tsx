@@ -99,7 +99,11 @@ function Orbital() {
     <div className="orbital relative aspect-square w-full max-w-[28rem] mx-auto" aria-hidden>
       <div className="absolute inset-0 rounded-full bg-mesh blur-3xl opacity-60" />
 
-      <svg viewBox="0 0 400 400" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid meet">
+      {/* viewBox is padded by 50 on each side so outer-orbit labels at
+          radius 215 stay inside the drawing area at every angle. The SVG
+          is sized to the orbital container, so the visual content is just
+          slightly more zoomed-out than before. */}
+      <svg viewBox="-50 -50 500 500" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid meet">
         <defs>
           <linearGradient id="o1" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="var(--brand-1)" />
@@ -116,12 +120,13 @@ function Orbital() {
         </defs>
 
         <g transform="translate(200 200)" fill="none" strokeWidth="2">
-          {/* Rings — pushed further out to give the central globe real
-              breathing room. Each rotates gently in opposing directions. */}
+          {/* Rings — inner moved closer to the globe, outer moved closer
+              to the centre, with bigger gaps between rings for breathing
+              room. Each rotates gently in opposing directions. */}
           {[
-            { r: 130, c: 'url(#o1)', dur: 24, dash: '4 6' },
-            { r: 165, c: 'url(#o2)', dur: 32, dash: '6 4' },
-            { r: 195, c: 'url(#o3)', dur: 40, dash: '2 8' },
+            { r: 110, c: 'url(#o1)', dur: 26, dash: '4 6' },
+            { r: 155, c: 'url(#o2)', dur: 34, dash: '6 4' },
+            { r: 195, c: 'url(#o3)', dur: 42, dash: '2 8' },
           ].map((o, i) => (
             <circle key={i} r={o.r} stroke={o.c} strokeDasharray={o.dash} opacity="0.55">
               {!reduce && (
@@ -137,50 +142,29 @@ function Orbital() {
             </circle>
           ))}
 
-          {/* Planets — each in its own rotating group so it actually orbits
-              the centre instead of just wobbling. Different starting angles
-              (0°, 120°, 240°) keep them spaced; different durations make
-              them feel like distinct bodies in distinct orbits. */}
+          {/* Planets + labels in the SAME rotating group so the label
+              follows its planet exactly. Inside, a counter-rotating
+              sub-group keeps the label text upright in screen space at
+              every orbit angle. */}
           {!reduce ? (
             <>
-              <g>
-                <animateTransform attributeName="transform" type="rotate" from="0"   to="360" dur="20s" repeatCount="indefinite" />
-                <circle cx="0" cy="-130" r="11" fill="url(#o1)" />
-              </g>
-              <g>
-                <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="28s" repeatCount="indefinite" />
-                <circle cx="0" cy="-165" r="10" fill="url(#o2)" />
-              </g>
-              <g>
-                <animateTransform attributeName="transform" type="rotate" from="240" to="600" dur="36s" repeatCount="indefinite" />
-                <circle cx="0" cy="-195" r="9" fill="url(#o3)" />
-              </g>
+              <PlanetWithLabel radius={110} labelRadius={140} startAngle={0}   dur={22} fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
+              <PlanetWithLabel radius={155} labelRadius={185} startAngle={120} dur={30} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
+              <PlanetWithLabel radius={195} labelRadius={225} startAngle={240} dur={38} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
             </>
           ) : (
-            // Static fallback honouring prefers-reduced-motion
+            // Static fallback honouring prefers-reduced-motion — same
+            // compass stations, no animation. Labels rendered at the
+            // matching angle, upright (no counter-rotation needed because
+            // there's no parent rotation).
             <>
-              <circle cx="0"      cy="-130" r="11" fill="url(#o1)" />
-              <circle cx="142.9"  cy="82.5" r="10" fill="url(#o2)" />
-              <circle cx="-168.9" cy="97.5" r="9"  fill="url(#o3)" />
+              <StaticPlanetWithLabel radius={110} labelRadius={140} angle={0}   fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
+              <StaticPlanetWithLabel radius={155} labelRadius={185} angle={120} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
+              <StaticPlanetWithLabel radius={195} labelRadius={225} angle={240} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
             </>
           )}
         </g>
       </svg>
-
-      {/* HTML labels at fixed compass stations the planets pass through.
-          Kept inside the container at every viewport (verified by UI test). */}
-      <PillarLabel
-        text="People"
-        style={{ top: '2%', left: '50%', transform: 'translate(-50%, 0)' }}
-      />
-      <PillarLabel
-        text="Technology"
-        style={{ top: '78%', left: '82%', transform: 'translate(-50%, 0)' }}
-      />
-      <PillarLabel
-        text="Process"
-        style={{ top: '78%', left: '18%', transform: 'translate(-50%, 0)' }}
-      />
 
       {/* Central globe — the Costco Wholesale GCC sphere logo. The artwork has
           a soft drop shadow baked in that reads as a halo on dark backgrounds,
@@ -204,13 +188,86 @@ function Orbital() {
   );
 }
 
-function PillarLabel({ text, style }: { text: string; style: React.CSSProperties }) {
+/* Pill label rendered inside SVG so it can ride a rotating group with its
+   planet. Sized roughly by character count — good enough for the three
+   short pillar names we use. Text colour is the brand-X-text variable so
+   contrast holds in light + dark per palette. */
+function SvgPillLabel({ label, textColor }: { label: string; textColor: string }) {
+  const charW = 6.4; // average glyph width at 11.5 px font in this stack
+  const padX = 12;
+  const w = Math.max(50, Math.round(label.length * charW + padX * 2));
   return (
-    <span
-      className="orbital-label absolute text-[11px] sm:text-xs font-bold tracking-tight whitespace-nowrap text-[color:var(--ink)] bg-[color:var(--card)] border border-[color:var(--line)] rounded-full px-2 py-0.5 shadow-sm"
-      style={style}
-    >
-      {text}
-    </span>
+    <g>
+      <rect
+        x={-w / 2} y={-11} width={w} height={22} rx={11}
+        fill="var(--card)"
+        stroke="var(--line)"
+        strokeWidth="1"
+      />
+      <text
+        x="0" y="4"
+        textAnchor="middle"
+        fontSize="11.5"
+        fontWeight="700"
+        fill={textColor}
+        style={{ fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif', letterSpacing: '-0.005em' }}
+      >
+        {label}
+      </text>
+    </g>
+  );
+}
+
+/* Planet + label pair that orbits the centre. The outer <g> rotates from
+   `startAngle` through +360° over `dur`. The label sub-group sits at
+   labelRadius (radially outside the planet) and counter-rotates so the
+   text stays upright in screen at every angle. */
+function PlanetWithLabel({
+  radius, labelRadius, startAngle, dur, fill, textColor, label,
+}: {
+  radius: number; labelRadius: number; startAngle: number;
+  dur: number; fill: string; textColor: string; label: string;
+}) {
+  return (
+    <g>
+      <animateTransform
+        attributeName="transform" type="rotate"
+        from={String(startAngle)}
+        to={String(startAngle + 360)}
+        dur={`${dur}s`} repeatCount="indefinite"
+      />
+      <circle cx={0} cy={-radius} r={10} fill={fill} />
+      <g transform={`translate(0 ${-labelRadius})`}>
+        <g>
+          <animateTransform
+            attributeName="transform" type="rotate"
+            from={String(-startAngle)}
+            to={String(-startAngle - 360)}
+            dur={`${dur}s`} repeatCount="indefinite"
+          />
+          <SvgPillLabel label={label} textColor={textColor} />
+        </g>
+      </g>
+    </g>
+  );
+}
+
+/* Reduced-motion equivalent: same geometry, no animations. The label is
+   rendered at the matching angle but doesn't need counter-rotation since
+   there's no parent rotation to cancel. */
+function StaticPlanetWithLabel({
+  radius, labelRadius, angle, fill, textColor, label,
+}: {
+  radius: number; labelRadius: number; angle: number;
+  fill: string; textColor: string; label: string;
+}) {
+  const rad = (angle * Math.PI) / 180;
+  return (
+    <g>
+      <circle cx={radius * Math.sin(rad)} cy={-radius * Math.cos(rad)} r={10} fill={fill} />
+      <g transform={`translate(${labelRadius * Math.sin(rad)} ${-labelRadius * Math.cos(rad)})`}>
+        <SvgPillLabel label={label} textColor={textColor} />
+      </g>
+    </g>
   );
 }
