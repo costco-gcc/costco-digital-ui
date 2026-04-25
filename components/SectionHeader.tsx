@@ -50,7 +50,10 @@ export default function SectionHeader({ eyebrow, number, title, description, ali
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-[color:var(--muted)] mt-3 text-base sm:text-lg max-w-2xl"
+          className={clsx(
+            'text-[color:var(--muted)] mt-3 text-base sm:text-lg max-w-4xl',
+            align === 'left' && 'prose-justify',
+          )}
         >
           {description}
         </m.p>

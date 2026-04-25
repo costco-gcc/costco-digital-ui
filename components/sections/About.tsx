@@ -18,7 +18,7 @@ import content from '@/data/content/about.json';
 export default function About() {
   return (
     <section id="about" className="py-20 sm:py-28">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Act 1 — establish */}
         <SectionHeader
           number={1}
@@ -58,7 +58,7 @@ export default function About() {
               <h3 className="mt-4 text-lg font-bold">{p.k}</h3>
               <p className="mt-2 text-sm font-medium text-[color:var(--ink)]">{p.v}</p>
               {p.body && (
-                <p className="mt-3 text-sm text-[color:var(--muted)] leading-relaxed">{p.body}</p>
+                <p className="prose-justify mt-3 text-sm text-[color:var(--muted)] leading-relaxed">{p.body}</p>
               )}
             </div>
           ))}
@@ -81,7 +81,7 @@ export default function About() {
               <span className="text-[color:var(--muted)]">— {content.fifthPrinciple.v}</span>
             </p>
             {content.fifthPrinciple.body && (
-              <p className="mt-2 text-sm text-[color:var(--muted)] leading-relaxed">
+              <p className="prose-justify mt-2 text-sm text-[color:var(--muted)] leading-relaxed">
                 {content.fifthPrinciple.body}
               </p>
             )}
@@ -101,7 +101,7 @@ export default function About() {
           <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-[color:var(--muted)]">
             {content.panel.title}
           </p>
-          <p className="mt-4 text-base sm:text-lg max-w-3xl text-[color:var(--ink)] leading-relaxed">
+          <p className="prose-justify mt-4 text-base sm:text-lg max-w-4xl text-[color:var(--ink)] leading-relaxed">
             {content.panel.body}
           </p>
 

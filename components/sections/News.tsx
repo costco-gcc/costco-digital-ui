@@ -47,7 +47,7 @@ export default function News() {
                 </figure>
                 <div className="p-5 flex flex-col grow">
                   <h3 className="font-semibold leading-snug">{it.title}</h3>
-                  <p className="text-sm text-[color:var(--muted)] mt-2 grow">{it.excerpt}</p>
+                  <p className="prose-justify text-sm text-[color:var(--muted)] mt-2 grow">{it.excerpt}</p>
                   {it.credit && (
                     <p className="mt-3 text-[10px] text-[color:var(--muted)]/70 italic">{it.credit}</p>
                   )}

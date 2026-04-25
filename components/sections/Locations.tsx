@@ -38,7 +38,7 @@ export default function Locations() {
             <h3 className="text-2xl font-bold tracking-tight">{content.officeName}</h3>
             <p className="text-sm text-[color:var(--muted)] mt-1">{content.officeCityLine}</p>
 
-            <p className="mt-4 text-[15px] leading-relaxed">{content.officeBlurb}</p>
+            <p className="prose-justify mt-4 text-[15px] leading-relaxed">{content.officeBlurb}</p>
 
             <div className="grid sm:grid-cols-2 gap-3 mt-6">
               {content.features.map((f) => (

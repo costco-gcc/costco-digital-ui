@@ -241,6 +241,22 @@ main:focus { outline: none; }
 /* Selection */
 ::selection { background: color-mix(in srgb, var(--brand-2) 30%, transparent); }
 
+/* Justified body prose. text-justify:inter-word smooths the gap-rivers
+   that pure justify produces; hyphens:auto lets the browser break long
+   words on language-aware boundaries (we set lang=en on <html>, so the
+   English dictionary is used); text-wrap:pretty improves last-line
+   handling in modern Chromium/WebKit. Apply only to long-form paragraphs
+   where the line length is comfortably ≥50ch — short captions and labels
+   stay left-aligned. */
+.prose-justify,
+.prose-legal p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-wrap: pretty;
+}
+
 /* ----- Custom scrollbar -----
    Thin, theme-aware, no track chrome. Falls back to the platform default
    on browsers that don't support either property family.

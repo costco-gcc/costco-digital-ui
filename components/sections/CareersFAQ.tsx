@@ -80,7 +80,7 @@ export default function CareersFAQ() {
                       transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
                       className="overflow-hidden"
                     >
-                      <p className="pb-4 pr-8 text-[13px] text-[color:var(--muted)] leading-relaxed">{it.a}</p>
+                      <p className="prose-justify pb-4 pr-8 text-[13px] text-[color:var(--muted)] leading-relaxed">{it.a}</p>
                     </m.div>
                   )}
                 </AnimatePresence>
