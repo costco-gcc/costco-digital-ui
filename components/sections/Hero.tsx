@@ -120,18 +120,18 @@ function Orbital() {
         </defs>
 
         <g transform="translate(200 200)" fill="none" strokeWidth="2">
-          {/* Rings — uniform spacing between consecutive rings (~5% of the
-              orbital radius = 25 viewBox units), matching the globe→inner
-              gap. The centre globe gap is preserved as-is.
-                globe edge   r = 100
-                inner ring   r = 125  (gap 25)
-                mid ring     r = 150  (gap 25)
-                outer ring   r = 175  (gap 25)
+          {/* Rings — uniform 25 vbu spacing. Inner ring pushed out 12 vbu
+              from the previous layout to keep clearance after the central
+              globe was enlarged 10% (w-[40%] → w-[44%]).
+                globe edge   r ≈ 121
+                inner ring   r = 137  (gap 16)
+                mid ring     r = 162  (gap 25)
+                outer ring   r = 187  (gap 25)
               Each rotates gently in opposing directions. */}
           {[
-            { r: 125, c: 'url(#o1)', dur: 26, dash: '4 6' },
-            { r: 150, c: 'url(#o2)', dur: 34, dash: '6 4' },
-            { r: 175, c: 'url(#o3)', dur: 42, dash: '2 8' },
+            { r: 137, c: 'url(#o1)', dur: 26, dash: '4 6' },
+            { r: 162, c: 'url(#o2)', dur: 34, dash: '6 4' },
+            { r: 187, c: 'url(#o3)', dur: 42, dash: '2 8' },
           ].map((o, i) => (
             <circle key={i} r={o.r} stroke={o.c} strokeDasharray={o.dash} opacity="0.55">
               {!reduce && (
@@ -153,15 +153,15 @@ function Orbital() {
               every orbit angle. */}
           {!reduce ? (
             <>
-              <PlanetWithLabel radius={125} labelRadius={155} startAngle={0}   dur={22} fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
-              <PlanetWithLabel radius={150} labelRadius={180} startAngle={120} dur={30} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
-              <PlanetWithLabel radius={175} labelRadius={205} startAngle={240} dur={38} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
+              <PlanetWithLabel radius={137} labelRadius={167} startAngle={0}   dur={22} fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
+              <PlanetWithLabel radius={162} labelRadius={192} startAngle={120} dur={30} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
+              <PlanetWithLabel radius={187} labelRadius={217} startAngle={240} dur={38} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
             </>
           ) : (
             <>
-              <StaticPlanetWithLabel radius={125} labelRadius={155} angle={0}   fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
-              <StaticPlanetWithLabel radius={150} labelRadius={180} angle={120} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
-              <StaticPlanetWithLabel radius={175} labelRadius={205} angle={240} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
+              <StaticPlanetWithLabel radius={137} labelRadius={167} angle={0}   fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
+              <StaticPlanetWithLabel radius={162} labelRadius={192} angle={120} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
+              <StaticPlanetWithLabel radius={187} labelRadius={217} angle={240} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
             </>
           )}
         </g>
@@ -174,7 +174,7 @@ function Orbital() {
           (the lockup itself is a globe) unless the user prefers reduced motion. */}
       <div className="absolute inset-0 grid place-items-center">
         <div
-          className={`rounded-full bg-white grid place-items-center w-[40%] h-[40%] shadow-[0_18px_45px_-18px_rgba(0,0,0,0.45)] ring-1 ring-black/5 ${reduce ? '' : 'orbital-globe-spin'}`}
+          className={`rounded-full bg-white grid place-items-center w-[44%] h-[44%] shadow-[0_18px_45px_-18px_rgba(0,0,0,0.45)] ring-1 ring-black/5 ${reduce ? '' : 'orbital-globe-spin'}`}
         >
           <img
             src={`${basePath}/logo-globe.png`}
