@@ -31,10 +31,16 @@ jobs:
       - name: Compute base path
         id: base
         run: |
-          # If repo is "<user>.github.io" it serves at the root; otherwise at /<repo>/
+          # Pages serves at the apex of the custom domain when a CNAME file
+          # is present, so basePath must be empty in that case.
+          # Otherwise: "<user>.github.io" repos serve at root; all other repos
+          # serve under /<repo>/.
           REPO_NAME="${GITHUB_REPOSITORY##*/}"
           OWNER="${GITHUB_REPOSITORY%%/*}"
-          if [ "$REPO_NAME" = "${OWNER}.github.io" ]; then
+          if [ -f public/CNAME ]; then
+            echo "base=" >> "$GITHUB_OUTPUT"
+            echo "Using custom domain: $(cat public/CNAME)"
+          elif [ "$REPO_NAME" = "${OWNER}.github.io" ]; then
             echo "base=" >> "$GITHUB_OUTPUT"
           else
             echo "base=/$REPO_NAME" >> "$GITHUB_OUTPUT"
