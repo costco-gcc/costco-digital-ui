@@ -1,0 +1,65 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Compute base path
+        id: base
+        run: |
+          # If repo is "<user>.github.io" it serves at the root; otherwise at /<repo>/
+          REPO_NAME="${GITHUB_REPOSITORY##*/}"
+          OWNER="${GITHUB_REPOSITORY%%/*}"
+          if [ "$REPO_NAME" = "${OWNER}.github.io" ]; then
+            echo "base=" >> "$GITHUB_OUTPUT"
+          else
+            echo "base=/$REPO_NAME" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.base.outputs.base }}
+          NODE_ENV: production
+        run: |
+          npm run build
+          touch out/.nojekyll
+          # SPA fallback for client-side routes (404 -> 404.html, GitHub Pages serves it)
+          cp out/404/index.html out/404.html 2>/dev/null || true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,52 @@
+name: Sync Talent500 openings
+
+on:
+  schedule:
+    # Daily at 03:30 UTC (~09:00 IST). Adjust as needed.
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-openings
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Need full history to push back a commit cleanly.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync openings from Talent500 API
+        id: scrape
+        run: npm run sync:openings
+
+      - name: Commit if changed
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          if git diff --quiet -- public/openings.json; then
+            echo "No changes to openings.json — skipping commit."
+            exit 0
+          fi
+          COUNT=$(node -e "const j=require('./public/openings.json');console.log(Array.isArray(j.openings)?j.openings.length:0)")
+          git add public/openings.json
+          git commit -m "chore(openings): sync Talent500 — ${COUNT} roles"
+          git push

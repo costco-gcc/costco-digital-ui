@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand palette — overridden at runtime by lib/themes.ts. */
+:root {
+  --brand-1: #E31837;        /* primary (Costco red) */
+  --brand-1-deep: #B7142C;
+  --brand-2: #005DAA;        /* secondary (Costco blue) */
+  --brand-2-deep: #003B73;
+  --brand-3: #F5A623;        /* tertiary (amber) */
+
+  --bg: #FAF7F2;
+  --ink: #0B0F1A;
+  --muted: #4B5563;
+  --line: rgba(11, 15, 26, 0.08);
+  --card: #ffffff;
+
+  --shadow-soft: 0 12px 40px -22px rgba(11, 15, 26, 0.25);
+  --shadow-strong: 0 24px 60px -28px rgba(11, 15, 26, 0.45);
+
+  color-scheme: light;
+}
+
+html.dark {
+  --bg: #06080F;
+  --ink: #F4F6FB;
+  --muted: #9AA3B2;
+  --line: rgba(255, 255, 255, 0.08);
+  --card: #0E1322;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body { min-height: 100dvh; overflow-x: hidden; }
+
+/* Respect reduced-motion globally. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ----- Skip link ----- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  border-radius: 6px;
+}
+.skip-link:focus { left: 0.5rem; top: 0.5rem; }
+main:focus { outline: none; }
+
+/* Costco-alike wordmark font — loaded from Google Fonts in layout.tsx.
+   Falls back to Cooper Black on systems that have it, then to a slab serif. */
+.font-costco {
+  font-family: 'Sansita', 'Cooper Black', 'Cooper Std Black', 'Bookman Old Style', 'Bookman', Georgia, serif;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+/* Custom component / utility classes go inside @layer so Tailwind's own
+   utilities (e.g. `hidden`) can still win at the cascade. Without this,
+   declarations like `.btn { display: inline-flex }` placed below
+   `@tailwind utilities;` would override `display: none` from `hidden`. */
+@layer components {
+
+/* ----- Brand-aware utilities ----- */
+.brand-1 { color: var(--brand-1); }
+.brand-2 { color: var(--brand-2); }
+.brand-3 { color: var(--brand-3); }
+.bg-brand-1 { background-color: var(--brand-1); }
+.bg-brand-2 { background-color: var(--brand-2); }
+.bg-brand-3 { background-color: var(--brand-3); }
+.bg-brand-1\/10 { background-color: color-mix(in srgb, var(--brand-1) 10%, transparent); }
+.bg-brand-2\/10 { background-color: color-mix(in srgb, var(--brand-2) 10%, transparent); }
+.bg-brand-3\/10 { background-color: color-mix(in srgb, var(--brand-3) 10%, transparent); }
+.bg-brand-1\/15 { background-color: color-mix(in srgb, var(--brand-1) 15%, transparent); }
+.bg-brand-2\/15 { background-color: color-mix(in srgb, var(--brand-2) 15%, transparent); }
+.bg-brand-3\/15 { background-color: color-mix(in srgb, var(--brand-3) 15%, transparent); }
+.border-brand-1\/15 { border-color: color-mix(in srgb, var(--brand-1) 15%, transparent); }
+.border-brand-2\/15 { border-color: color-mix(in srgb, var(--brand-2) 15%, transparent); }
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--brand-1) 0%, var(--brand-2) 60%, var(--brand-3) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-mesh {
+  background-image:
+    radial-gradient(at 20% 10%, color-mix(in srgb, var(--brand-2) 18%, transparent) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, color-mix(in srgb, var(--brand-1) 18%, transparent) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, color-mix(in srgb, var(--brand-3) 14%, transparent) 0px, transparent 50%);
+}
+
+.glass {
+  background: color-mix(in srgb, var(--card) 78%, transparent);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  border: 1px solid var(--line);
+}
+
+/* Use for floating panels (theme picker, popovers) where translucency
+   would let underlying content visually leak through. */
+.glass-opaque {
+  background: var(--card);
+  backdrop-filter: saturate(140%) blur(14px);
+  -webkit-backdrop-filter: saturate(140%) blur(14px);
+  border: 1px solid var(--line);
+}
+
+.divider-fade { height: 1px; background: linear-gradient(90deg, transparent, var(--line), transparent); }
+
+/* ----- Buttons ----- */
+.btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  border-radius: 9999px;
+  padding: .65rem 1.1rem;
+  font-weight: 600;
+  font-size: .9rem;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
+  will-change: transform;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-primary { background: var(--brand-1); color: #fff; box-shadow: 0 6px 22px -10px color-mix(in srgb, var(--brand-1) 70%, transparent); }
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.btn-ghost:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+}
+.card-hover { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.card-hover:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft); border-color: color-mix(in srgb, var(--brand-2) 25%, var(--line)); }
+
+.section-title {
+  font-size: clamp(1.7rem, 1.2rem + 1.8vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* Subtle grid background used in hero */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, var(--line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at 50% 30%, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 30%, transparent 75%);
+}
+
+/* ----- Focus rings ----- */
+:focus-visible {
+  outline: 2px solid var(--brand-2);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Form fields share a base look */
+.field {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--line);
+  background: transparent;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+}
+.field:focus { border-color: var(--brand-2); box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-2) 18%, transparent); }
+.field[aria-invalid="true"] { border-color: var(--brand-1); }
+
+/* Scroll progress bar — sits under the navbar */
+.scroll-progress {
+  position: fixed;
+  inset: 0 auto auto 0;
+  height: 3px;
+  width: 100%;
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, var(--brand-1), var(--brand-2), var(--brand-3));
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* Selection */
+::selection { background: color-mix(in srgb, var(--brand-2) 30%, transparent); }
+
+/* Slow Y-axis-feel rotation for the central hero globe. Subtle; the rings
+   carry most of the motion. We use a 3D-ish skew + scale wobble to imply
+   rotation rather than a flat 2D spin (a 2D spin on a sphere logo looks weird). */
+@keyframes orbital-globe-spin {
+  0%, 100% { transform: rotate(-3deg) scale(1); }
+  50%      { transform: rotate(3deg)  scale(1.02); }
+}
+.orbital-globe-spin {
+  animation: orbital-globe-spin 16s ease-in-out infinite;
+  transform-origin: center;
+}
+
+} /* end @layer components */

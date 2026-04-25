@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Stylized Costco India GCC mark: a single person silhouette + a gear behind, in red over blue circle -->
+  <circle cx="32" cy="32" r="30" fill="#005DAA"/>
+  <circle cx="32" cy="32" r="22" fill="#fff"/>
+  <g fill="#005DAA">
+    <rect x="29" y="6" width="6" height="7" rx="1"/>
+    <rect x="29" y="51" width="6" height="7" rx="1"/>
+    <rect x="6" y="29" width="7" height="6" rx="1"/>
+    <rect x="51" y="29" width="7" height="6" rx="1"/>
+    <rect x="13" y="13" width="6" height="7" rx="1" transform="rotate(-45 16 16.5)"/>
+    <rect x="45" y="13" width="6" height="7" rx="1" transform="rotate(45 48 16.5)"/>
+    <rect x="13" y="44" width="6" height="7" rx="1" transform="rotate(45 16 47.5)"/>
+    <rect x="45" y="44" width="6" height="7" rx="1" transform="rotate(-45 48 47.5)"/>
+  </g>
+  <circle cx="32" cy="32" r="10" fill="#005DAA"/>
+  <circle cx="32" cy="22" r="5" fill="#E31837"/>
+  <path d="M22 38 Q32 32 42 38 L42 44 L22 44 Z" fill="#E31837"/>
+</svg>

@@ -1,0 +1,477 @@
+{
+  "verifiedAt": "2026-04-25",
+  "source": "https://talent500.com/jobs/costco/",
+  "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
+  "totalReportedByApi": 30,
+  "openings": [
+    {
+      "title": "Adobe Platform Engineer -MarTech",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "12 - 15 years",
+      "skills": [
+        "Adobe Experience Platform",
+        "AEP",
+        "Adobe Experience"
+      ],
+      "jobCode": "T500-25028",
+      "url": "https://talent500.com/jobs/costco/adobe-platform-engineer-martech-hyderabad-T500-25028/"
+    },
+    {
+      "title": "IT Reliability & Incident Lead",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "5 - 8 years",
+      "skills": [
+        "SQL",
+        "Javascript",
+        "Python",
+        "Incident Management"
+      ],
+      "jobCode": "T500-24989",
+      "url": "https://talent500.com/jobs/costco/it-reliability-incident-lead-hyderabad-T500-24989/"
+    },
+    {
+      "title": "Platform Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "5 - 8 years",
+      "skills": [
+        "Python",
+        "Power BI",
+        "Bigquery",
+        "Big Query",
+        "GitHub Actions"
+      ],
+      "jobCode": "T500-25374",
+      "url": "https://talent500.com/jobs/costco/platform-engineer-hyderabad-T500-25374/"
+    },
+    {
+      "title": "Platform Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "12 - 18 years",
+      "skills": [
+        "Terraform",
+        "GCP",
+        "GitOps",
+        "GKE",
+        "Google Kubernetes Engine"
+      ],
+      "jobCode": "T500-25385",
+      "url": "https://talent500.com/jobs/costco/platform-engineer-hyderabad-T500-25385/"
+    },
+    {
+      "title": "Senior Platform Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "8 - 14 years",
+      "skills": [
+        "Python",
+        "Power BI",
+        "GitHub Actions",
+        "GHA",
+        "GitHub Action"
+      ],
+      "jobCode": "T500-25375",
+      "url": "https://talent500.com/jobs/costco/senior-platform-engineer-hyderabad-T500-25375/"
+    },
+    {
+      "title": "Data Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "4 - 8 years",
+      "skills": [
+        "GCP",
+        "Java",
+        "Python",
+        "Data Engineer",
+        "Data Engineering"
+      ],
+      "jobCode": "T500-25102",
+      "url": "https://talent500.com/jobs/costco/data-engineer-hyderabad-T500-25102/"
+    },
+    {
+      "title": "Data Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "5 - 8 years",
+      "skills": [
+        "GCP",
+        "ETL",
+        "ELT",
+        "Python",
+        "Big Query"
+      ],
+      "jobCode": "T500-25348",
+      "url": "https://talent500.com/jobs/costco/data-engineer-hyderabad-T500-25348/"
+    },
+    {
+      "title": "Data Engineer,L3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "5 - 9 years",
+      "skills": [
+        "Python",
+        "Data Streaming",
+        "Pub/Sub",
+        "Kafka",
+        "Dataflow"
+      ],
+      "jobCode": "T500-25063",
+      "url": "https://talent500.com/jobs/costco/data-engineer-staff-hyderabad-T500-25063/"
+    },
+    {
+      "title": "Data Engineering - Manager- MarTech",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "14 - 22 years",
+      "skills": [
+        "GCP",
+        "Big Query"
+      ],
+      "jobCode": "T500-25026",
+      "url": "https://talent500.com/jobs/costco/data-engineering-manager-martech-hyderabad-T500-25026/"
+    },
+    {
+      "title": "Senior Data Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "8 - 14 years",
+      "skills": [
+        "GCP",
+        "Python",
+        "ELT",
+        "ETL",
+        "Big Query"
+      ],
+      "jobCode": "T500-25349",
+      "url": "https://talent500.com/jobs/costco/senior-data-engineer-hyderabad-T500-25349/"
+    },
+    {
+      "title": "Senior Data Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "8 - 12 years",
+      "skills": [
+        "GCP",
+        "ETL",
+        "ELT",
+        "Java",
+        "Python"
+      ],
+      "jobCode": "T500-25114",
+      "url": "https://talent500.com/jobs/costco/senior-data-engineer-hyderabad-T500-25114/"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "12 - 15 years",
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Rest",
+        "API",
+        "Docker"
+      ],
+      "jobCode": "T500-24751",
+      "url": "https://talent500.com/jobs/costco/senior-software-engineer-hyderabad-T500-24751/"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "12 - 18 years",
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Spring",
+        "GitHub",
+        "Jenkins"
+      ],
+      "jobCode": "T500-24865",
+      "url": "https://talent500.com/jobs/costco/senior-software-engineer-java-hyderabad-T500-24865/"
+    },
+    {
+      "title": "Software Engineer 2a, International eCommerce",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "4 - 6 years",
+      "skills": [
+        "Hybris",
+        "SAP Commerce",
+        "Git",
+        "AGILE",
+        "SQL"
+      ],
+      "jobCode": "T500-21471",
+      "url": "https://talent500.com/jobs/costco/software-engineer-2a-international-ecommerce-hyderabad-T500-21471/"
+    },
+    {
+      "title": "Software Engineer 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "C#",
+        ".Net Core",
+        "CICD",
+        "Jenkins",
+        "Github Actions"
+      ],
+      "jobCode": "T500-24140",
+      "url": "https://talent500.com/jobs/costco/software-engineer-3-hyderabad-T500-24140/"
+    },
+    {
+      "title": "Software Engineer 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "C#",
+        ".Net Core",
+        "CICD",
+        "Jenkins",
+        "Github Actions"
+      ],
+      "jobCode": "T500-20143",
+      "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-20143/"
+    },
+    {
+      "title": "Software Engineer Level 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "MDM",
+        "Master Data Management",
+        "Stibo",
+        "Stibo Step",
+        "Step"
+      ],
+      "jobCode": "T500-24870",
+      "url": "https://talent500.com/jobs/costco/software-engineer-master-data-management-hyderabad-T500-24870/"
+    },
+    {
+      "title": "Software Engineer Level 3-Front end",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Typescript",
+        "ReactJs",
+        "Rest",
+        "API",
+        "NextJS"
+      ],
+      "jobCode": "T500-24750",
+      "url": "https://talent500.com/jobs/costco/software-engineer-level-3-front-end-hyderabad-T500-24750/"
+    },
+    {
+      "title": "Software Engineer Senior- Front end",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "12 - 15 years",
+      "skills": [
+        "Typescript",
+        "GCP",
+        "AWS",
+        "Azure",
+        "Rest"
+      ],
+      "jobCode": "T500-24755",
+      "url": "https://talent500.com/jobs/costco/software-engineer-senior-front-end-hyderabad-T500-24755/"
+    },
+    {
+      "title": "Software Engineer Senior- Front end",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "12 - 18 years",
+      "skills": [
+        "NextJs",
+        "Typescript",
+        "AWS",
+        "GCP",
+        "Azure"
+      ],
+      "jobCode": "T500-24866",
+      "url": "https://talent500.com/jobs/costco/software-engineer-senior-front-end-hyderabad-T500-24866/"
+    },
+    {
+      "title": "Sr. Software Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "12 - 18 years",
+      "skills": [
+        "C#",
+        ".Net Core",
+        "CICD",
+        "Jenkins",
+        "Github Actions"
+      ],
+      "jobCode": "T500-20224",
+      "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-20224/"
+    },
+    {
+      "title": "Software Engineer 4 - Adobe -MarTech",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "MarTech",
+      "experience": "10 - 15 years",
+      "skills": [
+        "Adobe Experience",
+        "AEP",
+        "Adobe Journey Optimizer",
+        "AJO"
+      ],
+      "jobCode": "T500-25027",
+      "url": "https://talent500.com/jobs/costco/software-engineer-4-adobe-martech-hyderabad-T500-25027/"
+    },
+    {
+      "title": "Software Engineer 4 - Adobe-MarTech",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "MarTech",
+      "experience": "12 - 15 years",
+      "skills": [
+        "Adobe Expererince Platform",
+        "AEP",
+        "AE",
+        "QA",
+        "Automation Testing"
+      ],
+      "jobCode": "T500-25029",
+      "url": "https://talent500.com/jobs/costco/software-engineer-4-adobe-martech-hyderabad-T500-25029/"
+    },
+    {
+      "title": "Software Engineer 4 (Martech/AdTech)",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "MarTech",
+      "experience": "12 - 15 years",
+      "skills": [
+        "SQL",
+        "Data Pipeline",
+        "GCP",
+        "Customer Data Integration",
+        "Customer Data"
+      ],
+      "jobCode": "T500-20230",
+      "url": "https://talent500.com/jobs/costco/software-engineer-4-martechadtech-hyderabad-T500-20230/"
+    },
+    {
+      "title": "Senior Product Owner",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Product",
+      "experience": "12 - 18 years",
+      "skills": [
+        "Product Roadmap",
+        "Agile Methodologies",
+        "Agile",
+        "Product Management"
+      ],
+      "jobCode": "T500-24864",
+      "url": "https://talent500.com/jobs/costco/senior-product-owner-hyderabad-T500-24864/"
+    },
+    {
+      "title": "Quality Assurance Analyst - International Ecommerce",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Quality",
+      "experience": "5 - 8 years",
+      "skills": [
+        "Selenium",
+        "Playwright",
+        "API Testing",
+        "Postman",
+        "Regression Testing"
+      ],
+      "jobCode": "T500-24722",
+      "url": "https://talent500.com/jobs/costco/quality-assurance-analyst-international-ecommerce-hyderabad-T500-24722/"
+    },
+    {
+      "title": "Quality Automation Engineer Level 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Quality",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Playwright",
+        "Javascript",
+        "Automation testing",
+        "Manual Testing",
+        "Postman"
+      ],
+      "jobCode": "T500-24867",
+      "url": "https://talent500.com/jobs/costco/quality-automation-engineer-hyderabad-T500-24867/"
+    },
+    {
+      "title": "Quality Engineer - International eCommerce",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Quality",
+      "experience": "5 - 8 years",
+      "skills": [
+        "Automation Testing",
+        "Selenium",
+        "Playwright",
+        "CI/CD",
+        "CICD"
+      ],
+      "jobCode": "T500-24788",
+      "url": "https://talent500.com/jobs/costco/quality-engineer-international-ecommerce-hyderabad-T500-24788/"
+    },
+    {
+      "title": "Senior Quality Automation Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Quality",
+      "experience": "12 - 15 years",
+      "skills": [
+        "Automation Testing",
+        "Java",
+        "Playwright"
+      ],
+      "jobCode": "T500-24754",
+      "url": "https://talent500.com/jobs/costco/senior-quality-automation-engineer-hyderabad-T500-24754/"
+    },
+    {
+      "title": "Security Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Security",
+      "experience": "5 - 9 years",
+      "skills": [
+        "Terraform",
+        "SQL",
+        "Java",
+        "CI/CD"
+      ],
+      "jobCode": "T500-24988",
+      "url": "https://talent500.com/jobs/costco/security-engineer-hyderabad-T500-24988/"
+    }
+  ]
+}
