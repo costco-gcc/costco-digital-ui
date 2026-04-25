@@ -5,12 +5,13 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight, Briefcase, MapPin, ExternalLink, Clock, RefreshCw, Info } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import { loadOpenings, openings as seedOpenings, seedVerifiedAt, TALENT500_COMPANY_URL, type Opening } from '@/data/openings';
+import content from '@/data/content/careers.json';
 
 export default function Careers() {
   const [items, setItems] = useState<Opening[]>(seedOpenings);
   const [verifiedAt, setVerifiedAt] = useState<string>(seedVerifiedAt);
   const [total, setTotal] = useState<number>(seedOpenings.length);
-  const [filter, setFilter] = useState<string>('All');
+  const [filter, setFilter] = useState<string>(content.filterAll);
 
   useEffect(() => {
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -28,10 +29,10 @@ export default function Careers() {
     const sorted = Array.from(counts.entries())
       .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
       .map(([name, count]) => ({ name, count }));
-    return [{ name: 'All', count: items.length }, ...sorted];
+    return [{ name: content.filterAll, count: items.length }, ...sorted];
   }, [items]);
 
-  const visible = filter === 'All' ? items : items.filter((o) => o.category === filter);
+  const visible = filter === content.filterAll ? items : items.filter((o) => o.category === filter);
 
   return (
     <section id="careers" className="py-20 sm:py-28">
@@ -39,14 +40,14 @@ export default function Careers() {
         <div className="grid lg:grid-cols-12 gap-10 items-end mb-8">
           <div className="lg:col-span-7">
             <SectionHeader
-              eyebrow="Careers"
-              title={`${total} live roles. All in Hyderabad.`}
-              description="Costco India GCC hiring is facilitated by Talent500. Tiles below are pulled from the live Talent500 listing — every link goes straight to the official job page to apply."
+              eyebrow={content.eyebrow}
+              title={content.titleTemplate.replace('{n}', String(total))}
+              description={content.description}
             />
           </div>
           <div className="lg:col-span-5 flex lg:justify-end">
             <a href={TALENT500_COMPANY_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              View all on Talent500 <ExternalLink size={14} />
+              {content.viewAllCta} <ExternalLink size={14} />
             </a>
           </div>
         </div>
@@ -118,32 +119,30 @@ export default function Careers() {
           </div>
         ) : (
           <div className="card p-8 text-center">
-            <p className="font-semibold">No openings match this filter right now.</p>
-            <p className="text-sm text-[color:var(--muted)] mt-1">The full list is always current on Talent500.</p>
+            <p className="font-semibold">{content.emptyState.title}</p>
+            <p className="text-sm text-[color:var(--muted)] mt-1">{content.emptyState.subtitle}</p>
             <a href={TALENT500_COMPANY_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-4">
-              Open Talent500 <ExternalLink size={14} />
+              {content.emptyState.cta} <ExternalLink size={14} />
             </a>
           </div>
         )}
 
         <div className="card mt-8 p-6 sm:p-8 grid md:grid-cols-2 gap-6 items-center bg-gradient-to-br from-costco-blue/5 via-transparent to-costco-red/5">
           <div>
-            <h3 className="text-lg font-semibold">Don&rsquo;t see your role?</h3>
-            <p className="text-sm text-[color:var(--muted)] mt-1">
-              New roles open regularly across engineering, data, AI, cloud, security, ops, and finance — all in Hyderabad.
-            </p>
+            <h3 className="text-lg font-semibold">{content.ctaCard.title}</h3>
+            <p className="text-sm text-[color:var(--muted)] mt-1">{content.ctaCard.body}</p>
           </div>
           <div className="flex md:justify-end">
             <a href={TALENT500_COMPANY_URL} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
-              Open careers portal <ExternalLink size={14} />
+              {content.ctaCard.cta} <ExternalLink size={14} />
             </a>
           </div>
         </div>
 
         <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-[color:var(--muted)]">
-          <span className="inline-flex items-center gap-1"><Info size={12} /> List verified {verifiedAt}.</span>
+          <span className="inline-flex items-center gap-1"><Info size={12} /> {content.verifiedPrefix} {verifiedAt}.</span>
           <a href={TALENT500_COMPANY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-costco-blue hover:underline">
-            <RefreshCw size={12} /> Refresh on Talent500
+            <RefreshCw size={12} /> {content.refreshLabel}
           </a>
         </div>
       </div>

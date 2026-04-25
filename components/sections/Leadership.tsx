@@ -3,35 +3,19 @@
 import SectionHeader from '@/components/SectionHeader';
 import { motion } from 'framer-motion';
 import { Linkedin, Globe2 } from 'lucide-react';
+import content from '@/data/content/leadership.json';
 
 type Member = { name: string; role: string; bio: string; initials: string; linkedin?: string; tag: string };
 
-// Costco corporate leader is shown for context; India GCC leadership is named where public.
-const team: Member[] = [
-  {
-    name: 'Ron Vachris',
-    role: 'President & CEO, Costco Wholesale',
-    bio: 'Joined Costco in 1982 as a forklift driver at Price Club; appointed CEO in January 2024 as the company\'s third chief executive.',
-    initials: 'RV',
-    tag: 'Global',
-  },
-  {
-    name: 'Rajeev Mall',
-    role: 'CEO, Costco Wholesale India GCC',
-    bio: 'Leads the India GCC. Previously VP Global Business Services at Mondelēz International and Group CIO at Coca-Cola Bottlers Japan.',
-    initials: 'RM',
-    tag: 'India',
-  },
-];
-
 export default function Leadership() {
+  const team = content.team as Member[];
   return (
     <section id="leadership" className="py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <SectionHeader
-          eyebrow="Leadership"
-          title="Operators who lead from the floor."
-          description="Costco has had only three CEOs in 40+ years — that's how seriously the company takes principled leadership. Our India team carries that same operating culture."
+          eyebrow={content.eyebrow}
+          title={content.title}
+          description={content.description}
         />
         <div className="grid sm:grid-cols-2 gap-5 max-w-3xl">
           {team.map((m, i) => (

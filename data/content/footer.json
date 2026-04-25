@@ -1,0 +1,50 @@
+{
+  "manifesto": "Built to last. Operated with care. Run from Hyderabad.",
+  "brandStatement": "Costco Wholesale India Private Limited — uniting People, Technology, and Process to power Costco worldwide.",
+  "columns": [
+    {
+      "heading": "Company",
+      "links": [
+        { "href": "#about", "label": "About" },
+        { "href": "#capabilities", "label": "Capabilities" },
+        { "href": "#culture", "label": "Life @ Costco" },
+        { "href": "#news", "label": "News & Insights" }
+      ]
+    },
+    {
+      "heading": "Engage",
+      "links": [
+        { "href": "#careers", "label": "Careers" },
+        { "href": "https://talent500.com/jobs/costco/", "label": "Apply on Talent500", "external": true },
+        { "href": "#contact", "label": "Contact" },
+        { "href": "/portal/", "label": "Employee portal" }
+      ]
+    }
+  ],
+  "visit": {
+    "heading": "Visit",
+    "name": "Capitaland, Madhapur",
+    "cityLine": "Hyderabad, Telangana, India",
+    "mapsLabel": "Open in Maps",
+    "mapsHref": "https://www.google.com/maps/search/?api=1&query=Capitaland%2C+Madhapur%2C+Hyderabad"
+  },
+  "now": {
+    "heading": "Now in Hyderabad",
+    "timezoneAbbrev": "IST",
+    "ianaTimeZone": "Asia/Kolkata",
+    "statusLabel": "Operating"
+  },
+  "legal": {
+    "heading": "Legal",
+    "links": [
+      { "href": "/legal/privacy/", "label": "Privacy notice" },
+      { "href": "/legal/cookies/", "label": "Cookies" },
+      { "href": "/legal/terms/", "label": "Terms of use" },
+      { "href": "/legal/accessibility/", "label": "Accessibility" },
+      { "href": "/legal/whistleblower/", "label": "Whistleblower" }
+    ]
+  },
+  "backdropWord": "INDIA",
+  "copyrightTemplate": "© {year} Costco Wholesale India Private Limited. All rights reserved. Costco Wholesale and the Costco logo are trademarks of Costco Wholesale Corporation, used here for identification only.",
+  "tagline": "Built with care · DPDP & GDPR aware · WCAG 2.2 AA targeted"
+}

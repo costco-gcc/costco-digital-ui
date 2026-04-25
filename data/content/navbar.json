@@ -1,0 +1,15 @@
+{
+  "ariaLabel": "Primary",
+  "homeAriaLabel": "Costco India GCC home",
+  "links": [
+    { "href": "#about", "label": "About" },
+    { "href": "#capabilities", "label": "Capabilities" },
+    { "href": "#locations", "label": "Locations" },
+    { "href": "#culture", "label": "Life @ Costco" },
+    { "href": "#careers", "label": "Careers" },
+    { "href": "#news", "label": "News" },
+    { "href": "#contact", "label": "Contact" }
+  ],
+  "ctaLabel": "Join us",
+  "ctaHref": "#careers"
+}

@@ -1,0 +1,40 @@
+{
+  "eyebrow": "Capabilities",
+  "title": "People · Technology · Process — three pillars, one engine.",
+  "description": "The India GCC focuses on predictive inventory, membership analytics, omnichannel fulfilment, and cybersecurity — all in service of a member-first promise.",
+  "pillars": [
+    {
+      "title": "People",
+      "swatch": "p",
+      "icon": "Users",
+      "blurb": "Member-obsessed engineers, designers, analysts, and ops leaders who do the right thing — every time.",
+      "capabilities": [
+        { "icon": "Headset", "label": "Membership analytics & member services" },
+        { "icon": "ShieldCheck", "label": "Trust, safety & risk" },
+        { "icon": "BarChart3", "label": "People analytics & HR tech" }
+      ]
+    },
+    {
+      "title": "Technology",
+      "swatch": "t",
+      "icon": "Cpu",
+      "blurb": "Modern platforms that move at warehouse speed and member scale.",
+      "capabilities": [
+        { "icon": "Cloud", "label": "GCP, BigQuery, GitHub Actions, GKE" },
+        { "icon": "Database", "label": "Data engineering & lakehouse" },
+        { "icon": "Bot", "label": "AI / ML & responsible Generative AI" }
+      ]
+    },
+    {
+      "title": "Process",
+      "swatch": "r",
+      "icon": "Workflow",
+      "blurb": "Disciplined operations and continuous improvement, end to end.",
+      "capabilities": [
+        { "icon": "ShoppingCart", "label": "Predictive inventory & merchandising" },
+        { "icon": "Boxes", "label": "Omnichannel fulfilment & supply chain" },
+        { "icon": "Banknote", "label": "Finance & accounting tech" }
+      ]
+    }
+  ]
+}

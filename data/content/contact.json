@@ -1,0 +1,40 @@
+{
+  "eyebrow": "Contact",
+  "title": "Talk to us.",
+  "description": "For partnerships, press, careers questions, or general inquiries — we'd love to hear from you.",
+  "address": {
+    "name": "Capitaland, Madhapur",
+    "cityLine": "Hyderabad, Telangana, India"
+  },
+  "email": "india.gcc@costco.com",
+  "company": "Costco Wholesale India Private Limited",
+  "whistleblowerLabel": "Whistleblower & ethics:",
+  "whistleblowerCta": "Report concern",
+  "whistleblowerHref": "/legal/whistleblower/",
+  "talent500Cta": "Careers on Talent500",
+  "talent500Href": "https://talent500.com/jobs/costco/",
+  "form": {
+    "srHelp": "All fields marked with an asterisk are required. Submitting opens your email client; nothing leaves this page automatically.",
+    "nameLabel": "Your name",
+    "emailLabel": "Email",
+    "topicLabel": "Topic",
+    "messageLabel": "Message",
+    "topics": ["General", "Partnership", "Press", "Careers", "Vendor / Supplier"],
+    "consent": {
+      "lead": "I consent to Costco India processing my contact details to respond to this inquiry, in line with the",
+      "linkText": "Privacy notice",
+      "linkHref": "/legal/privacy/",
+      "tail": "."
+    },
+    "submitLabel": "Send message",
+    "submitHelp": "Submitting opens your email client — nothing is sent from this page.",
+    "successMessage": "Thanks — your email client should be open with the message ready to send.",
+    "errors": {
+      "name": "Please tell us your name.",
+      "emailRequired": "We need an email to reply.",
+      "emailInvalid": "That email looks invalid.",
+      "message": "Add a short message so we can help.",
+      "consent": "Please consent to our processing of your details."
+    }
+  }
+}

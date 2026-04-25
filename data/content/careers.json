@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Careers",
+  "titleTemplate": "{n} live roles. All in Hyderabad.",
+  "description": "Costco India GCC hiring is facilitated by Talent500. Tiles below are pulled from the live Talent500 listing — every link goes straight to the official job page to apply.",
+  "viewAllCta": "View all on Talent500",
+  "filterAll": "All",
+  "emptyState": {
+    "title": "No openings match this filter right now.",
+    "subtitle": "The full list is always current on Talent500.",
+    "cta": "Open Talent500"
+  },
+  "ctaCard": {
+    "title": "Don't see your role?",
+    "body": "New roles open regularly across engineering, data, AI, cloud, security, ops, and finance — all in Hyderabad.",
+    "cta": "Open careers portal"
+  },
+  "verifiedPrefix": "List verified",
+  "refreshLabel": "Refresh on Talent500"
+}

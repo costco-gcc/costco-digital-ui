@@ -5,16 +5,9 @@ import Logo from './Logo';
 import ThemePicker from './ThemePicker';
 import { Menu, X } from 'lucide-react';
 import clsx from 'clsx';
+import content from '@/data/content/navbar.json';
 
-const links = [
-  { href: '#about', label: 'About' },
-  { href: '#capabilities', label: 'Capabilities' },
-  { href: '#locations', label: 'Locations' },
-  { href: '#culture', label: 'Life @ Costco' },
-  { href: '#careers', label: 'Careers' },
-  { href: '#news', label: 'News' },
-  { href: '#contact', label: 'Contact' },
-];
+const links = content.links;
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -57,8 +50,8 @@ export default function Navbar() {
       )}
       role="banner"
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2" aria-label="Primary">
-        <a href="#top" className="flex items-center gap-2 shrink-0" aria-label="Costco India GCC home">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2" aria-label={content.ariaLabel}>
+        <a href="#top" className="flex items-center gap-2 shrink-0" aria-label={content.homeAriaLabel}>
           <Logo />
         </a>
         <ul className="hidden lg:flex items-center gap-1">
@@ -81,7 +74,7 @@ export default function Navbar() {
         </ul>
         <div className="flex items-center gap-1">
           <ThemePicker />
-          <a href="#careers" className="hidden sm:inline-flex btn btn-primary">Join us</a>
+          <a href={content.ctaHref} className="hidden sm:inline-flex btn btn-primary">{content.ctaLabel}</a>
           <button
             type="button"
             className="lg:hidden p-2 rounded-full hover:bg-[color:var(--line)]"
@@ -111,11 +104,11 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="#careers"
+                href={content.ctaHref}
                 onClick={() => setOpen(false)}
                 className="block mt-2 px-3 py-2 rounded-full text-center btn btn-primary"
               >
-                Join us
+                {content.ctaLabel}
               </a>
             </li>
           </ul>

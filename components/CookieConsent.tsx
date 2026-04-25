@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Cookie, ShieldCheck, X } from 'lucide-react';
 import { readConsent, writeConsent, defaultConsent, ConsentState } from '@/lib/cookies';
+import content from '@/data/content/cookie-consent.json';
 
 export default function CookieConsent() {
   const [show, setShow] = useState(false);
@@ -36,7 +37,7 @@ export default function CookieConsent() {
       {/* Floating shield to re-open preferences any time */}
       <button
         type="button"
-        aria-label="Cookie preferences"
+        aria-label={content.shieldAriaLabel}
         onClick={() => setOpenPrefs(true)}
         className="fixed bottom-5 left-5 z-40 p-2.5 rounded-full glass border border-[color:var(--line)] hover:translate-y-[-1px] transition-transform"
       >
@@ -57,19 +58,18 @@ export default function CookieConsent() {
             <div className="flex items-start gap-3">
               <div className="p-2 rounded-xl bg-costco-blue/10 text-costco-blue"><Cookie size={18} /></div>
               <div className="flex-1">
-                <h2 className="font-semibold text-sm">Your privacy choices</h2>
+                <h2 className="font-semibold text-sm">{content.banner.title}</h2>
                 <p className="text-xs text-[color:var(--muted)] mt-1">
-                  We use only strictly necessary cookies by default. With your consent, we may also use preferences,
-                  analytics, and marketing cookies. You can change this anytime via the shield icon in the bottom-left.
-                  Read our <a className="underline" href="/legal/cookies/">Cookie policy</a> and <a className="underline" href="/legal/privacy/">Privacy notice</a>.
+                  {content.banner.body}{' '}
+                  Read our <a className="underline" href={content.banner.policyLink.href}>{content.banner.policyLink.label}</a> and <a className="underline" href={content.banner.privacyLink.href}>{content.banner.privacyLink.label}</a>.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-3">
-                  <button onClick={acceptAll} className="btn btn-primary">Accept all</button>
-                  <button onClick={rejectAll} className="btn btn-ghost">Reject non-essential</button>
-                  <button onClick={() => setOpenPrefs(true)} className="btn btn-ghost">Preferences</button>
+                  <button onClick={acceptAll} className="btn btn-primary">{content.banner.acceptAll}</button>
+                  <button onClick={rejectAll} className="btn btn-ghost">{content.banner.rejectAll}</button>
+                  <button onClick={() => setOpenPrefs(true)} className="btn btn-ghost">{content.banner.preferences}</button>
                 </div>
               </div>
-              <button onClick={() => setShow(false)} aria-label="Dismiss" className="p-1 rounded hover:bg-[color:var(--line)]"><X size={14} /></button>
+              <button onClick={() => setShow(false)} aria-label={content.banner.dismissAriaLabel} className="p-1 rounded hover:bg-[color:var(--line)]"><X size={14} /></button>
             </div>
           </motion.div>
         )}
@@ -92,26 +92,32 @@ function Preferences({ state, onClose, onSave }: { state: ConsentState; onClose:
     <div role="dialog" aria-label="Cookie preferences" className="fixed inset-0 z-[60] grid place-items-center p-4 bg-black/50">
       <div className="w-full max-w-lg glass rounded-2xl border border-[color:var(--line)] p-6">
         <div className="flex items-center justify-between">
-          <h2 className="font-semibold">Cookie preferences</h2>
+          <h2 className="font-semibold">{content.preferences.title}</h2>
           <button onClick={onClose} aria-label="Close" className="p-1 rounded hover:bg-[color:var(--line)]"><X size={16} /></button>
         </div>
-        <p className="text-xs text-[color:var(--muted)] mt-1">
-          Control how we use cookies. Strictly necessary cookies are always on so the site works.
-        </p>
+        <p className="text-xs text-[color:var(--muted)] mt-1">{content.preferences.intro}</p>
 
         <div className="mt-4 space-y-3 text-sm">
-          <Row title="Strictly necessary" desc="Required for core functionality and security. Cannot be disabled." checked disabled />
-          <Row title="Preferences" desc="Remembers theme and consent choices."
-               checked={draft.preferences} onChange={(v) => setDraft({ ...draft, preferences: v })} />
-          <Row title="Analytics" desc="Anonymized usage stats to help us improve. Loaded only with consent."
-               checked={draft.analytics} onChange={(v) => setDraft({ ...draft, analytics: v })} />
-          <Row title="Marketing" desc="Optional ad-related cookies. Off by default."
-               checked={draft.marketing} onChange={(v) => setDraft({ ...draft, marketing: v })} />
+          {content.preferences.rows.map((row) => {
+            if (row.key === 'necessary') {
+              return <Row key={row.key} title={row.title} desc={row.desc} checked disabled />;
+            }
+            const k = row.key as 'preferences' | 'analytics' | 'marketing';
+            return (
+              <Row
+                key={row.key}
+                title={row.title}
+                desc={row.desc}
+                checked={draft[k]}
+                onChange={(v) => setDraft({ ...draft, [k]: v })}
+              />
+            );
+          })}
         </div>
 
         <div className="flex flex-wrap gap-2 mt-5 justify-end">
-          <button onClick={onClose} className="btn btn-ghost">Cancel</button>
-          <button onClick={() => onSave({ ...draft })} className="btn btn-primary">Save preferences</button>
+          <button onClick={onClose} className="btn btn-ghost">{content.preferences.cancel}</button>
+          <button onClick={() => onSave({ ...draft })} className="btn btn-primary">{content.preferences.save}</button>
         </div>
       </div>
     </div>

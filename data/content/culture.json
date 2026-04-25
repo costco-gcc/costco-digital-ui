@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Life @ Costco India",
+  "title": "A workplace built on care, craft, and community.",
+  "description": "Costco's Code of Ethics is a way of working. Here's how it shows up day-to-day in India.",
+  "pillars": [
+    { "icon": "HeartHandshake", "title": "Belonging", "body": "Inclusive teams where every voice counts. Employee resource groups, women in tech, and accessibility-first events." },
+    { "icon": "GraduationCap", "title": "Growth", "body": "Learning budgets, certifications, internal mobility, and Costco-funded technical academies." },
+    { "icon": "Stethoscope", "title": "Wellbeing", "body": "Comprehensive health cover for you and your dependents, mental wellness support, and parental leave." },
+    { "icon": "Sprout", "title": "Sustainability", "body": "Green campuses, reduced printing, clean-commute incentives, and CSR aligned with India initiatives." },
+    { "icon": "Users", "title": "Community", "body": "Hackathons, demo days, family days, and warehouse experience visits." },
+    { "icon": "Palette", "title": "Craft", "body": "Engineering excellence guilds, design critiques, and a culture of curious tinkering." }
+  ]
+}

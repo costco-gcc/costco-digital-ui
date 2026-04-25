@@ -1,0 +1,28 @@
+{
+  "eyebrow": "News & insights",
+  "title": "From our teams, to the world.",
+  "description": "Announcements, hiring updates, and links to Costco's broader programs.",
+  "items": [
+    {
+      "icon": "Building",
+      "tag": "Announcement",
+      "date": "2025",
+      "title": "Costco announces its first Global Capability Center in India.",
+      "excerpt": "A purpose-built engine in Hyderabad to power Costco's technology and operations worldwide. Initial scale: ~1,000 employees."
+    },
+    {
+      "icon": "Briefcase",
+      "tag": "Hiring",
+      "date": "2026",
+      "title": "Hiring across engineering, data, AI, cloud, security, and quality.",
+      "excerpt": "All India GCC openings are facilitated by Talent500. See the Careers section for live roles, or jump straight to the official portal."
+    },
+    {
+      "icon": "Leaf",
+      "tag": "Sustainability",
+      "date": "Costco global",
+      "title": "Climate Action Plan: net-zero by 2050; SBTi-aligned 2030 targets.",
+      "excerpt": "Costco committed to net-zero across the value chain, with a 39% Scope 1+2 reduction and a 20% Scope 3 intensity reduction by 2030."
+    }
+  ]
+}

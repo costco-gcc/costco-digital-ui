@@ -1,0 +1,28 @@
+{
+  "eyebrow": "Our story",
+  "title": "A Costco-grade engine, built in India.",
+  "description": "Costco Wholesale India Private Limited is the Global Capability Center for Costco — designing, building, and running technology and operations for warehouses, e-commerce, and members worldwide. Announced in 2025, we're scaling from Hyderabad.",
+  "principles": [
+    { "k": "Obey the law", "v": "Compliance and ethics, end to end." },
+    { "k": "Take care of our members", "v": "Quality, value, and trust — every day." },
+    { "k": "Take care of our employees", "v": "Care, craft, and growth as a way of working." },
+    { "k": "Respect our suppliers", "v": "Long-term partnerships, fair dealing." }
+  ],
+  "fifthPrinciple": {
+    "k": "Reward our shareholders",
+    "v": "the natural outcome of living the four principles above."
+  },
+  "panel": {
+    "title": "Why a GCC, why India, why Hyderabad?",
+    "body": "India is the world's largest hub for Global Capability Centers. Hyderabad pairs deep engineering and operations talent with strong policy support — a fit for Costco's quality-at-scale operating style.",
+    "bullets": [
+      { "k": "Talent density", "v": "Hyderabad's tech corridor — among India's strongest engineering ecosystems." },
+      { "k": "Global delivery", "v": "Time-zone coverage and 24×7 follow-the-sun operations." },
+      { "k": "Speed to scale", "v": "Build, learn, and ramp without compromising standards." }
+    ],
+    "facts": [
+      { "k": "~1,000", "v": "planned employees in Hyderabad" },
+      { "k": "2025", "v": "year of public announcement" }
+    ]
+  }
+}

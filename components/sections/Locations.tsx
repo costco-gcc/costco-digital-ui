@@ -2,16 +2,18 @@
 
 import SectionHeader from '@/components/SectionHeader';
 import { motion } from 'framer-motion';
-import { MapPin, Building2, Users2, Sparkles, Navigation } from 'lucide-react';
+import { MapPin, type LucideIcon } from 'lucide-react';
+import { icon as iconByName } from '@/lib/icons';
+import content from '@/data/content/locations.json';
 
 export default function Locations() {
   return (
     <section id="locations" className="py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <SectionHeader
-          eyebrow="Where we work"
-          title="Built in Hyderabad."
-          description="A purpose-built campus in Madhapur — at the heart of India's most dynamic tech corridor."
+          eyebrow={content.eyebrow}
+          title={content.title}
+          description={content.description}
         />
 
         <motion.div
@@ -24,40 +26,35 @@ export default function Locations() {
           <div className="relative min-h-[280px] bg-gradient-to-br from-costco-blue/15 via-costco-red/10 to-accent-process/15">
             <CityArt />
             <span className="absolute top-4 left-4 inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-white/85 dark:bg-black/40 backdrop-blur">
-              <MapPin size={12} /> Hyderabad · Telangana
+              <MapPin size={12} /> {content.tagCity}
             </span>
             <span className="absolute bottom-4 left-4 inline-flex items-center gap-1 text-[11px] px-2 py-1 rounded-full bg-costco-red text-white">
-              HQ · India GCC
+              {content.tagBadge}
             </span>
           </div>
 
           <div className="p-6 sm:p-8">
-            <h3 className="text-2xl font-bold tracking-tight">Capitaland, Madhapur</h3>
-            <p className="text-sm text-[color:var(--muted)] mt-1">Hyderabad, Telangana, India</p>
+            <h3 className="text-2xl font-bold tracking-tight">{content.officeName}</h3>
+            <p className="text-sm text-[color:var(--muted)] mt-1">{content.officeCityLine}</p>
 
-            <p className="mt-4 text-[15px] leading-relaxed">
-              Our Hyderabad campus brings People, Technology, and Process under one roof — engineering,
-              data, AI, operations, finance tech, and member-experience teams collaborating with Costco
-              business and product partners worldwide.
-            </p>
+            <p className="mt-4 text-[15px] leading-relaxed">{content.officeBlurb}</p>
 
             <div className="grid sm:grid-cols-2 gap-3 mt-6">
-              <Feature icon={Building2} title="Modern campus" body="Capitaland, Madhapur — Hyderabad's tech corridor." />
-              <Feature icon={Users2} title="Hybrid teams" body="Collaboration spaces, focus zones, war-rooms." />
-              <Feature icon={Sparkles} title="Award-aligned" body="Targeting Great Place to Work culture." />
-              <Feature icon={Navigation} title="Connected" body="Close to Hitech City metro & expressways." />
+              {content.features.map((f) => (
+                <Feature key={f.title} icon={iconByName(f.icon)} title={f.title} body={f.body} />
+              ))}
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Capitaland%2C+Madhapur%2C+Hyderabad"
+                href={content.ctaPrimary.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
-                Open in Maps
+                {content.ctaPrimary.label}
               </a>
-              <a href="#contact" className="btn btn-ghost">Contact us</a>
+              <a href={content.ctaSecondary.href} className="btn btn-ghost">{content.ctaSecondary.label}</a>
             </div>
           </div>
         </motion.div>
@@ -66,7 +63,7 @@ export default function Locations() {
   );
 }
 
-function Feature({ icon: Icon, title, body }: { icon: any; title: string; body: string }) {
+function Feature({ icon: Icon, title, body }: { icon: LucideIcon; title: string; body: string }) {
   return (
     <div className="rounded-xl border border-[color:var(--line)] p-3">
       <div className="flex items-center gap-2 text-sm font-semibold">

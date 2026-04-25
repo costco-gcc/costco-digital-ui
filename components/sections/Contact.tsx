@@ -4,6 +4,7 @@ import SectionHeader from '@/components/SectionHeader';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Building2, ShieldCheck, ExternalLink, AlertCircle } from 'lucide-react';
 import { useState } from 'react';
+import content from '@/data/content/contact.json';
 
 type Errors = Partial<Record<'name' | 'email' | 'message' | 'consent', string>>;
 
@@ -18,11 +19,11 @@ export default function Contact() {
     const email = String(f.get('email') || '').trim();
     const message = String(f.get('message') || '').trim();
     const consent = f.get('consent') === 'on';
-    if (!name) e.name = 'Please tell us your name.';
-    if (!email) e.email = 'We need an email to reply.';
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) e.email = 'That email looks invalid.';
-    if (!message) e.message = 'Add a short message so we can help.';
-    if (!consent) e.consent = 'Please consent to our processing of your details.';
+    if (!name) e.name = content.form.errors.name;
+    if (!email) e.email = content.form.errors.emailRequired;
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) e.email = content.form.errors.emailInvalid;
+    if (!message) e.message = content.form.errors.message;
+    if (!consent) e.consent = content.form.errors.consent;
     return e;
   }
 
@@ -42,7 +43,7 @@ export default function Contact() {
     const topic = String(f.get('topic') || 'General');
     const message = String(f.get('message') || '').trim();
     const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0ATopic: ${topic}%0D%0A%0D%0A${encodeURIComponent(message)}`;
-    window.location.href = `mailto:india.gcc@costco.com?subject=${encodeURIComponent('[Costco India GCC] ' + topic)}&body=${body}`;
+    window.location.href = `mailto:${content.email}?subject=${encodeURIComponent('[Costco India GCC] ' + topic)}&body=${body}`;
     setSent(true);
   }
 
@@ -51,19 +52,19 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-10">
         <div className="lg:col-span-5">
           <SectionHeader
-            eyebrow="Contact"
-            title="Talk to us."
-            description="For partnerships, press, careers questions, or general inquiries — we'd love to hear from you."
+            eyebrow={content.eyebrow}
+            title={content.title}
+            description={content.description}
           />
           <div className="space-y-3 text-sm">
-            <div className="flex items-start gap-3"><MapPin size={16} className="mt-0.5 text-costco-blue shrink-0" /><div><strong>Capitaland, Madhapur</strong><br />Hyderabad, Telangana, India</div></div>
-            <div className="flex items-start gap-3"><Mail size={16} className="mt-0.5 text-costco-blue shrink-0" /><div><a href="mailto:india.gcc@costco.com" className="hover:text-costco-blue">india.gcc@costco.com</a></div></div>
-            <div className="flex items-start gap-3"><Building2 size={16} className="mt-0.5 text-costco-blue shrink-0" /><div>Costco Wholesale India Private Limited</div></div>
-            <div className="flex items-start gap-3"><ShieldCheck size={16} className="mt-0.5 text-costco-blue shrink-0" /><div>Whistleblower &amp; ethics: <a href="/legal/whistleblower/" className="text-costco-blue underline">Report concern</a></div></div>
+            <div className="flex items-start gap-3"><MapPin size={16} className="mt-0.5 text-costco-blue shrink-0" /><div><strong>{content.address.name}</strong><br />{content.address.cityLine}</div></div>
+            <div className="flex items-start gap-3"><Mail size={16} className="mt-0.5 text-costco-blue shrink-0" /><div><a href={`mailto:${content.email}`} className="hover:text-costco-blue">{content.email}</a></div></div>
+            <div className="flex items-start gap-3"><Building2 size={16} className="mt-0.5 text-costco-blue shrink-0" /><div>{content.company}</div></div>
+            <div className="flex items-start gap-3"><ShieldCheck size={16} className="mt-0.5 text-costco-blue shrink-0" /><div>{content.whistleblowerLabel} <a href={content.whistleblowerHref} className="text-costco-blue underline">{content.whistleblowerCta}</a></div></div>
           </div>
           <div className="mt-6">
-            <a href="https://talent500.com/jobs/costco/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
-              Careers on Talent500 <ExternalLink size={14} aria-hidden />
+            <a href={content.talent500Href} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+              {content.talent500Cta} <ExternalLink size={14} aria-hidden />
             </a>
           </div>
         </div>
@@ -78,33 +79,33 @@ export default function Contact() {
           noValidate
           aria-describedby="contact-help"
         >
-          <p id="contact-help" className="sr-only">All fields marked with an asterisk are required. Submitting opens your email client; nothing leaves this page automatically.</p>
+          <p id="contact-help" className="sr-only">{content.form.srHelp}</p>
 
           <div className="grid sm:grid-cols-2 gap-4">
-            <Field label="Your name" name="name" required error={errors.name} />
-            <Field label="Email" name="email" type="email" required error={errors.email} />
+            <Field label={content.form.nameLabel} name="name" required error={errors.name} />
+            <Field label={content.form.emailLabel} name="email" type="email" required error={errors.email} />
           </div>
-          <Select label="Topic" name="topic" options={['General', 'Partnership', 'Press', 'Careers', 'Vendor / Supplier']} />
-          <TextArea label="Message" name="message" required error={errors.message} />
+          <Select label={content.form.topicLabel} name="topic" options={content.form.topics} />
+          <TextArea label={content.form.messageLabel} name="message" required error={errors.message} />
 
           <div>
             <label className="flex items-start gap-2 text-xs text-[color:var(--muted)]">
               <input type="checkbox" name="consent" aria-invalid={!!errors.consent} className="mt-0.5 accent-[color:var(--brand-2)]" />
               <span>
-                I consent to Costco India processing my contact details to respond to this inquiry, in line with the{' '}
-                <a className="underline" href="/legal/privacy/">Privacy notice</a>.
+                {content.form.consent.lead}{' '}
+                <a className="underline" href={content.form.consent.linkHref}>{content.form.consent.linkText}</a>{content.form.consent.tail}
               </span>
             </label>
             {errors.consent && <FieldError msg={errors.consent} />}
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-            <p className="text-xs text-[color:var(--muted)]">Submitting opens your email client — nothing is sent from this page.</p>
-            <button type="submit" className="btn btn-primary self-start sm:self-auto">Send message</button>
+            <p className="text-xs text-[color:var(--muted)]">{content.form.submitHelp}</p>
+            <button type="submit" className="btn btn-primary self-start sm:self-auto">{content.form.submitLabel}</button>
           </div>
 
           {sent && Object.keys(errors).length === 0 && (
-            <p className="text-sm text-emerald-600">Thanks — your email client should be open with the message ready to send.</p>
+            <p className="text-sm text-emerald-600">{content.form.successMessage}</p>
           )}
         </motion.form>
       </div>

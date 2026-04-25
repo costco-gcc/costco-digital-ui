@@ -1,7 +1,9 @@
 'use client';
 
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowRight, Sparkles, Users, Cpu, Workflow } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
+import { icon as iconByName } from '@/lib/icons';
+import content from '@/data/content/hero.json';
 
 export default function Hero() {
   return (
@@ -18,7 +20,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full px-3 py-1 border border-[color:var(--line)] glass text-xs font-medium"
           >
             <Sparkles size={14} className="text-costco-red" aria-hidden />
-            Costco Wholesale India Private Limited · Global Capability Center
+            {content.eyebrow}
           </motion.div>
 
           <motion.h1
@@ -27,8 +29,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.05 }}
             className="mt-5 font-extrabold tracking-tight leading-[1.05] text-[clamp(2.2rem,1.8rem+3vw,4.6rem)]"
           >
-            Powering Costco worldwide,{' '}
-            <span className="gradient-text">from Hyderabad.</span>
+            {content.headlinePrefix}{' '}
+            <span className="gradient-text">{content.headlineAccent}</span>
           </motion.h1>
 
           <motion.p
@@ -37,10 +39,13 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="mt-5 text-base sm:text-lg text-[color:var(--muted)] max-w-2xl"
           >
-            We bring together extraordinary <strong className="text-[color:var(--ink)]">people</strong>,
-            modern <strong className="text-[color:var(--ink)]">technology</strong>, and disciplined{' '}
-            <strong className="text-[color:var(--ink)]">process</strong> to deliver member-first
-            experiences for Costco worldwide.
+            {content.introLead}{' '}
+            <strong className="text-[color:var(--ink)]">{content.introHighlights[0]}</strong>
+            {content.introJoinerA}{' '}
+            <strong className="text-[color:var(--ink)]">{content.introHighlights[1]}</strong>
+            {content.introJoinerB}{' '}
+            <strong className="text-[color:var(--ink)]">{content.introHighlights[2]}</strong>{' '}
+            {content.introTail}
           </motion.p>
 
           <motion.div
@@ -49,37 +54,36 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="mt-7 flex flex-wrap items-center gap-3"
           >
-            <a href="#careers" className="btn btn-primary">
-              Explore careers <ArrowRight size={16} aria-hidden />
+            <a href={content.ctaPrimary.href} className="btn btn-primary">
+              {content.ctaPrimary.label} <ArrowRight size={16} aria-hidden />
             </a>
-            <a href="#about" className="btn btn-ghost">
-              Why we exist
+            <a href={content.ctaSecondary.href} className="btn btn-ghost">
+              {content.ctaSecondary.label}
             </a>
           </motion.div>
 
           <div className="mt-10 grid grid-cols-3 gap-3 max-w-xl">
-            {[
-              { icon: Users, label: 'People', desc: 'Member-obsessed teams', color: 'brand-1' },
-              { icon: Cpu, label: 'Technology', desc: 'AI · Cloud · Data · Security', color: 'brand-2' },
-              { icon: Workflow, label: 'Process', desc: 'Lean · Audited · Scalable', color: 'brand-3' },
-            ].map((p, i) => (
-              <motion.div
-                key={p.label}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 + i * 0.05 }}
-                className="card p-3"
-              >
-                <p.icon size={18} aria-hidden style={{ color: `var(--${p.color})` }} />
-                <div className="mt-2 text-sm font-semibold">{p.label}</div>
-                <div className="text-xs text-[color:var(--muted)]">{p.desc}</div>
-              </motion.div>
-            ))}
+            {content.pillars.map((p, i) => {
+              const Icon = iconByName(p.icon);
+              return (
+                <motion.div
+                  key={p.label}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 + i * 0.05 }}
+                  className="card p-3"
+                >
+                  <Icon size={18} aria-hidden style={{ color: `var(--${p.color})` }} />
+                  <div className="mt-2 text-sm font-semibold">{p.label}</div>
+                  <div className="text-xs text-[color:var(--muted)]">{p.desc}</div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
 
         <div className="lg:col-span-5">
-          <Orbital />
+          <Orbital labels={content.orbital.labels} />
         </div>
       </div>
     </section>
@@ -92,7 +96,7 @@ export default function Hero() {
  * container, never clip, and inherit theme colors. Each label is anchored to
  * its dot with absolute % positioning relative to the orbital container.
  */
-function Orbital() {
+function Orbital({ labels }: { labels: string[] }) {
   const reduce = useReducedMotion();
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return (
@@ -100,9 +104,7 @@ function Orbital() {
       <div className="absolute inset-0 rounded-full bg-mesh blur-3xl opacity-60" />
 
       {/* viewBox is padded by 75 on each side so the outer-orbit label at
-          radius 250 stays inside the drawing area at every angle. The SVG
-          is sized to fill the orbital container, so visually the content
-          just sits in a slightly more zoomed-out frame. */}
+          radius 250 stays inside the drawing area at every angle. */}
       <svg viewBox="-75 -75 550 550" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid meet">
         <defs>
           <linearGradient id="o1" x1="0" y1="0" x2="1" y2="1">
@@ -147,31 +149,22 @@ function Orbital() {
             </circle>
           ))}
 
-          {/* Planets + labels in the SAME rotating group so the label
-              follows its planet exactly. Inside, a counter-rotating
-              sub-group keeps the label text upright in screen space at
-              every orbit angle. */}
           {!reduce ? (
             <>
-              <PlanetWithLabel radius={137} labelRadius={167} startAngle={0}   dur={22} fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
-              <PlanetWithLabel radius={162} labelRadius={192} startAngle={120} dur={30} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
-              <PlanetWithLabel radius={187} labelRadius={217} startAngle={240} dur={38} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
+              <PlanetWithLabel radius={137} labelRadius={167} startAngle={0}   dur={22} fill="url(#o1)" textColor="var(--brand-1-text)" label={labels[0]} />
+              <PlanetWithLabel radius={162} labelRadius={192} startAngle={120} dur={30} fill="url(#o2)" textColor="var(--brand-2-text)" label={labels[1]} />
+              <PlanetWithLabel radius={187} labelRadius={217} startAngle={240} dur={38} fill="url(#o3)" textColor="var(--brand-3-text)" label={labels[2]} />
             </>
           ) : (
             <>
-              <StaticPlanetWithLabel radius={137} labelRadius={167} angle={0}   fill="url(#o1)" textColor="var(--brand-1-text)" label="People" />
-              <StaticPlanetWithLabel radius={162} labelRadius={192} angle={120} fill="url(#o2)" textColor="var(--brand-2-text)" label="Technology" />
-              <StaticPlanetWithLabel radius={187} labelRadius={217} angle={240} fill="url(#o3)" textColor="var(--brand-3-text)" label="Process" />
+              <StaticPlanetWithLabel radius={137} labelRadius={167} angle={0}   fill="url(#o1)" textColor="var(--brand-1-text)" label={labels[0]} />
+              <StaticPlanetWithLabel radius={162} labelRadius={192} angle={120} fill="url(#o2)" textColor="var(--brand-2-text)" label={labels[1]} />
+              <StaticPlanetWithLabel radius={187} labelRadius={217} angle={240} fill="url(#o3)" textColor="var(--brand-3-text)" label={labels[2]} />
             </>
           )}
         </g>
       </svg>
 
-      {/* Central globe — the Costco Wholesale GCC sphere logo. The artwork has
-          a soft drop shadow baked in that reads as a halo on dark backgrounds,
-          so we sit it on a clean white circle (its intended canvas) and let
-          the orbital rings provide all the on-bg colour. Rotates slowly
-          (the lockup itself is a globe) unless the user prefers reduced motion. */}
       <div className="absolute inset-0 grid place-items-center">
         <div
           className={`rounded-full bg-white grid place-items-center w-[44%] h-[44%] shadow-[0_18px_45px_-18px_rgba(0,0,0,0.45)] ring-1 ring-black/5 ${reduce ? '' : 'orbital-globe-spin'}`}
@@ -189,12 +182,8 @@ function Orbital() {
   );
 }
 
-/* Pill label rendered inside SVG so it can ride a rotating group with its
-   planet. Sized roughly by character count — good enough for the three
-   short pillar names we use. Text colour is the brand-X-text variable so
-   contrast holds in light + dark per palette. */
 function SvgPillLabel({ label, textColor }: { label: string; textColor: string }) {
-  const charW = 6.4; // average glyph width at 11.5 px font in this stack
+  const charW = 6.4;
   const padX = 12;
   const w = Math.max(50, Math.round(label.length * charW + padX * 2));
   return (
@@ -219,10 +208,6 @@ function SvgPillLabel({ label, textColor }: { label: string; textColor: string }
   );
 }
 
-/* Planet + label pair that orbits the centre. The outer <g> rotates from
-   `startAngle` through +360° over `dur`. The label sub-group sits at
-   labelRadius (radially outside the planet) and counter-rotates so the
-   text stays upright in screen at every angle. */
 function PlanetWithLabel({
   radius, labelRadius, startAngle, dur, fill, textColor, label,
 }: {
@@ -253,9 +238,6 @@ function PlanetWithLabel({
   );
 }
 
-/* Reduced-motion equivalent: same geometry, no animations. The label is
-   rendered at the matching angle but doesn't need counter-rotation since
-   there's no parent rotation to cancel. */
 function StaticPlanetWithLabel({
   radius, labelRadius, angle, fill, textColor, label,
 }: {

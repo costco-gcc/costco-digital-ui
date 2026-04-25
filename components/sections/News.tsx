@@ -2,44 +2,21 @@
 
 import SectionHeader from '@/components/SectionHeader';
 import { motion } from 'framer-motion';
-import { Building, Briefcase, Leaf } from 'lucide-react';
-
-const items = [
-  {
-    icon: Building,
-    tag: 'Announcement',
-    date: '2025',
-    title: 'Costco announces its first Global Capability Center in India.',
-    excerpt: 'A purpose-built engine in Hyderabad to power Costco\'s technology and operations worldwide. Initial scale: ~1,000 employees.',
-  },
-  {
-    icon: Briefcase,
-    tag: 'Hiring',
-    date: '2026',
-    title: 'Hiring across engineering, data, AI, cloud, security, and quality.',
-    excerpt: 'All India GCC openings are facilitated by Talent500. See the Careers section for live roles, or jump straight to the official portal.',
-  },
-  {
-    icon: Leaf,
-    tag: 'Sustainability',
-    date: 'Costco global',
-    title: 'Climate Action Plan: net-zero by 2050; SBTi-aligned 2030 targets.',
-    excerpt: 'Costco committed to net-zero across the value chain, with a 39% Scope 1+2 reduction and a 20% Scope 3 intensity reduction by 2030.',
-  },
-];
+import { icon as iconByName } from '@/lib/icons';
+import content from '@/data/content/news.json';
 
 export default function News() {
   return (
     <section id="news" className="py-20 sm:py-28 bg-[color:var(--card)]/30 border-y border-[color:var(--line)]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <SectionHeader
-          eyebrow="News & insights"
-          title="From our teams, to the world."
-          description="Announcements, hiring updates, and links to Costco's broader programs."
+          eyebrow={content.eyebrow}
+          title={content.title}
+          description={content.description}
         />
         <div className="grid md:grid-cols-3 gap-5">
-          {items.map((it, i) => {
-            const Icon = it.icon;
+          {content.items.map((it, i) => {
+            const Icon = iconByName(it.icon);
             return (
               <motion.article
                 key={it.title}

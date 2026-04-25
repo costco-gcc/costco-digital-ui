@@ -1,0 +1,25 @@
+{
+  "shieldAriaLabel": "Cookie preferences",
+  "banner": {
+    "title": "Your privacy choices",
+    "body": "We use only strictly necessary cookies by default. With your consent, we may also use preferences, analytics, and marketing cookies. You can change this any time via the shield icon in the bottom-left.",
+    "policyLink": { "label": "Cookie policy", "href": "/legal/cookies/" },
+    "privacyLink": { "label": "Privacy notice", "href": "/legal/privacy/" },
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject non-essential",
+    "preferences": "Preferences",
+    "dismissAriaLabel": "Dismiss"
+  },
+  "preferences": {
+    "title": "Cookie preferences",
+    "intro": "Control how we use cookies. Strictly necessary cookies are always on so the site works.",
+    "rows": [
+      { "title": "Strictly necessary", "desc": "Required for core functionality and security. Cannot be disabled.", "key": "necessary" },
+      { "title": "Preferences", "desc": "Remembers theme and consent choices.", "key": "preferences" },
+      { "title": "Analytics", "desc": "Anonymized usage stats to help us improve. Loaded only with consent.", "key": "analytics" },
+      { "title": "Marketing", "desc": "Optional ad-related cookies. Off by default.", "key": "marketing" }
+    ],
+    "cancel": "Cancel",
+    "save": "Save preferences"
+  }
+}

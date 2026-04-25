@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Costco Wholesale India Private Limited · Global Capability Center",
+  "headlinePrefix": "Powering Costco worldwide,",
+  "headlineAccent": "from Hyderabad.",
+  "introLead": "We bring together extraordinary",
+  "introHighlights": ["people", "technology", "process"],
+  "introTail": "to deliver member-first experiences for Costco worldwide.",
+  "introJoinerA": ", modern",
+  "introJoinerB": ", and disciplined",
+  "ctaPrimary": { "label": "Explore careers", "href": "#careers" },
+  "ctaSecondary": { "label": "Why we exist", "href": "#about" },
+  "pillars": [
+    { "icon": "Users", "label": "People", "desc": "Member-obsessed teams", "color": "brand-1" },
+    { "icon": "Cpu", "label": "Technology", "desc": "AI · Cloud · Data · Security", "color": "brand-2" },
+    { "icon": "Workflow", "label": "Process", "desc": "Lean · Audited · Scalable", "color": "brand-3" }
+  ],
+  "orbital": {
+    "labels": ["People", "Technology", "Process"]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "eyebrow": "Leadership",
+  "title": "Operators who lead from the floor.",
+  "description": "Costco has had only three CEOs in 40+ years — that's how seriously the company takes principled leadership. Our India team carries that same operating culture.",
+  "team": [
+    {
+      "name": "Ron Vachris",
+      "role": "President & CEO, Costco Wholesale",
+      "bio": "Joined Costco in 1982 as a forklift driver at Price Club; appointed CEO in January 2024 as the company's third chief executive.",
+      "initials": "RV",
+      "tag": "Global"
+    },
+    {
+      "name": "Rajeev Mall",
+      "role": "CEO, Costco Wholesale India GCC",
+      "bio": "Leads the India GCC. Previously VP Global Business Services at Mondelēz International and Group CIO at Coca-Cola Bottlers Japan.",
+      "initials": "RM",
+      "tag": "India"
+    }
+  ]
+}

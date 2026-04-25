@@ -1,0 +1,18 @@
+{
+  "eyebrow": "Where we work",
+  "title": "Built in Hyderabad.",
+  "description": "A purpose-built campus in Madhapur — at the heart of India's most dynamic tech corridor.",
+  "tagCity": "Hyderabad · Telangana",
+  "tagBadge": "HQ · India GCC",
+  "officeName": "Capitaland, Madhapur",
+  "officeCityLine": "Hyderabad, Telangana, India",
+  "officeBlurb": "Our Hyderabad campus brings People, Technology, and Process under one roof — engineering, data, AI, operations, finance tech, and member-experience teams collaborating with Costco business and product partners worldwide.",
+  "features": [
+    { "icon": "Building2", "title": "Modern campus", "body": "Capitaland, Madhapur — Hyderabad's tech corridor." },
+    { "icon": "Users2", "title": "Hybrid teams", "body": "Collaboration spaces, focus zones, war-rooms." },
+    { "icon": "Sparkles", "title": "Award-aligned", "body": "Targeting Great Place to Work culture." },
+    { "icon": "Navigation", "title": "Connected", "body": "Close to Hitech City metro & expressways." }
+  ],
+  "ctaPrimary": { "label": "Open in Maps", "href": "https://www.google.com/maps/search/?api=1&query=Capitaland%2C+Madhapur%2C+Hyderabad" },
+  "ctaSecondary": { "label": "Contact us", "href": "#contact" }
+}
