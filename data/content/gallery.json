@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Inside the campus",
+  "title": "A working environment, sketched.",
+  "description": "Until our shutter clicks, here's the campus the way our teams describe it. Each tile maps to a real space at Capitaland, Madhapur.",
+  "scenes": [
+    { "key": "atrium", "label": "Atrium", "caption": "First impression on the way in." },
+    { "key": "focus", "label": "Focus zone", "caption": "Heads-down work, headphones welcome." },
+    { "key": "huddle", "label": "Huddle room", "caption": "Squad sync, retro, design crit." },
+    { "key": "cafe", "label": "Café", "caption": "Where standups become brainstorms." },
+    { "key": "warroom", "label": "War-room", "caption": "Launch days, incidents, all-hands." },
+    { "key": "terrace", "label": "Outdoor terrace", "caption": "Reset between deep blocks." }
+  ],
+  "footnote": "Illustrations — campus photography to follow."
+}

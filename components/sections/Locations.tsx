@@ -58,6 +58,33 @@ export default function Locations() {
             </div>
           </div>
         </motion.div>
+
+        {/* Campus amenities strip — six tile row that gives candidates a feel
+            for the office without inventing photos we don't have. */}
+        <div className="mt-10">
+          <h3 className="text-[11px] uppercase tracking-[0.18em] font-semibold text-[color:var(--muted)] mb-4">
+            {content.amenities.heading}
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+            {content.amenities.items.map((a, i) => {
+              const Icon = iconByName(a.icon);
+              return (
+                <motion.div
+                  key={a.label}
+                  initial={{ opacity: 0, y: 8 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-40px' }}
+                  transition={{ duration: 0.35, delay: i * 0.04 }}
+                  className="rounded-xl border border-[color:var(--line)] p-4 bg-[color:var(--card)]/40"
+                >
+                  <Icon size={16} className="text-costco-blue" />
+                  <div className="mt-2 text-sm font-semibold leading-tight">{a.label}</div>
+                  <div className="text-xs text-[color:var(--muted)] mt-1 leading-snug">{a.body}</div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </section>
   );

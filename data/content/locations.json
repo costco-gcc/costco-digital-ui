@@ -14,5 +14,16 @@
     { "icon": "Navigation", "title": "Connected", "body": "Close to Hitech City metro & expressways." }
   ],
   "ctaPrimary": { "label": "Open in Maps", "href": "https://www.google.com/maps/search/?api=1&query=Capitaland%2C+Madhapur%2C+Hyderabad" },
-  "ctaSecondary": { "label": "Contact us", "href": "#contact" }
+  "ctaSecondary": { "label": "Contact us", "href": "#contact" },
+  "amenities": {
+    "heading": "What to expect on campus",
+    "items": [
+      { "icon": "Building2", "label": "Modern campus", "body": "Purpose-built workspaces in Madhapur — Hyderabad's tech corridor." },
+      { "icon": "Users2", "label": "Collaboration zones", "body": "Open team areas, focus rooms, and war-rooms for the work that demands it." },
+      { "icon": "Headset", "label": "Meeting & video rooms", "body": "Connected rooms designed for partner overlap with HQ in Issaquah." },
+      { "icon": "Sparkles", "label": "Wellness & cafeteria", "body": "Cafeteria with daily menus and wellness amenities for the team." },
+      { "icon": "Leaf", "label": "Green-aligned design", "body": "Energy-efficient floors and reduced single-use plastics across the campus." },
+      { "icon": "Navigation", "label": "Connected location", "body": "Close to the Hitech City metro, expressways, and the broader Madhapur ecosystem." }
+    ]
+  }
 }

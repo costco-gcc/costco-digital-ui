@@ -1,0 +1,55 @@
+{
+  "eyebrow": "Careers FAQ",
+  "title": "What candidates ask us most.",
+  "description": "If your question isn't here, the recruiter you're matched with on Talent500 can answer it after you apply.",
+  "items": [
+    {
+      "q": "Where are India GCC roles based?",
+      "a": "All India GCC roles are based at our campus in Capitaland, Madhapur, Hyderabad. We're a single-office GCC."
+    },
+    {
+      "q": "How do I apply?",
+      "a": "All openings are facilitated by Talent500. Browse roles in the Careers section above or jump straight to talent500.com/jobs/costco. Submitting there starts the official process."
+    },
+    {
+      "q": "Are roles hybrid, remote, or onsite?",
+      "a": "We work in a hybrid model anchored at the Hyderabad campus. The exact in-office cadence varies by role and team — your recruiter shares specifics after you apply."
+    },
+    {
+      "q": "What does the interview loop usually look like?",
+      "a": "A typical loop is: recruiter chat → technical screen → 2–4 deep technical or domain rounds → hiring-manager conversation → values-alignment round. Specifics depend on level and team."
+    },
+    {
+      "q": "How long does the hiring process take?",
+      "a": "Most loops complete in 3–5 weeks from first recruiter contact to offer. Senior or specialised roles can take longer because more partners are involved."
+    },
+    {
+      "q": "Do you sponsor work visas to other countries?",
+      "a": "India GCC roles are based in Hyderabad and don't require a visa for Indian residents. We don't sponsor work visas to other countries from these roles."
+    },
+    {
+      "q": "Do you offer relocation support?",
+      "a": "Yes, for many roles where it's needed. Specifics depend on level and circumstance — confirm with your recruiter once you have an offer in motion."
+    },
+    {
+      "q": "Do you hire freshers and interns?",
+      "a": "Yes. We hire from campuses and welcome interns across engineering, data, and design. Watch the Talent500 portal for early-career and internship openings."
+    },
+    {
+      "q": "Is moonlighting allowed?",
+      "a": "Like most large employers we expect employees to be working only for Costco during their tenure (no dual employment). Personal projects and open-source contributions are typically fine — disclose anything that may create a conflict of interest."
+    },
+    {
+      "q": "What happens after I submit my application?",
+      "a": "Talent500 routes your application to our talent-acquisition team. If there's a fit, a recruiter reaches out to schedule the first conversation. If not, you'll receive a notification. Either way, you don't need to follow up separately."
+    },
+    {
+      "q": "Can I refer a friend?",
+      "a": "If you know someone at Costco India GCC, ask them to refer you through the internal program — it surfaces your application faster."
+    },
+    {
+      "q": "Will my application be subject to a background check?",
+      "a": "All offers are subject to standard background verification (employment, education, identity, address, criminal record). It's a routine part of joining and the talent-acquisition team walks you through the steps."
+    }
+  ]
+}
