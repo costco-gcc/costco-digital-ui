@@ -32,7 +32,13 @@ html.dark {
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html {
+  scroll-behavior: smooth;
+  /* Sticky navbar is h-16 (64px). Reserve 80px so anchored sections land
+     under the bar with breathing room when nav links scroll into view. */
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+}
 html, body {
   background: var(--bg);
   color: var(--ink);
