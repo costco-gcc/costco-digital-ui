@@ -167,16 +167,23 @@ function Orbital() {
         style={{ top: '70%', left: '26%', transform: 'translate(-50%, 8px)' }}
       />
 
-      {/* Central globe — the Costco Wholesale GCC sphere logo. Rotates slowly
+      {/* Central globe — the Costco Wholesale GCC sphere logo. The artwork has
+          a soft drop shadow baked in that reads as a halo on dark backgrounds,
+          so we sit it on a clean white circle (its intended canvas) and let
+          the orbital rings provide all the on-bg colour. Rotates slowly
           (the lockup itself is a globe) unless the user prefers reduced motion. */}
       <div className="absolute inset-0 grid place-items-center">
-        <img
-          src={`${basePath}/logo-globe.png`}
-          alt=""
-          aria-hidden
-          className={`w-[44%] h-auto object-contain drop-shadow-md ${reduce ? '' : 'orbital-globe-spin'}`}
-          draggable={false}
-        />
+        <div
+          className={`rounded-full bg-white grid place-items-center w-[50%] h-[50%] shadow-[0_18px_45px_-18px_rgba(0,0,0,0.45)] ring-1 ring-black/5 ${reduce ? '' : 'orbital-globe-spin'}`}
+        >
+          <img
+            src={`${basePath}/logo-globe.png`}
+            alt=""
+            aria-hidden
+            className="w-[88%] h-[88%] object-contain"
+            draggable={false}
+          />
+        </div>
       </div>
     </div>
   );
