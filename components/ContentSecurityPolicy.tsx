@@ -28,7 +28,11 @@ const policy = [
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com data:",
   "img-src 'self' https: data: blob:",
-  "connect-src 'self' https://prod-warmachine.talent500.co",
+  // Google Fonts is requested via the <link rel="preconnect"> hints in
+  // app/layout.tsx; some browsers treat the preconnect as a connect-src
+  // candidate, so allow the two font origins here as well as in
+  // style-src/font-src below.
+  "connect-src 'self' https://prod-warmachine.talent500.co https://fonts.googleapis.com https://fonts.gstatic.com",
   "form-action 'self' mailto:",
   "base-uri 'self'",
   "object-src 'none'",

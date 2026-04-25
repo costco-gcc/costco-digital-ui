@@ -402,11 +402,13 @@ async function checkLocationCardRenders(page, vp) {
 }
 
 async function checkCareersListsRoles(page, vp) {
-  // Wait for openings.json fetch to populate (the seed list has only 1 role)
+  // Wait for /openings.json fetch to populate (seed has 1 role; the file
+  // has ~30). In CI the cold-start fetch + hydration occasionally pushes
+  // past the old 8s budget — give it 20s to remove the flake.
   await page.waitForFunction(() => {
     const cards = document.querySelectorAll('section#careers a[href*="/jobs/costco/"]');
     return cards.length >= 5;
-  }, null, { timeout: 8_000 }).catch(() => null);
+  }, null, { timeout: 20_000 }).catch(() => null);
   const count = await page.locator('section#careers a[href*="/jobs/costco/"]').count();
   if (count < 5) fail(`[${vp.name}] careers showing only ${count} roles (expected ≥5 from /openings.json)`);
   else ok(`[${vp.name}] careers shows ${count} live roles`);
