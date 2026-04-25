@@ -1,5 +1,6 @@
 {
   "ariaLabel": "At a glance",
+  "kicker": "By the numbers",
   "items": [
     { "k": "$254B", "label": "FY2024 revenue", "sub": "Costco Wholesale Corporation" },
     { "k": "81.4M", "label": "Paid memberships", "sub": "~145.9M cardholders worldwide" },

@@ -2,7 +2,6 @@
 
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import { icon as iconByName } from '@/lib/icons';
 import content from '@/data/content/hero.json';
 
 export default function Hero() {
@@ -62,24 +61,21 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          <div className="mt-10 grid grid-cols-3 gap-3 max-w-xl">
-            {content.pillars.map((p, i) => {
-              const Icon = iconByName(p.icon);
-              return (
-                <motion.div
-                  key={p.label}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.3 + i * 0.05 }}
-                  className="card p-3"
-                >
-                  <Icon size={18} aria-hidden style={{ color: `var(--${p.color})` }} />
-                  <div className="mt-2 text-sm font-semibold">{p.label}</div>
-                  <div className="text-xs text-[color:var(--muted)]">{p.desc}</div>
-                </motion.div>
-              );
-            })}
-          </div>
+          {/* Single-line metadata strip — replaces the prior 3-pillar mini-cards
+              that duplicated the orbital labels. Editorial pacing wins over
+              repetition. */}
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.35 }}
+            className="mt-10 text-xs text-[color:var(--muted)] inline-flex flex-wrap items-center gap-x-4 gap-y-1"
+          >
+            <span>One campus · Hyderabad</span>
+            <span aria-hidden>·</span>
+            <span>~1,000 planned employees</span>
+            <span aria-hidden>·</span>
+            <span>Live roles on Talent500</span>
+          </motion.p>
         </div>
 
         <div className="lg:col-span-5">

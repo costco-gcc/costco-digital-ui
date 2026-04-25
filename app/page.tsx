@@ -1,6 +1,7 @@
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Capabilities from '@/components/sections/Capabilities';
+import Manifesto from '@/components/sections/Manifesto';
 import Locations from '@/components/sections/Locations';
 import Culture from '@/components/sections/Culture';
 import Careers from '@/components/sections/Careers';
@@ -20,6 +21,7 @@ export default function Home() {
       <Stats />
       <About />
       <Capabilities />
+      <Manifesto />
       <Locations />
       <Culture />
       <Gallery />
