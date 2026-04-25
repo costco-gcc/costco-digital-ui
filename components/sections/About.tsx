@@ -56,7 +56,10 @@ export default function About() {
                 </span>
               </div>
               <h3 className="mt-4 text-lg font-bold">{p.k}</h3>
-              <p className="mt-2 text-sm text-[color:var(--muted)]">{p.v}</p>
+              <p className="mt-2 text-sm font-medium text-[color:var(--ink)]">{p.v}</p>
+              {p.body && (
+                <p className="mt-3 text-sm text-[color:var(--muted)] leading-relaxed">{p.body}</p>
+              )}
             </div>
           ))}
         </m.div>
@@ -71,11 +74,18 @@ export default function About() {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="mt-5 flex items-start gap-3 sm:gap-4 px-6 sm:px-8 py-5 rounded-2xl border border-dashed border-[color:var(--line)]"
         >
-          <ArrowRight size={18} className="mt-0.5 shrink-0 text-costco-red" aria-hidden />
-          <p className="text-sm sm:text-base">
-            <strong>{content.fifthPrinciple.k}</strong>{' '}
-            <span className="text-[color:var(--muted)]">— {content.fifthPrinciple.v}</span>
-          </p>
+          <ArrowRight size={18} className="mt-1 shrink-0 text-costco-red" aria-hidden />
+          <div>
+            <p className="text-sm sm:text-base">
+              <strong>{content.fifthPrinciple.k}</strong>{' '}
+              <span className="text-[color:var(--muted)]">— {content.fifthPrinciple.v}</span>
+            </p>
+            {content.fifthPrinciple.body && (
+              <p className="mt-2 text-sm text-[color:var(--muted)] leading-relaxed">
+                {content.fifthPrinciple.body}
+              </p>
+            )}
+          </div>
         </m.div>
 
         {/* Act 3 — why Hyderabad. Top divider sets it apart from the

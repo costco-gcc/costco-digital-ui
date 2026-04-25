@@ -241,6 +241,35 @@ main:focus { outline: none; }
 /* Selection */
 ::selection { background: color-mix(in srgb, var(--brand-2) 30%, transparent); }
 
+/* ----- Custom scrollbar -----
+   Thin, theme-aware, no track chrome. Falls back to the platform default
+   on browsers that don't support either property family.
+   - Firefox: scrollbar-width + scrollbar-color
+   - Chromium/WebKit: ::-webkit-scrollbar pseudo elements
+   The thumb darkens on hover and tightens on the page level — auto on
+   inner scrollers (chatbot, picker) so they get the same chrome. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--ink) 22%, transparent) transparent;
+}
+*:hover {
+  scrollbar-color: color-mix(in srgb, var(--brand-2) 55%, transparent) transparent;
+}
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--ink) 22%, transparent);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background-color .15s ease;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--brand-2) 55%, transparent);
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-corner { background: transparent; }
+
 /* Slow Y-axis-feel rotation for the central hero globe. Subtle; the rings
    carry most of the motion. We use a 3D-ish skew + scale wobble to imply
    rotation rather than a flat 2D spin (a 2D spin on a sphere logo looks weird). */

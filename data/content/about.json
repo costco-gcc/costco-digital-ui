@@ -1,24 +1,41 @@
 {
   "eyebrow": "Our story",
   "title": "A Costco-grade engine, built in India.",
-  "description": "Costco Wholesale India Private Limited is the Global Capability Center for Costco — designing, building, and running technology and operations for warehouses, e-commerce, and members worldwide. Announced in 2025, we're scaling from Hyderabad.",
+  "description": "Costco Wholesale India Private Limited is the Global Capability Center for Costco Wholesale Corporation — the design, build, and operate engine for the technology and operations that serve Costco's warehouses, e-commerce, and members worldwide. Announced publicly in 2025, we're scaling from Hyderabad with one operating mandate: bring the same quality-at-lowest-cost discipline that has defined Costco for over forty years to the systems and processes that power it.",
   "principles": [
-    { "k": "Obey the law", "v": "Compliance and ethics, end to end." },
-    { "k": "Take care of our members", "v": "Quality, value, and trust — every day." },
-    { "k": "Take care of our employees", "v": "Care, craft, and growth as a way of working." },
-    { "k": "Respect our suppliers", "v": "Long-term partnerships, fair dealing." }
+    {
+      "k": "Obey the law",
+      "v": "Compliance and ethics, end to end.",
+      "body": "The law is irrefutable. We conduct our work in total compliance with the laws and regulations of every community in which we operate — workplace safety, fair employment, anti-bribery, quality standards, and data protection (including India's DPDP Act, 2023, and the EU's GDPR for member data we handle on behalf of Costco worldwide). Integrity is the floor, not the ceiling: no deadline, deal, or shortcut is worth compromising it."
+    },
+    {
+      "k": "Take care of our members",
+      "v": "Quality, value, and trust — every day.",
+      "body": "Costco's members are our reason for being. Every system we design, every process we operate, ladders up to a single promise: high-quality goods and services at the lowest possible prices. We measure success by whether the work makes a member's day better — not by what is internally convenient or impressive."
+    },
+    {
+      "k": "Take care of our employees",
+      "v": "Care, craft, and growth as a way of working.",
+      "body": "Our employees are our most important asset. We pledge competitive wages, comprehensive benefits, a safe and inclusive workplace free from harassment, an open-door policy that gives anyone access to senior leadership, and a strong bias toward promotion from within. We hire for the long term and invest in the careers we hire for."
+    },
+    {
+      "k": "Respect our suppliers",
+      "v": "Long-term partnerships, fair dealing.",
+      "body": "Our suppliers are partners, not vendors. We pay our invoices on time, share information transparently, honour the terms we negotiate, and build relationships that last decades — because the quality our members count on rests on suppliers who trust us enough to keep investing in delivering it consistently."
+    }
   ],
   "fifthPrinciple": {
     "k": "Reward our shareholders",
-    "v": "the natural outcome of living the four principles above."
+    "v": "the natural outcome of living the four principles above.",
+    "body": "If we obey the law, take care of our members and our employees, and respect our suppliers, our shareholders will be rewarded. It is the explicit promise of Costco's Code of Ethics — not a separate goal but the compound interest of doing the first four well, year after year, for over forty years."
   },
   "panel": {
     "title": "Why a GCC, why India, why Hyderabad?",
-    "body": "India is the world's largest hub for Global Capability Centers. Hyderabad pairs deep engineering and operations talent with strong policy support — a fit for Costco's quality-at-scale operating style.",
+    "body": "India hosts the world's largest concentration of Global Capability Centers — a mature sector that has become a primary platform for global enterprises to build engineering, data, and operations capabilities at scale. Hyderabad pairs that talent density with strong policy support, modern infrastructure, and a tech corridor that has compounded for over two decades. It is a fit for Costco's quality-at-scale operating style and our long-term horizon for the India GCC.",
     "bullets": [
-      { "k": "Talent density", "v": "Hyderabad's tech corridor — among India's strongest engineering ecosystems." },
-      { "k": "Global delivery", "v": "Time-zone coverage and 24×7 follow-the-sun operations." },
-      { "k": "Speed to scale", "v": "Build, learn, and ramp without compromising standards." }
+      { "k": "Talent density", "v": "Hyderabad's tech corridor — among India's strongest engineering, data, and SRE ecosystems, with a deep bench of operators who have shipped at global scale." },
+      { "k": "Global delivery", "v": "Time-zone coverage that complements HQ in Issaquah, with 24×7 follow-the-sun operations for member services, security, and platform reliability." },
+      { "k": "Speed to scale", "v": "Build, learn, and ramp without compromising standards — local infrastructure, hiring, and policy support are tuned for compounded scale, not one-off builds." }
     ],
     "facts": [
       { "k": "~1,000", "v": "planned employees in Hyderabad" },

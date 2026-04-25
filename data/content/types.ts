@@ -60,12 +60,21 @@ export interface StatsContent {
 }
 
 // ── about.json ─────────────────────────────────────────────────────────────
+export interface Principle {
+  /** Principle name (e.g. "Obey the law"). */
+  k: string;
+  /** Short tagline summary. */
+  v: string;
+  /** Optional longer paragraph drawn from Costco's published Code of Ethics. */
+  body?: string;
+}
+
 export interface AboutContent {
   eyebrow: string;
   title: string;
   description: string;
-  principles: KV[];
-  fifthPrinciple: KV;
+  principles: Principle[];
+  fifthPrinciple: Principle;
   panel: {
     title: string;
     body: string;

@@ -70,7 +70,13 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   robots: { index: true, follow: true },
-  icons: { icon: '/favicon.svg' },
+  icons: {
+    icon: [
+      { url: '/logo-globe.png', type: 'image/png', sizes: '512x512' },
+    ],
+    shortcut: '/logo-globe.png',
+    apple: '/logo-globe.png',
+  },
 };
 
 export const viewport: Viewport = {
