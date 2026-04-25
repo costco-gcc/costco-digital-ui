@@ -2,10 +2,18 @@
 
 import SectionHeader from '@/components/SectionHeader';
 import { motion } from 'framer-motion';
-import { Linkedin, Globe2 } from 'lucide-react';
+import { Linkedin, Globe2, Briefcase } from 'lucide-react';
 import content from '@/data/content/leadership.json';
 
-type Member = { name: string; role: string; bio: string; initials: string; linkedin?: string; tag: string };
+type Member = {
+  name: string;
+  role: string;
+  bio: string;
+  initials: string;
+  linkedin?: string;
+  tag: string;
+  openSeat?: boolean;
+};
 
 export default function Leadership() {
   const team = content.team as Member[];
@@ -18,7 +26,7 @@ export default function Leadership() {
           title={content.title}
           description={content.description}
         />
-        <div className="grid sm:grid-cols-2 gap-5 max-w-3xl">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {team.map((m, i) => (
             <motion.article
               key={m.name}
@@ -26,28 +34,47 @@ export default function Leadership() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="card card-hover p-5"
+              className={
+                m.openSeat
+                  ? 'card p-5 border-dashed bg-transparent'
+                  : 'card card-hover p-5'
+              }
             >
               <div className="flex items-start justify-between">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-costco-red to-costco-blue text-white grid place-items-center font-bold">
-                  {m.initials}
-                </div>
+                {m.openSeat ? (
+                  <div className="w-14 h-14 rounded-2xl border-2 border-dashed border-[color:var(--line)] grid place-items-center text-[color:var(--muted)]">
+                    <Briefcase size={20} aria-hidden />
+                  </div>
+                ) : (
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-costco-red to-costco-blue text-white grid place-items-center font-bold">
+                    {m.initials}
+                  </div>
+                )}
                 <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full border border-[color:var(--line)] text-[color:var(--muted)] inline-flex items-center gap-1">
                   <Globe2 size={10} /> {m.tag}
                 </span>
               </div>
-              <div className="mt-3 font-semibold">{m.name}</div>
+              <div className={`mt-3 font-semibold ${m.openSeat ? 'text-[color:var(--muted)]' : ''}`}>{m.name}</div>
               <div className="text-xs text-[color:var(--muted)]">{m.role}</div>
               <p className="text-xs text-[color:var(--muted)] mt-2 leading-relaxed">{m.bio}</p>
-              {m.linkedin && (
+              {m.openSeat ? (
                 <a
-                  href={m.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#careers"
                   className="inline-flex items-center gap-1 mt-3 text-xs text-costco-blue hover:underline"
                 >
-                  <Linkedin size={12} /> LinkedIn
+                  See open roles →
                 </a>
+              ) : (
+                m.linkedin && (
+                  <a
+                    href={m.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 mt-3 text-xs text-costco-blue hover:underline"
+                  >
+                    <Linkedin size={12} /> LinkedIn
+                  </a>
+                )
               )}
             </motion.article>
           ))}

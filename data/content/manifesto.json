@@ -1,10 +1,25 @@
 {
   "kicker": "The operating standard",
-  "lines": [
-    "We build for warehouse speed",
-    "and member scale —",
-    "the same standard Costco has held",
-    "for forty-plus years."
+  "lead": "Three rules. One promise.",
+  "principles": [
+    {
+      "n": "01",
+      "verb": "Build",
+      "rest": "for warehouse speed —",
+      "note": "ship fast, decide quickly, cut what doesn't matter."
+    },
+    {
+      "n": "02",
+      "verb": "Operate",
+      "rest": "at member scale —",
+      "note": "every system designed to hold up under millions."
+    },
+    {
+      "n": "03",
+      "verb": "Maintain",
+      "rest": "Costco-grade for forty-plus years —",
+      "note": "the same standard, refused to drift, refused to soften."
+    }
   ],
   "footer": "Run from one campus in Hyderabad."
 }

@@ -25,17 +25,32 @@ export default function News() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.06 }}
-                className="card card-hover overflow-hidden group"
+                className="card card-hover overflow-hidden group flex flex-col"
               >
-                <div className="aspect-[16/9] bg-gradient-to-br from-costco-blue/15 to-costco-red/15 grid place-items-center">
-                  <Icon className="text-costco-blue" size={28} />
-                </div>
-                <div className="p-5">
-                  <div className="text-xs uppercase tracking-wider font-semibold text-costco-red">
-                    {it.tag} · <span className="text-[color:var(--muted)]">{it.date}</span>
-                  </div>
-                  <h3 className="mt-2 font-semibold leading-snug">{it.title}</h3>
-                  <p className="text-sm text-[color:var(--muted)] mt-2">{it.excerpt}</p>
+                <figure className="aspect-[16/9] relative overflow-hidden bg-gradient-to-br from-costco-blue/15 to-costco-red/15">
+                  {/* Real photography. Fallback gradient + icon stays visible
+                      under the image until it loads (alt text used by SR). */}
+                  <img
+                    src={it.image}
+                    alt={it.imageAlt}
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                  />
+                  {/* Tag pill sits over the image */}
+                  <span className="absolute top-3 left-3 inline-flex items-center gap-1.5 text-[10px] uppercase tracking-wider px-2 py-1 rounded-full bg-white/85 dark:bg-black/55 backdrop-blur text-[color:var(--ink)] font-semibold">
+                    <Icon size={11} aria-hidden /> {it.tag}
+                  </span>
+                  <span className="absolute top-3 right-3 text-[10px] px-2 py-1 rounded-full bg-white/85 dark:bg-black/55 backdrop-blur text-[color:var(--muted)]">
+                    {it.date}
+                  </span>
+                </figure>
+                <div className="p-5 flex flex-col grow">
+                  <h3 className="font-semibold leading-snug">{it.title}</h3>
+                  <p className="text-sm text-[color:var(--muted)] mt-2 grow">{it.excerpt}</p>
+                  {it.credit && (
+                    <p className="mt-3 text-[10px] text-[color:var(--muted)]/70 italic">{it.credit}</p>
+                  )}
                 </div>
               </motion.article>
             );

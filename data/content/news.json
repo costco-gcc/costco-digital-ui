@@ -8,21 +8,30 @@
       "tag": "Announcement",
       "date": "2025",
       "title": "Costco announces its first Global Capability Center in India.",
-      "excerpt": "A purpose-built engine in Hyderabad to power Costco's technology and operations worldwide. Initial scale: ~1,000 employees."
+      "excerpt": "A purpose-built engine in Hyderabad to power Costco's technology and operations worldwide. Initial scale: ~1,000 employees.",
+      "image": "https://images.unsplash.com/photo-1596432150438-3ef028cca147?w=1200&auto=format&fit=crop&q=80",
+      "imageAlt": "Aerial view of Hyderabad's HITEC City skyline at dusk, with modern glass towers lining the tech corridor",
+      "credit": "Photo by Aman Upadhyay on Unsplash"
     },
     {
       "icon": "Briefcase",
       "tag": "Hiring",
       "date": "2026",
       "title": "Hiring across engineering, data, AI, cloud, security, and quality.",
-      "excerpt": "All India GCC openings are facilitated by Talent500. See the Careers section for live roles, or jump straight to the official portal."
+      "excerpt": "All India GCC openings are facilitated by Talent500. See the Careers section for live roles, or jump straight to the official portal.",
+      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&auto=format&fit=crop&q=80",
+      "imageAlt": "Diverse team of engineers collaborating around a laptop in a modern, naturally lit workspace",
+      "credit": "Photo by Mimi Thian on Unsplash"
     },
     {
       "icon": "Leaf",
       "tag": "Sustainability",
       "date": "Costco global",
       "title": "Climate Action Plan: net-zero by 2050; SBTi-aligned 2030 targets.",
-      "excerpt": "Costco committed to net-zero across the value chain, with a 39% Scope 1+2 reduction and a 20% Scope 3 intensity reduction by 2030."
+      "excerpt": "Costco committed to net-zero across the value chain, with a 39% Scope 1+2 reduction and a 20% Scope 3 intensity reduction by 2030.",
+      "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1200&auto=format&fit=crop&q=80",
+      "imageAlt": "Wind turbines on a green hillside catching first light at sunrise, low cloud in the valleys",
+      "credit": "Photo by Karsten Wurth on Unsplash"
     }
   ]
 }

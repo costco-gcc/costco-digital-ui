@@ -8,14 +8,32 @@
       "role": "President & CEO, Costco Wholesale",
       "bio": "Joined Costco in 1982 as a forklift driver at Price Club; appointed CEO in January 2024 as the company's third chief executive.",
       "initials": "RV",
-      "tag": "Global"
+      "tag": "Global",
+      "openSeat": false
     },
     {
       "name": "Rajeev Mall",
       "role": "CEO, Costco Wholesale India GCC",
       "bio": "Leads the India GCC. Previously VP Global Business Services at Mondelēz International and Group CIO at Coca-Cola Bottlers Japan.",
       "initials": "RM",
-      "tag": "India"
+      "tag": "India",
+      "openSeat": false
+    },
+    {
+      "name": "Venkat Kadambi",
+      "role": "Director, Operations — Costco India GCC",
+      "bio": "Leads operations at the Costco India GCC.",
+      "initials": "VK",
+      "tag": "India",
+      "openSeat": false
+    },
+    {
+      "name": "Engineering Lead",
+      "role": "Director, Engineering — Costco India GCC",
+      "bio": "This seat is open. The next leader will own engineering, platforms, and SRE for the India GCC.",
+      "initials": "—",
+      "tag": "India",
+      "openSeat": true
     }
   ]
 }
