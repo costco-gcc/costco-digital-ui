@@ -9,9 +9,15 @@ import ScrollProgress from '@/components/ScrollProgress';
 import BackToTop from '@/components/BackToTop';
 
 export const metadata: Metadata = {
-  title: 'Costco Wholesale India — Global Capability Center',
+  // Resolves relative URLs in OG/Twitter cards to the canonical host.
+  metadataBase: new URL('https://www.costcodigital.com'),
+  title: {
+    default: 'Costco Wholesale India — Global Capability Center',
+    template: '%s · Costco India GCC',
+  },
   description:
     'Costco Wholesale India Private Limited Global Capability Center — uniting People, Technology, and Process to power Costco worldwide from Hyderabad.',
+  applicationName: 'Costco India GCC',
   keywords: [
     'Costco India',
     'Costco GCC',
@@ -24,13 +30,32 @@ export const metadata: Metadata = {
     'Technology',
   ],
   authors: [{ name: 'Costco Wholesale India Private Limited' }],
+  alternates: { canonical: '/' },
   openGraph: {
     title: 'Costco Wholesale India — Global Capability Center',
-    description: 'People · Technology · Process — Powering Costco from India.',
+    description:
+      'People · Technology · Process — Powering Costco worldwide, from Hyderabad.',
+    siteName: 'Costco India GCC',
+    url: '/',
     type: 'website',
     locale: 'en_IN',
+    images: [
+      {
+        url: '/og-image.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Powering Costco worldwide, from Hyderabad.',
+        type: 'image/svg+xml',
+      },
+    ],
   },
-  twitter: { card: 'summary_large_image' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Costco Wholesale India — Global Capability Center',
+    description:
+      'People · Technology · Process — Powering Costco worldwide, from Hyderabad.',
+    images: ['/og-image.svg'],
+  },
   robots: { index: true, follow: true },
   icons: { icon: '/favicon.svg' },
 };
