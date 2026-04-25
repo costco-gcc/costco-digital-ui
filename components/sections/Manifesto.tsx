@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
+import { m, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import content from '@/data/content/manifesto.json';
 
@@ -31,13 +31,13 @@ export default function Manifesto() {
       className="relative py-24 sm:py-36 overflow-hidden"
     >
       <BlueprintGrid />
-      <motion.div
+      <m.div
         aria-hidden
         style={{ y: compassY, rotate: compassRot }}
         className="absolute right-[-6rem] top-1/2 -translate-y-1/2 w-[36rem] h-[36rem] pointer-events-none opacity-[0.06] text-[color:var(--ink)]"
       >
         <Compass />
-      </motion.div>
+      </m.div>
 
       <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
         {/* Kicker rule */}
@@ -58,7 +58,7 @@ export default function Manifesto() {
           ))}
         </ol>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: '-15%' }}
@@ -67,7 +67,7 @@ export default function Manifesto() {
         >
           <span aria-hidden className="text-costco-red text-xl">◆</span>
           <p className="text-base sm:text-lg text-[color:var(--ink)] font-medium">{content.footer}</p>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );
@@ -77,7 +77,7 @@ function Principle({
   n, verb, rest, note, index,
 }: { n: string; verb: string; rest: string; note: string; index: number }) {
   return (
-    <motion.li
+    <m.li
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-15%' }}
@@ -99,7 +99,7 @@ function Principle({
           {note}
         </p>
       </div>
-    </motion.li>
+    </m.li>
   );
 }
 

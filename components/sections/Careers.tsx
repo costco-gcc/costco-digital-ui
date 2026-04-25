@@ -1,8 +1,8 @@
 'use client';
 
 import SectionHeader from '@/components/SectionHeader';
-import { motion } from 'framer-motion';
-import { ArrowUpRight, Briefcase, MapPin, ExternalLink, Clock, RefreshCw, Info } from 'lucide-react';
+import { m } from 'framer-motion';
+import { ArrowUpRight, Briefcase, MapPin, ExternalLink, Clock, RefreshCw, Info, AlertTriangle } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import { loadOpenings, openings as seedOpenings, seedVerifiedAt, TALENT500_COMPANY_URL, type Opening } from '@/data/openings';
 import content from '@/data/content/careers.json';
@@ -68,7 +68,7 @@ export default function Careers() {
                     : 'border-[color:var(--line)] hover:bg-[color:var(--line)]')
                 }
               >
-                {c.name} <span className="opacity-70">({c.count})</span>
+                {c.name} <span className={active ? 'opacity-90' : 'opacity-70'}>({c.count})</span>
               </button>
             );
           })}
@@ -77,7 +77,7 @@ export default function Careers() {
         {visible.length > 0 ? (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {visible.map((r, i) => (
-              <motion.a
+              <m.a
                 key={r.url}
                 href={r.url}
                 target="_blank"
@@ -115,7 +115,7 @@ export default function Careers() {
                     ))}
                   </div>
                 )}
-              </motion.a>
+              </m.a>
             ))}
           </div>
         ) : (
@@ -140,8 +140,21 @@ export default function Careers() {
           </div>
         </div>
 
+        {/* `verifiedAt` is YYYY-MM-DD from the sync script. If it's older
+            than a week, the cron probably broke — surface a soft warning
+            and steer users straight to the canonical Talent500 list. */}
         <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-[color:var(--muted)]">
-          <span className="inline-flex items-center gap-1"><Info size={12} /> {content.verifiedPrefix} {verifiedAt}.</span>
+          {(() => {
+            const ageDays = Math.floor((Date.now() - new Date(verifiedAt).getTime()) / 86_400_000);
+            const stale = Number.isFinite(ageDays) && ageDays > 7;
+            return stale ? (
+              <span className="inline-flex items-center gap-1 text-amber-700 dark:text-amber-400">
+                <AlertTriangle size={12} /> List last verified {ageDays}d ago — Talent500 has the live list.
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-1"><Info size={12} /> {content.verifiedPrefix} {verifiedAt}.</span>
+            );
+          })()}
           <a href={TALENT500_COMPANY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-costco-blue hover:underline">
             <RefreshCw size={12} /> {content.refreshLabel}
           </a>

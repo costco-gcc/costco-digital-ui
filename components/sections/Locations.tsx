@@ -1,7 +1,7 @@
 'use client';
 
 import SectionHeader from '@/components/SectionHeader';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { MapPin, type LucideIcon } from 'lucide-react';
 import { icon as iconByName } from '@/lib/icons';
 import content from '@/data/content/locations.json';
@@ -17,7 +17,7 @@ export default function Locations() {
           description={content.description}
         />
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
@@ -58,7 +58,7 @@ export default function Locations() {
               <a href={content.ctaSecondary.href} className="btn btn-ghost">{content.ctaSecondary.label}</a>
             </div>
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Campus amenities strip — six tile row that gives candidates a feel
             for the office without inventing photos we don't have. */}
@@ -70,7 +70,7 @@ export default function Locations() {
             {content.amenities.items.map((a, i) => {
               const Icon = iconByName(a.icon);
               return (
-                <motion.div
+                <m.div
                   key={a.label}
                   initial={{ opacity: 0, y: 8 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ export default function Locations() {
                   <Icon size={16} className="text-costco-blue" />
                   <div className="mt-2 text-sm font-semibold leading-tight">{a.label}</div>
                   <div className="text-xs text-[color:var(--muted)] mt-1 leading-snug">{a.body}</div>
-                </motion.div>
+                </m.div>
               );
             })}
           </div>

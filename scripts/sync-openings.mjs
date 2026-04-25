@@ -77,25 +77,33 @@ async function fetchJobs() {
   return { total: body.total ?? body.data.length, rows: body.data };
 }
 
+// Validates a row against the minimal shape we depend on. Returns the mapped
+// Opening, or null with a reason. Keeps each rule narrow so a single API
+// quirk doesn't drop the entire batch.
 function mapRow(row) {
+  if (!row || typeof row !== 'object') return { ok: false, reason: 'not-object' };
   const slug = String(row.slug || '').trim();
-  if (!slug) return null;
+  if (!slug) return { ok: false, reason: 'missing-slug' };
+  const title = String(row.title || row.title_alias_1 || '').trim();
+  if (title.length < 3) return { ok: false, reason: 'short-title' };
   const url = `${PAGE_BASE}${slug}/`;
-  const title = String(row.title || row.title_alias_1 || 'Costco India GCC role').trim();
   const location = String(row.location || 'Hyderabad').trim();
   const type = fmtType(row.employment_type);
   const experience = fmtExperience(row.min_experience_years, row.max_experience_years);
   const skills = Array.isArray(row.primary_skills) ? row.primary_skills.filter(Boolean).slice(0, 5) : [];
   const jobCode = row.job_code ? String(row.job_code) : undefined;
   return {
-    title,
-    location,
-    type,
-    category: inferCategory(title),
-    experience,
-    skills,
-    jobCode,
-    url,
+    ok: true,
+    opening: {
+      title,
+      location,
+      type,
+      category: inferCategory(title),
+      experience,
+      skills,
+      jobCode,
+      url,
+    },
   };
 }
 
@@ -104,7 +112,22 @@ async function main() {
   const { total, rows } = await fetchJobs();
   console.log(`→ API reported total=${total}, returned ${rows.length} rows`);
 
-  const openings = rows.map(mapRow).filter(Boolean);
+  const results = rows.map(mapRow);
+  const openings = results.filter((r) => r.ok).map((r) => r.opening);
+  const dropped = results.filter((r) => !r.ok);
+
+  if (dropped.length) {
+    const reasons = dropped.reduce((m, r) => ((m[r.reason] = (m[r.reason] || 0) + 1), m), {});
+    console.warn(`! dropped ${dropped.length} row(s):`, reasons);
+  }
+
+  // If we lost more than half the rows, treat it as a schema breakage —
+  // bail out rather than publish a partial list that pretends to be current.
+  if (rows.length > 0 && dropped.length / rows.length > 0.5) {
+    console.error(`! ${dropped.length}/${rows.length} rows failed validation — aborting`);
+    process.exit(3);
+  }
+
   if (!openings.length) {
     console.error('! no openings parsed — leaving existing file untouched');
     process.exit(2);

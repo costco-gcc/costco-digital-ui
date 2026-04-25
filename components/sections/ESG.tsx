@@ -1,7 +1,7 @@
 'use client';
 
 import SectionHeader from '@/components/SectionHeader';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { icon as iconByName } from '@/lib/icons';
 import content from '@/data/content/esg.json';
 
@@ -20,7 +20,7 @@ export default function ESG() {
           {content.goals.map((g, i) => {
             const Icon = iconByName(g.icon);
             return (
-              <motion.div
+              <m.div
                 key={g.title}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export default function ESG() {
                 </div>
                 <h3 className="mt-3 font-semibold">{g.title}</h3>
                 <p className="text-sm text-[color:var(--muted)] mt-1">{g.body}</p>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>
@@ -42,7 +42,7 @@ export default function ESG() {
           {content.pillars.map((p, i) => {
             const Icon = iconByName(p.icon);
             return (
-              <motion.div
+              <m.div
                 key={p.title}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function ESG() {
                 </div>
                 <h3 className="mt-3 font-semibold">{p.title}</h3>
                 <p className="text-sm text-[color:var(--muted)] mt-1">{p.body}</p>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>

@@ -33,7 +33,7 @@ export default function PortalPage() {
       const c = await registerPasskey(name || 'Costco GCC user');
       await refresh();
       setAuthedAs(c.userName);
-    } catch (e: any) { setErr(e?.message || 'Registration failed.'); }
+    } catch (e) { setErr(e instanceof Error ? e.message : 'Registration failed.'); }
     finally { setBusy(false); }
   }
 
@@ -47,7 +47,7 @@ export default function PortalPage() {
       } else {
         setErr('Passkey did not verify.');
       }
-    } catch (e: any) { setErr(e?.message || 'Login failed.'); }
+    } catch (e) { setErr(e instanceof Error ? e.message : 'Login failed.'); }
     finally { setBusy(false); }
   }
 

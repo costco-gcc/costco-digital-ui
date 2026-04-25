@@ -1,7 +1,7 @@
 'use client';
 
 import SectionHeader from '@/components/SectionHeader';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { icon as iconByName } from '@/lib/icons';
 import content from '@/data/content/news.json';
 
@@ -19,7 +19,7 @@ export default function News() {
           {content.items.map((it, i) => {
             const Icon = iconByName(it.icon);
             return (
-              <motion.article
+              <m.article
                 key={it.title}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ export default function News() {
                     <p className="mt-3 text-[10px] text-[color:var(--muted)]/70 italic">{it.credit}</p>
                   )}
                 </div>
-              </motion.article>
+              </m.article>
             );
           })}
         </div>

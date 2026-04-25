@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useInView, useReducedMotion } from 'framer-motion';
+import { m, useInView, useReducedMotion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import content from '@/data/content/stats.json';
 
@@ -14,7 +14,7 @@ export default function Stats() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10 md:divide-x md:divide-[color:var(--line)]">
           {content.items.map((s, i) => (
-            <motion.div
+            <m.div
               key={s.label}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export default function Stats() {
               />
               <div className="font-semibold mt-3 text-[15px]">{s.label}</div>
               <div className="text-xs text-[color:var(--muted)] mt-1 leading-snug">{s.sub}</div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>
@@ -77,8 +77,11 @@ function CountUp({ value, className }: { value: string; className?: string }) {
   }, [inView, reduce, target, prefix, suffix, decimals, value]);
 
   return (
-    <div ref={ref} className={className} aria-label={value}>
-      <span aria-hidden>{display}</span>
+    <div ref={ref} className={className}>
+      <span aria-hidden="true">{display}</span>
+      {/* Animated digit string is read by AT only as the final value, once.
+          Prevents screen-reader chatter as the count ticks up. */}
+      <span className="sr-only">{value}</span>
     </div>
   );
 }

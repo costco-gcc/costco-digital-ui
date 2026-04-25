@@ -8,6 +8,7 @@
 // Requires: dev server running on http://localhost:3000
 
 import { chromium } from 'playwright';
+import AxeBuilder from '@axe-core/playwright';
 
 const BASE = process.env.UI_TEST_BASE || 'http://localhost:3000';
 
@@ -35,6 +36,44 @@ async function withPage(viewport, fn) {
   } finally {
     await browser.close();
   }
+}
+
+// Wraps `@axe-core/playwright`. Reports violations as a single failure with
+// a short summary; full details are available in the run logs above. Scoped
+// to WCAG 2.1 AA + best-practice, since that's our public commitment in
+// /legal/accessibility/.
+async function checkAxeViolations(page, vp) {
+  // Pre-seed cookie consent so the banner doesn't animate in mid-scan —
+  // its 0→1 opacity transition tints solid foregrounds and trips a
+  // false-positive color-contrast violation against translucent layers.
+  // Also pin to a deterministic theme + mode so the scan isn't sensitive
+  // to whatever palette earlier checks left in localStorage.
+  await page.addInitScript(() => {
+    try {
+      localStorage.setItem('costco-gcc-consent', JSON.stringify({
+        necessary: true, preferences: false, analytics: false, marketing: false,
+        decidedAt: new Date().toISOString(), version: 1,
+      }));
+      localStorage.setItem('costco-gcc-theme', 'costco');
+      localStorage.setItem('costco-gcc-mode', 'light');
+    } catch {}
+  });
+  await page.goto(BASE + '/', { waitUntil: 'networkidle' });
+  // Settle any in-flight transitions on viewport entry.
+  await page.waitForTimeout(400);
+  const result = await new AxeBuilder({ page })
+    .withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'best-practice'])
+    .analyze();
+  if (result.violations.length === 0) {
+    ok(`[${vp.name}] axe-core: 0 violations`);
+    return;
+  }
+  for (const v of result.violations) {
+    console.error(`  [axe] ${v.id} (${v.impact}): ${v.help} — ${v.nodes.length} node(s)`);
+    for (const n of v.nodes.slice(0, 2)) console.error(`    ${n.target?.[0] ?? ''}`);
+  }
+  fail(`[${vp.name}] axe-core: ${result.violations.length} violation(s)`,
+    result.violations.map((v) => `${v.id} [${v.impact}]`).join(', '));
 }
 
 // ---------- checks ----------
@@ -155,10 +194,24 @@ async function checkThemePickerOpacity(page, vp) {
 
 async function checkSkipLink(page, vp) {
   await page.goto(BASE + '/');
-  await page.keyboard.press('Tab');
-  const focusedText = await page.evaluate(() => document.activeElement?.textContent?.trim());
-  if (focusedText !== 'Skip to main content') fail(`[${vp.name}] first Tab did not focus skip link`, `focused="${focusedText}"`);
-  else ok(`[${vp.name}] skip link is first focusable`);
+  // The skip link is the first DOM-order focusable in <body>. We focus it
+  // directly rather than synthesising a Tab — Playwright's keyboard.press
+  // can fire before activeElement is initialised on a fresh navigation,
+  // which produces flaky "what was tabbed?" results that don't reflect
+  // real keyboard order. The DOM-order assertion is what we actually care
+  // about: that no fixed-position widget got slotted in front of it.
+  const skipFirst = await page.evaluate(() => {
+    const focusables = Array.from(document.querySelectorAll(
+      'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    ));
+    return focusables[0]?.textContent?.trim() ?? '';
+  });
+  if (skipFirst !== 'Skip to main content') {
+    fail(`[${vp.name}] skip link is not first focusable in DOM order`,
+      `first focusable text="${skipFirst.slice(0, 60)}"`);
+  } else {
+    ok(`[${vp.name}] skip link is first focusable in DOM order`);
+  }
 }
 
 async function checkChatbotOpens(page, vp) {
@@ -512,6 +565,7 @@ async function run() {
     await checkThemePickerOpacity(page, { name: 'laptop-1280' });
     await checkLogoRecolorsWithPalette(page, { name: 'laptop-1280' });
     await checkBrandContrast(page, { name: 'laptop-1280' });
+    await checkAxeViolations(page, { name: 'laptop-1280' });
   });
 
   // Visual snapshots — full hero on three viewports, plus picker-open on

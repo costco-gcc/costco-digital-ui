@@ -1,7 +1,7 @@
 'use client';
 
 import SectionHeader from '@/components/SectionHeader';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
 import content from '@/data/content/careers-faq.json';
@@ -69,7 +69,7 @@ export default function CareersFAQ() {
                 </h3>
                 <AnimatePresence initial={false}>
                   {isOpen && (
-                    <motion.div
+                    <m.div
                       key="content"
                       id={panelId}
                       role="region"
@@ -81,7 +81,7 @@ export default function CareersFAQ() {
                       className="overflow-hidden"
                     >
                       <p className="pb-4 pr-8 text-[13px] text-[color:var(--muted)] leading-relaxed">{it.a}</p>
-                    </motion.div>
+                    </m.div>
                   )}
                 </AnimatePresence>
               </div>

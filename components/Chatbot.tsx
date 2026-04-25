@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send, Sparkles, Trash2 } from 'lucide-react';
 import { answer } from '@/lib/chatbot-knowledge';
 
@@ -146,7 +146,7 @@ export default function Chatbot() {
 
       <AnimatePresence>
         {open && (
-          <motion.div
+          <m.div
             id="kirky-panel"
             initial={{ opacity: 0, y: 16, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -267,7 +267,7 @@ export default function Chatbot() {
                 <Send size={14} aria-hidden />
               </button>
             </form>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </>

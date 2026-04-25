@@ -1,7 +1,7 @@
 'use client';
 
 import SectionHeader from '@/components/SectionHeader';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { icon as iconByName } from '@/lib/icons';
 import content from '@/data/content/culture.json';
 
@@ -20,7 +20,7 @@ export default function Culture() {
           {content.pillars.map((p, i) => {
             const Icon = iconByName(p.icon);
             return (
-              <motion.div
+              <m.div
                 key={p.title}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export default function Culture() {
                 </div>
                 <h3 className="mt-3 font-semibold">{p.title}</h3>
                 <p className="text-sm text-[color:var(--muted)] mt-1">{p.body}</p>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>

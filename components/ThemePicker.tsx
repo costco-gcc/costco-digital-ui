@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Palette, Sun, Moon, Monitor } from 'lucide-react';
+import { Palette, Sun, Moon, Monitor, type LucideIcon } from 'lucide-react';
 import clsx from 'clsx';
 import { applyTheme, themes, ThemeId, THEME_KEY, MODE_KEY, DEFAULT_THEME } from '@/lib/themes';
 
@@ -105,7 +105,11 @@ export default function ThemePicker() {
   );
 }
 
-function ModeBtn({ current, value, icon: Icon, label, onClick }: { current: Mode; value: Mode; icon: any; label: string; onClick: () => void }) {
+function ModeBtn({ current, value, icon: Icon, label, onClick }: {
+  current: Mode; value: Mode;
+  icon: LucideIcon;
+  label: string; onClick: () => void;
+}) {
   const active = current === value;
   return (
     <button

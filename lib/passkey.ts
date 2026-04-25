@@ -39,7 +39,7 @@ async function tx<T>(mode: IDBTransactionMode, fn: (store: IDBObjectStore) => ID
   return new Promise<T>((resolve, reject) => {
     const t = db.transaction(STORE, mode);
     const store = t.objectStore(STORE);
-    let result: any;
+    let result: T | undefined;
     const out = fn(store);
     if (out instanceof IDBRequest) {
       out.onsuccess = () => { result = out.result; };

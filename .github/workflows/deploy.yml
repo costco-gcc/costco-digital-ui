@@ -56,6 +56,39 @@ jobs:
           # SPA fallback for client-side routes (404 -> 404.html, GitHub Pages serves it)
           cp out/404/index.html out/404.html 2>/dev/null || true
 
+      # Pre-deploy gate: serve the static export and run our Playwright +
+      # axe-core suite against it. Catches regressions that type-check can't
+      # see — clipped headlines, missing landmarks, contrast failures, etc.
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Serve static export
+        run: |
+          npx --yes serve out -l 3000 &
+          echo $! > .serve.pid
+          # Wait for the server to start responding.
+          for i in $(seq 1 30); do
+            curl -fsS http://localhost:3000/ -o /dev/null && break
+            sleep 0.5
+          done
+
+      - name: Run UI + a11y tests
+        env:
+          UI_TEST_BASE: http://localhost:3000
+        run: npm run test:ui
+
+      - name: Run Lighthouse CI
+        # Budgets defined in .lighthouserc.json. `continue-on-error` so a
+        # perf-score regression alerts us in the run summary without
+        # blocking deploy — flip to required once the budgets are stable.
+        continue-on-error: true
+        run: npx --yes @lhci/cli@0.14.x autorun
+
+      - name: Stop static server
+        if: always()
+        run: |
+          [ -f .serve.pid ] && kill "$(cat .serve.pid)" 2>/dev/null || true
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out

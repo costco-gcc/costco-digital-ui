@@ -1,7 +1,7 @@
 'use client';
 
 import SectionHeader from '@/components/SectionHeader';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Mail, MapPin, Building2, ShieldCheck, ExternalLink, AlertCircle } from 'lucide-react';
 import { useState } from 'react';
 import content from '@/data/content/contact.json';
@@ -70,7 +70,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <motion.form
+        <m.form
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -108,7 +108,7 @@ export default function Contact() {
           {sent && Object.keys(errors).length === 0 && (
             <p className="text-sm text-emerald-600">{content.form.successMessage}</p>
           )}
-        </motion.form>
+        </m.form>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { icon as iconByName } from '@/lib/icons';
 import content from '@/data/content/awards.json';
 
@@ -11,7 +11,7 @@ export default function Awards() {
         {content.items.map((a, i) => {
           const Icon = iconByName(a.icon);
           return (
-            <motion.div
+            <m.div
               key={a.title}
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export default function Awards() {
                 <div className="text-sm font-semibold">{a.title}</div>
                 <div className="text-xs text-[color:var(--muted)]">{a.sub}</div>
               </div>
-            </motion.div>
+            </m.div>
           );
         })}
       </div>

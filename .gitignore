@@ -3,8 +3,10 @@ node_modules
 out
 .DS_Store
 *.log
+*.tsbuildinfo
 .env*
 !.env.example
+.lighthouseci/
 
 # Claude Code local session state — never ships
 .claude/

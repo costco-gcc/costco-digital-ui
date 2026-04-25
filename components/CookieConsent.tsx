@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { Cookie, ShieldCheck, X } from 'lucide-react';
 import { readConsent, writeConsent, defaultConsent, ConsentState } from '@/lib/cookies';
 import content from '@/data/content/cookie-consent.json';
@@ -46,14 +46,14 @@ export default function CookieConsent() {
 
       <AnimatePresence>
         {show && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.25 }}
             role="dialog"
             aria-label="Cookie consent"
-            className="fixed inset-x-3 bottom-3 sm:inset-x-auto sm:right-3 sm:bottom-3 sm:max-w-md z-50 glass rounded-2xl border border-[color:var(--line)] shadow-2xl p-4 sm:p-5"
+            className="fixed inset-x-3 bottom-3 sm:inset-x-auto sm:right-3 sm:bottom-3 sm:max-w-md z-50 glass-opaque rounded-2xl border border-[color:var(--line)] shadow-2xl p-4 sm:p-5"
           >
             <div className="flex items-start gap-3">
               <div className="p-2 rounded-xl bg-costco-blue/10 text-costco-blue"><Cookie size={18} /></div>
@@ -71,7 +71,7 @@ export default function CookieConsent() {
               </div>
               <button onClick={() => setShow(false)} aria-label={content.banner.dismissAriaLabel} className="p-1 rounded hover:bg-[color:var(--line)]"><X size={14} /></button>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
 

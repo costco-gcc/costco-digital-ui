@@ -1,7 +1,7 @@
 'use client';
 
 import SectionHeader from '@/components/SectionHeader';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Linkedin, Globe2, Briefcase } from 'lucide-react';
 import content from '@/data/content/leadership.json';
 
@@ -27,37 +27,37 @@ export default function Leadership() {
           description={content.description}
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {team.map((m, i) => (
-            <motion.article
-              key={m.name}
+          {team.map((member, i) => (
+            <m.article
+              key={member.name}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
               className={
-                m.openSeat
+                member.openSeat
                   ? 'card p-5 border-dashed bg-transparent'
                   : 'card card-hover p-5'
               }
             >
               <div className="flex items-start justify-between">
-                {m.openSeat ? (
+                {member.openSeat ? (
                   <div className="w-14 h-14 rounded-2xl border-2 border-dashed border-[color:var(--line)] grid place-items-center text-[color:var(--muted)]">
                     <Briefcase size={20} aria-hidden />
                   </div>
                 ) : (
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-costco-red to-costco-blue text-white grid place-items-center font-bold">
-                    {m.initials}
+                    {member.initials}
                   </div>
                 )}
                 <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full border border-[color:var(--line)] text-[color:var(--muted)] inline-flex items-center gap-1">
-                  <Globe2 size={10} /> {m.tag}
+                  <Globe2 size={10} /> {member.tag}
                 </span>
               </div>
-              <div className={`mt-3 font-semibold ${m.openSeat ? 'text-[color:var(--muted)]' : ''}`}>{m.name}</div>
-              <div className="text-xs text-[color:var(--muted)]">{m.role}</div>
-              <p className="text-xs text-[color:var(--muted)] mt-2 leading-relaxed">{m.bio}</p>
-              {m.openSeat ? (
+              <div className={`mt-3 font-semibold ${member.openSeat ? 'text-[color:var(--muted)]' : ''}`}>{member.name}</div>
+              <div className="text-xs text-[color:var(--muted)]">{member.role}</div>
+              <p className="text-xs text-[color:var(--muted)] mt-2 leading-relaxed">{member.bio}</p>
+              {member.openSeat ? (
                 <a
                   href="#careers"
                   className="inline-flex items-center gap-1 mt-3 text-xs text-costco-blue hover:underline"
@@ -65,9 +65,9 @@ export default function Leadership() {
                   See open roles →
                 </a>
               ) : (
-                m.linkedin && (
+                member.linkedin && (
                   <a
-                    href={m.linkedin}
+                    href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 mt-3 text-xs text-costco-blue hover:underline"
@@ -76,7 +76,7 @@ export default function Leadership() {
                   </a>
                 )
               )}
-            </motion.article>
+            </m.article>
           ))}
         </div>
       </div>

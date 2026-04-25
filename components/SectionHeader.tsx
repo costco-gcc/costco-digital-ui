@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import clsx from 'clsx';
 
 type Props = {
@@ -19,7 +19,7 @@ export default function SectionHeader({ eyebrow, number, title, description, ali
   return (
     <div className={clsx('mb-10', align === 'center' && 'text-center mx-auto max-w-3xl')} id={id}>
       {(eyebrow || numberStr) && (
-        <motion.p
+        <m.p
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
@@ -33,9 +33,9 @@ export default function SectionHeader({ eyebrow, number, title, description, ali
             </>
           )}
           {eyebrow}
-        </motion.p>
+        </m.p>
       )}
-      <motion.h2
+      <m.h2
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-80px' }}
@@ -43,9 +43,9 @@ export default function SectionHeader({ eyebrow, number, title, description, ali
         className="section-title mt-2"
       >
         {title}
-      </motion.h2>
+      </m.h2>
       {description && (
-        <motion.p
+        <m.p
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
@@ -53,7 +53,7 @@ export default function SectionHeader({ eyebrow, number, title, description, ali
           className="text-[color:var(--muted)] mt-3 text-base sm:text-lg max-w-2xl"
         >
           {description}
-        </motion.p>
+        </m.p>
       )}
     </div>
   );

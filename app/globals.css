@@ -173,7 +173,11 @@ main:focus { outline: none; }
   white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
 }
+/* Light-mode brand-1 (#E31837) on white text passes 5.5:1. Dark-mode
+   brand-1 is brighter (#FF4D6A) and white drops to 2.86:1, so the dark
+   variant flips the foreground to ink-dark to keep AA. */
 .btn-primary { background: var(--brand-1); color: #fff; box-shadow: 0 6px 22px -10px color-mix(in srgb, var(--brand-1) 70%, transparent); }
+.dark .btn-primary { color: #0B0F1A; }
 .btn-primary:hover { transform: translateY(-1px); }
 .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
 .btn-ghost:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }

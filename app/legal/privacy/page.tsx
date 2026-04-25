@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import LegalShell from '@/components/LegalShell';
 
-export const metadata = { title: 'Privacy notice', description: 'How Costco Wholesale India Private Limited handles personal data on this site, in line with GDPR and India\'s DPDP Act, 2023.' };
+export const metadata: Metadata = {
+  title: 'Privacy notice',
+  description: 'How Costco Wholesale India Private Limited handles personal data on this site, in line with GDPR and India\'s DPDP Act, 2023.',
+  alternates: { canonical: '/legal/privacy/' },
+  openGraph: { url: '/legal/privacy/', title: 'Privacy notice · Costco India GCC' },
+};
 
 export default function Page() {
   return (

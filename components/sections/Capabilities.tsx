@@ -1,7 +1,7 @@
 'use client';
 
 import SectionHeader from '@/components/SectionHeader';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { icon as iconByName } from '@/lib/icons';
 import content from '@/data/content/capabilities.json';
 
@@ -40,7 +40,7 @@ export default function Capabilities() {
           {content.pillars.map((p, idx) => {
             const PillarIcon = iconByName(p.icon);
             return (
-              <motion.article
+              <m.article
                 key={p.title}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export default function Capabilities() {
                     );
                   })}
                 </ul>
-              </motion.article>
+              </m.article>
             );
           })}
         </div>

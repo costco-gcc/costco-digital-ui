@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useReducedMotion } from 'framer-motion';
+import { m, useReducedMotion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import content from '@/data/content/hero.json';
 
@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         {/* Top rail: eyebrow on the left, live status on the right —
             anchors both upper corners so the band reads as intentional. */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -30,11 +30,11 @@ export default function Hero() {
             </span>
             Live · Hiring now
           </div>
-        </motion.div>
+        </m.div>
 
         <div className="mt-10 grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7">
-            <motion.h1
+            <m.h1
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.05 }}
@@ -42,9 +42,9 @@ export default function Hero() {
             >
               {content.headlinePrefix}{' '}
               <span className="gradient-text">{content.headlineAccent}</span>
-            </motion.h1>
+            </m.h1>
 
-            <motion.p
+            <m.p
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
@@ -57,9 +57,9 @@ export default function Hero() {
               {content.introJoinerB}{' '}
               <strong className="text-[color:var(--ink)]">{content.introHighlights[2]}</strong>{' '}
               {content.introTail}
-            </motion.p>
+            </m.p>
 
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
@@ -71,7 +71,7 @@ export default function Hero() {
               <a href={content.ctaSecondary.href} className="btn btn-ghost">
                 {content.ctaSecondary.label}
               </a>
-            </motion.div>
+            </m.div>
           </div>
 
           <div className="lg:col-span-5">
@@ -82,7 +82,7 @@ export default function Hero() {
         {/* Bottom rail: editorial fact-strip that replaces the thin meta line.
             Three cells with vertical dividers fill the lower band so the
             section's ground stops floating. */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
@@ -97,7 +97,7 @@ export default function Hero() {
             href="#careers"
             className="sm:px-8 sm:pr-0"
           />
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

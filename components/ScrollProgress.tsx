@@ -20,14 +20,13 @@ export default function ScrollProgress() {
     };
   }, []);
 
+  // Decorative — the browser already exposes scroll position via its
+  // scrollbar, so hiding from AT prevents the page from having a stray
+  // widget outside any landmark.
   return (
     <div
       className="scroll-progress"
-      role="progressbar"
-      aria-label="Page scroll progress"
-      aria-valuemin={0}
-      aria-valuemax={100}
-      aria-valuenow={Math.round(v * 100)}
+      aria-hidden="true"
       style={{ transform: `scaleX(${v})` }}
     />
   );

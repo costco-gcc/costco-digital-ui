@@ -7,6 +7,9 @@ import Footer from '@/components/Footer';
 import ThemeBootstrap from '@/components/ThemeBootstrap';
 import ScrollProgress from '@/components/ScrollProgress';
 import BackToTop from '@/components/BackToTop';
+import StructuredData from '@/components/StructuredData';
+import ContentSecurityPolicy from '@/components/ContentSecurityPolicy';
+import MotionProvider from '@/components/MotionProvider';
 
 export const metadata: Metadata = {
   // Resolves relative URLs in OG/Twitter cards to the canonical host.
@@ -83,7 +86,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* CSP must be the first <meta> so the policy applies to subsequently
+            parsed inline scripts (including ThemeBootstrap below). */}
+        <ContentSecurityPolicy />
         <ThemeBootstrap />
+        <StructuredData />
         {/* Cooper Black-alike for the Costco wordmark. `display=swap` keeps the
             site usable while it loads; the font stack falls back to system
             slab/serifs that render close enough to avoid layout shift. */}
@@ -96,13 +103,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <a href="#main" className="skip-link">Skip to main content</a>
-        <ScrollProgress />
-        <Navbar />
-        <main id="main" tabIndex={-1}>{children}</main>
-        <Footer />
-        <BackToTop />
-        <Chatbot />
-        <CookieConsent />
+        <MotionProvider>
+          <ScrollProgress />
+          <Navbar />
+          <main id="main" tabIndex={-1}>{children}</main>
+          <Footer />
+          <BackToTop />
+          <Chatbot />
+          <CookieConsent />
+        </MotionProvider>
       </body>
     </html>
   );

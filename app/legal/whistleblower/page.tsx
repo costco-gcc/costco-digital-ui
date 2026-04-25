@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import LegalShell from '@/components/LegalShell';
 
-export const metadata = { title: 'Whistleblower & ethics reporting', description: 'How to raise an ethics concern at Costco India GCC — channels, confidentiality, non-retaliation.' };
+export const metadata: Metadata = {
+  title: 'Whistleblower & ethics reporting',
+  description: 'How to raise an ethics concern at Costco India GCC — channels, confidentiality, non-retaliation.',
+  alternates: { canonical: '/legal/whistleblower/' },
+  openGraph: { url: '/legal/whistleblower/', title: 'Whistleblower & ethics reporting · Costco India GCC' },
+};
 
 export default function Page() {
   return (

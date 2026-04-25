@@ -1,7 +1,7 @@
 'use client';
 
 import SectionHeader from '@/components/SectionHeader';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import content from '@/data/content/gallery.json';
 
 /**
@@ -24,7 +24,7 @@ export default function Gallery() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {content.scenes.map((s, i) => (
-            <motion.figure
+            <m.figure
               key={s.key}
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ export default function Gallery() {
                 </span>
               </div>
               <figcaption className="px-4 py-3 text-sm text-[color:var(--muted)]">{s.caption}</figcaption>
-            </motion.figure>
+            </m.figure>
           ))}
         </div>
 

@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import LegalShell from '@/components/LegalShell';
 
-export const metadata = { title: 'Terms of use', description: 'Terms governing use of the Costco India GCC website.' };
+export const metadata: Metadata = {
+  title: 'Terms of use',
+  description: 'Terms governing use of the Costco India GCC website.',
+  alternates: { canonical: '/legal/terms/' },
+  openGraph: { url: '/legal/terms/', title: 'Terms of use · Costco India GCC' },
+};
 
 export default function Page() {
   return (
