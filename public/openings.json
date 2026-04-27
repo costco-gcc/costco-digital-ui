@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-04-26",
+  "verifiedAt": "2026-04-27",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 30,
+  "totalReportedByApi": 31,
   "openings": [
     {
       "title": "Adobe Platform Engineer -MarTech",
@@ -17,6 +17,22 @@
       ],
       "jobCode": "T500-25028",
       "url": "https://talent500.com/jobs/costco/adobe-platform-engineer-martech-hyderabad-T500-25028/"
+    },
+    {
+      "title": "DevOps Engineer - Data",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Devops",
+        "Git",
+        "Python",
+        "Terraform",
+        "GCP"
+      ],
+      "jobCode": "T500-25504",
+      "url": "https://talent500.com/jobs/costco/devops-engineer-data-hyderabad-T500-25504/"
     },
     {
       "title": "IT Reliability & Incident Lead",
