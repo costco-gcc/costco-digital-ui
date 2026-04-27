@@ -23,6 +23,12 @@ const STORAGE_KEY = 'costco-gcc-gate';
 const REDIRECT_URL = 'https://www.costco.com/';
 const GATED_HOSTS = ['www.costcodigital.com', 'costcodigital.com'];
 
+// Cookies are the primary persistence: Safari's Intelligent Tracking
+// Prevention can clear localStorage after 7 days of inactivity, and
+// private/incognito modes silently drop localStorage writes. A 1-year
+// max-age cookie survives both, and we write localStorage as a backup
+// in case cookies are blocked by extensions. Either store unlocks the
+// gate on subsequent visits.
 const SCRIPT = `
 (function () {
   try {
@@ -35,12 +41,28 @@ const SCRIPT = `
     var url = new URL(window.location.href);
     var code = url.searchParams.get('code');
 
+    function readCookie() {
+      try {
+        var m = document.cookie.match(new RegExp('(?:^|; )' + key + '=([^;]*)'));
+        return m ? decodeURIComponent(m[1]) : null;
+      } catch (e) { return null; }
+    }
+    function writeCookie(v) {
+      try {
+        // 1-year persistence; Lax + Secure since the production host is HTTPS only.
+        document.cookie = key + '=' + encodeURIComponent(v) +
+          '; path=/; max-age=31536000; SameSite=Lax; Secure';
+      } catch (e) {}
+    }
+
     if (code === unlock) {
+      writeCookie(unlock);
       try { localStorage.setItem(key, unlock); } catch (e) {}
       url.searchParams.delete('code');
       try { history.replaceState(null, '', url.toString()); } catch (e) {}
       return;
     }
+    if (readCookie() === unlock) return;
     try { if (localStorage.getItem(key) === unlock) return; } catch (e) {}
 
     try { document.documentElement.style.visibility = 'hidden'; } catch (e) {}
