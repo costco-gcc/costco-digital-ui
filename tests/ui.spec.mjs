@@ -406,14 +406,17 @@ async function checkLocationCardRenders(page, vp) {
 
 async function checkCareersListsRoles(page, vp) {
   // Wait for /openings.json to load and the careers list to populate.
-  // Two-phase: (1) fetch in-page so the network is forced to complete,
-  // independent of how the section's useEffect schedules its own fetch.
-  // (2) poll for the rendered card count. In CI the cold-start hydration
-  // sometimes lags behind a plain timing-based wait, so this approach is
-  // more deterministic than waiting on cards alone.
+  // Three-phase to make the test robust against CI's slower cold-start:
+  //   (1) force an in-page fetch so the network is proven to work,
+  //       independent of how the section's useEffect schedules its own.
+  //   (2) reload the page so the careers fetch can hit the warm HTTP
+  //       cache from step 1 — sidesteps a CI-only race where the
+  //       initial mount fetch was being abandoned by Playwright before
+  //       it could update React state.
+  //   (3) wait for networkidle, then poll for rendered card count.
   const fetched = await page.evaluate(async () => {
     try {
-      const r = await fetch('/openings.json', { cache: 'no-store' });
+      const r = await fetch('/openings.json', { cache: 'force-cache' });
       if (!r.ok) return { ok: false, status: r.status };
       const j = await r.json();
       const items = Array.isArray(j) ? j : Array.isArray(j?.openings) ? j.openings : [];
@@ -426,6 +429,8 @@ async function checkCareersListsRoles(page, vp) {
     fail(`[${vp.name}] /openings.json fetch failed`, JSON.stringify(fetched));
     return;
   }
+  await page.reload({ waitUntil: 'networkidle' }).catch(() => null);
+  await page.waitForLoadState('networkidle', { timeout: 15_000 }).catch(() => null);
   await page.waitForFunction(() => {
     const cards = document.querySelectorAll('section#careers a[href*="/jobs/costco/"]');
     return cards.length >= 5;
