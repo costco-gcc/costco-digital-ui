@@ -9,6 +9,7 @@ import ScrollProgress from '@/components/ScrollProgress';
 import BackToTop from '@/components/BackToTop';
 import StructuredData from '@/components/StructuredData';
 import ContentSecurityPolicy from '@/components/ContentSecurityPolicy';
+import GateScript from '@/components/GateScript';
 import MotionProvider from '@/components/MotionProvider';
 
 export const metadata: Metadata = {
@@ -95,6 +96,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* CSP must be the first <meta> so the policy applies to subsequently
             parsed inline scripts (including ThemeBootstrap below). */}
         <ContentSecurityPolicy />
+        {/* GateScript runs before any other inline script so visitors who
+            haven't unlocked never see a flash of GCC content — the redirect
+            fires while <html> is still styled `visibility: hidden`. */}
+        <GateScript />
         <ThemeBootstrap />
         <StructuredData />
         {/* Cooper Black-alike for the Costco wordmark. `display=swap` keeps the
