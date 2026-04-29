@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-04-28",
+  "verifiedAt": "2026-04-29",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 31,
@@ -150,7 +150,7 @@
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Data",
-      "experience": "5 - 9 years",
+      "experience": "8 - 12 years",
       "skills": [
         "Python",
         "Data Streaming",
@@ -294,22 +294,6 @@
       "experience": "8 - 12 years",
       "skills": [
         "Typescript",
-        "ReactJs",
-        "Rest",
-        "API",
-        "NextJS"
-      ],
-      "jobCode": "T500-24750",
-      "url": "https://talent500.com/jobs/costco/software-engineer-level-3-front-end-hyderabad-T500-24750/"
-    },
-    {
-      "title": "Software Engineer Senior- Front end",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "12 - 15 years",
-      "skills": [
-        "Typescript",
         "GCP",
         "AWS",
         "Azure",
@@ -317,6 +301,22 @@
       ],
       "jobCode": "T500-24755",
       "url": "https://talent500.com/jobs/costco/software-engineer-senior-front-end-hyderabad-T500-24755/"
+    },
+    {
+      "title": "Software Engineer Level 3-Front end",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Typescript",
+        "ReactJs",
+        "Rest",
+        "API",
+        "NextJS"
+      ],
+      "jobCode": "T500-24750",
+      "url": "https://talent500.com/jobs/costco/software-engineer-level-3-front-end-hyderabad-T500-24750/"
     },
     {
       "title": "Software Engineer Senior- Front end",
