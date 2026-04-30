@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-04-29",
+  "verifiedAt": "2026-04-30",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 31,
@@ -146,6 +146,22 @@
       "url": "https://talent500.com/jobs/costco/data-engineer-hyderabad-T500-25348/"
     },
     {
+      "title": "Data Engineer 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Python",
+        "Data Streaming",
+        "Pub/Sub",
+        "Kafka",
+        "Dataflow"
+      ],
+      "jobCode": "T500-25583",
+      "url": "https://talent500.com/jobs/costco/data-engineer-3-hyderabad-T500-25583/"
+    },
+    {
       "title": "Data Engineer,L3",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -253,22 +269,6 @@
       ],
       "jobCode": "T500-21471",
       "url": "https://talent500.com/jobs/costco/software-engineer-2a-international-ecommerce-hyderabad-T500-21471/"
-    },
-    {
-      "title": "Software Engineer 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "8 - 12 years",
-      "skills": [
-        "C#",
-        ".Net Core",
-        "CICD",
-        "Jenkins",
-        "Github Actions"
-      ],
-      "jobCode": "T500-24140",
-      "url": "https://talent500.com/jobs/costco/software-engineer-3-hyderabad-T500-24140/"
     },
     {
       "title": "Software Engineer Level 3",
