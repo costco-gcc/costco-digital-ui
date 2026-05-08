@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-05-07",
+  "verifiedAt": "2026-05-08",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 31,
+  "totalReportedByApi": 30,
   "openings": [
     {
       "title": "Adobe Platform Engineer -MarTech",
@@ -294,22 +294,6 @@
       "experience": "8 - 12 years",
       "skills": [
         "Typescript",
-        "GCP",
-        "AWS",
-        "Azure",
-        "Rest"
-      ],
-      "jobCode": "T500-24755",
-      "url": "https://talent500.com/jobs/costco/software-engineer-senior-front-end-hyderabad-T500-24755/"
-    },
-    {
-      "title": "Software Engineer Level 3-Front end",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "8 - 12 years",
-      "skills": [
-        "Typescript",
         "ReactJs",
         "Rest",
         "API",
@@ -449,7 +433,7 @@
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Quality",
-      "experience": "5 - 8 years",
+      "experience": "8 - 12 years",
       "skills": [
         "Automation Testing",
         "Selenium",
