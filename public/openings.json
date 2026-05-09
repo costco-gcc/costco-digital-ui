@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-05-08",
+  "verifiedAt": "2026-05-09",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 30,
+  "totalReportedByApi": 29,
   "openings": [
     {
       "title": "Adobe Platform Engineer -MarTech",
@@ -285,22 +285,6 @@
       ],
       "jobCode": "T500-24870",
       "url": "https://talent500.com/jobs/costco/software-engineer-master-data-management-hyderabad-T500-24870/"
-    },
-    {
-      "title": "Software Engineer Level 3-Front end",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "8 - 12 years",
-      "skills": [
-        "Typescript",
-        "ReactJs",
-        "Rest",
-        "API",
-        "NextJS"
-      ],
-      "jobCode": "T500-24750",
-      "url": "https://talent500.com/jobs/costco/software-engineer-level-3-front-end-hyderabad-T500-24750/"
     },
     {
       "title": "Software Engineer Senior- Front end",
