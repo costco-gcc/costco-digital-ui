@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-05-11",
+  "verifiedAt": "2026-05-12",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 28,
+  "totalReportedByApi": 27,
   "openings": [
     {
       "title": "Adobe Platform Engineer -MarTech",
@@ -205,22 +205,6 @@
       ],
       "jobCode": "T500-25349",
       "url": "https://talent500.com/jobs/costco/senior-data-engineer-hyderabad-T500-25349/"
-    },
-    {
-      "title": "Senior Data Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Data",
-      "experience": "8 - 12 years",
-      "skills": [
-        "GCP",
-        "ETL",
-        "ELT",
-        "Java",
-        "Python"
-      ],
-      "jobCode": "T500-25114",
-      "url": "https://talent500.com/jobs/costco/senior-data-engineer-hyderabad-T500-25114/"
     },
     {
       "title": "Senior Software Engineer",
