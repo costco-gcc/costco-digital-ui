@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-05-14",
+  "verifiedAt": "2026-05-15",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 28,
+  "totalReportedByApi": 26,
   "openings": [
     {
       "title": "Adobe Platform Engineer -MarTech",
@@ -49,21 +49,6 @@
       ],
       "jobCode": "T500-25502",
       "url": "https://talent500.com/jobs/costco/devops-engineer-data-hyderabad-T500-25502/"
-    },
-    {
-      "title": "IT Reliability & Incident Lead",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Cloud",
-      "experience": "5 - 8 years",
-      "skills": [
-        "SQL",
-        "Javascript",
-        "Python",
-        "Incident Management"
-      ],
-      "jobCode": "T500-24989",
-      "url": "https://talent500.com/jobs/costco/it-reliability-incident-lead-hyderabad-T500-24989/"
     },
     {
       "title": "Platform Engineer",
@@ -271,6 +256,22 @@
       "url": "https://talent500.com/jobs/costco/software-engineer-2a-international-ecommerce-hyderabad-T500-21471/"
     },
     {
+      "title": "Software Engineer 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "12 - 18 years",
+      "skills": [
+        "C#",
+        ".Net Core",
+        "CICD",
+        "Jenkins",
+        "Github Actions"
+      ],
+      "jobCode": "T500-20224",
+      "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-20224/"
+    },
+    {
       "title": "Software Engineer Senior- Front end",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -285,22 +286,6 @@
       ],
       "jobCode": "T500-24866",
       "url": "https://talent500.com/jobs/costco/software-engineer-senior-front-end-hyderabad-T500-24866/"
-    },
-    {
-      "title": "Sr. Software Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "12 - 18 years",
-      "skills": [
-        "C#",
-        ".Net Core",
-        "CICD",
-        "Jenkins",
-        "Github Actions"
-      ],
-      "jobCode": "T500-20224",
-      "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-20224/"
     },
     {
       "title": "Software Engineer 4 - Adobe -MarTech",
@@ -348,21 +333,6 @@
       ],
       "jobCode": "T500-20230",
       "url": "https://talent500.com/jobs/costco/software-engineer-4-martechadtech-hyderabad-T500-20230/"
-    },
-    {
-      "title": "Product Owner 4",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Product",
-      "experience": "12 - 18 years",
-      "skills": [
-        "Product Roadmap",
-        "Agile Methodologies",
-        "Agile",
-        "Product Management"
-      ],
-      "jobCode": "T500-24864",
-      "url": "https://talent500.com/jobs/costco/senior-product-owner-hyderabad-T500-24864/"
     },
     {
       "title": "Quality Assurance Analyst - International Ecommerce",
