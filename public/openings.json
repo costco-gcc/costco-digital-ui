@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-05-15",
+  "verifiedAt": "2026-05-16",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 26,
+  "totalReportedByApi": 25,
   "openings": [
     {
       "title": "Adobe Platform Engineer -MarTech",
@@ -65,22 +65,6 @@
       ],
       "jobCode": "T500-25374",
       "url": "https://talent500.com/jobs/costco/platform-engineer-hyderabad-T500-25374/"
-    },
-    {
-      "title": "Platform Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Cloud",
-      "experience": "12 - 18 years",
-      "skills": [
-        "Terraform",
-        "GCP",
-        "GitOps",
-        "GKE",
-        "Google Kubernetes Engine"
-      ],
-      "jobCode": "T500-25385",
-      "url": "https://talent500.com/jobs/costco/platform-engineer-hyderabad-T500-25385/"
     },
     {
       "title": "Senior Platform Engineer",
