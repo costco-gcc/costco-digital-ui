@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-05-16",
+  "verifiedAt": "2026-05-17",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 25,
+  "totalReportedByApi": 24,
   "openings": [
     {
       "title": "Adobe Platform Engineer -MarTech",
@@ -97,22 +97,6 @@
       ],
       "jobCode": "T500-25348",
       "url": "https://talent500.com/jobs/costco/data-engineer-hyderabad-T500-25348/"
-    },
-    {
-      "title": "Data Engineer - 2b",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Data",
-      "experience": "4 - 8 years",
-      "skills": [
-        "GCP",
-        "Java",
-        "Python",
-        "Data Engineer",
-        "Data Engineering"
-      ],
-      "jobCode": "T500-25102",
-      "url": "https://talent500.com/jobs/costco/data-engineer-hyderabad-T500-25102/"
     },
     {
       "title": "Data Engineer 3",
