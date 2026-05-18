@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-05-17",
+  "verifiedAt": "2026-05-18",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 24,
+  "totalReportedByApi": 23,
   "openings": [
     {
       "title": "Adobe Platform Engineer -MarTech",
@@ -222,22 +222,6 @@
       ],
       "jobCode": "T500-21471",
       "url": "https://talent500.com/jobs/costco/software-engineer-2a-international-ecommerce-hyderabad-T500-21471/"
-    },
-    {
-      "title": "Software Engineer 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "12 - 18 years",
-      "skills": [
-        "C#",
-        ".Net Core",
-        "CICD",
-        "Jenkins",
-        "Github Actions"
-      ],
-      "jobCode": "T500-20224",
-      "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-20224/"
     },
     {
       "title": "Software Engineer Senior- Front end",
