@@ -1,23 +1,9 @@
 {
-  "verifiedAt": "2026-05-18",
+  "verifiedAt": "2026-05-19",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 23,
+  "totalReportedByApi": 22,
   "openings": [
-    {
-      "title": "Adobe Platform Engineer -MarTech",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Cloud",
-      "experience": "12 - 15 years",
-      "skills": [
-        "Adobe Experience Platform",
-        "AEP",
-        "Adobe Experience"
-      ],
-      "jobCode": "T500-25028",
-      "url": "https://talent500.com/jobs/costco/adobe-platform-engineer-martech-hyderabad-T500-25028/"
-    },
     {
       "title": "DevOps Engineer - Data",
       "location": "Hyderabad",
