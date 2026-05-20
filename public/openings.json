@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-05-19",
+  "verifiedAt": "2026-05-20",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 22,
@@ -43,11 +43,11 @@
       "category": "Cloud",
       "experience": "5 - 8 years",
       "skills": [
-        "Python",
-        "Power BI",
-        "Bigquery",
-        "Big Query",
-        "GitHub Actions"
+        "Terraform",
+        "GitHub Actions",
+        "GHA",
+        "GitHub Action",
+        "GCP Big query"
       ],
       "jobCode": "T500-25374",
       "url": "https://talent500.com/jobs/costco/platform-engineer-hyderabad-T500-25374/"
@@ -59,11 +59,11 @@
       "category": "Cloud",
       "experience": "8 - 14 years",
       "skills": [
-        "Python",
-        "Power BI",
+        "Terraform",
         "GitHub Actions",
         "GHA",
-        "GitHub Action"
+        "GitHub Action",
+        "CI/CD"
       ],
       "jobCode": "T500-25375",
       "url": "https://talent500.com/jobs/costco/senior-platform-engineer-hyderabad-T500-25375/"
@@ -293,6 +293,20 @@
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Quality",
+      "experience": "12 - 15 years",
+      "skills": [
+        "Automation Testing",
+        "Java",
+        "Playwright"
+      ],
+      "jobCode": "T500-24754",
+      "url": "https://talent500.com/jobs/costco/senior-quality-automation-engineer-hyderabad-T500-24754/"
+    },
+    {
+      "title": "Quality Automation Engineer Level 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Quality",
       "experience": "8 - 12 years",
       "skills": [
         "Playwright",
@@ -319,20 +333,6 @@
       ],
       "jobCode": "T500-24788",
       "url": "https://talent500.com/jobs/costco/quality-engineer-international-ecommerce-hyderabad-T500-24788/"
-    },
-    {
-      "title": "Senior Quality Automation Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Quality",
-      "experience": "12 - 15 years",
-      "skills": [
-        "Automation Testing",
-        "Java",
-        "Playwright"
-      ],
-      "jobCode": "T500-24754",
-      "url": "https://talent500.com/jobs/costco/senior-quality-automation-engineer-hyderabad-T500-24754/"
     },
     {
       "title": "Security Engineer",
