@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-05-20",
+  "verifiedAt": "2026-05-21",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 22,
+  "totalReportedByApi": 21,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -208,22 +208,6 @@
       ],
       "jobCode": "T500-21471",
       "url": "https://talent500.com/jobs/costco/software-engineer-2a-international-ecommerce-hyderabad-T500-21471/"
-    },
-    {
-      "title": "Software Engineer Senior- Front end",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "12 - 18 years",
-      "skills": [
-        "NextJs",
-        "Typescript",
-        "AWS",
-        "GCP",
-        "Azure"
-      ],
-      "jobCode": "T500-24866",
-      "url": "https://talent500.com/jobs/costco/software-engineer-senior-front-end-hyderabad-T500-24866/"
     },
     {
       "title": "Software Engineer 4 - Adobe -MarTech",
