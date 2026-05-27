@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-05-26",
+  "verifiedAt": "2026-05-27",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 23,
+  "totalReportedByApi": 24,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -224,6 +224,22 @@
       ],
       "jobCode": "T500-21471",
       "url": "https://talent500.com/jobs/costco/software-engineer-2a-international-ecommerce-hyderabad-T500-21471/"
+    },
+    {
+      "title": "Software Engineer 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "C#",
+        ".Net Core",
+        "CICD",
+        "Jenkins",
+        "Github Actions"
+      ],
+      "jobCode": "T500-26226",
+      "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-26226/"
     },
     {
       "title": "Software Engineer 3",
