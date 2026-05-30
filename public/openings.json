@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-05-29",
+  "verifiedAt": "2026-05-30",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 24,
+  "totalReportedByApi": 23,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -319,20 +319,6 @@
       ],
       "jobCode": "T500-24722",
       "url": "https://talent500.com/jobs/costco/quality-assurance-analyst-international-ecommerce-hyderabad-T500-24722/"
-    },
-    {
-      "title": "Quality Automation Engineer Level 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Quality",
-      "experience": "12 - 15 years",
-      "skills": [
-        "Automation Testing",
-        "Java",
-        "Playwright"
-      ],
-      "jobCode": "T500-24754",
-      "url": "https://talent500.com/jobs/costco/senior-quality-automation-engineer-hyderabad-T500-24754/"
     },
     {
       "title": "Quality Automation Engineer Level 3",
