@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-06-03",
+  "verifiedAt": "2026-06-04",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 23,
+  "totalReportedByApi": 22,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -160,22 +160,6 @@
       ],
       "jobCode": "T500-25891",
       "url": "https://talent500.com/jobs/costco/engineering-manager-rmn-hyderabad-T500-25891/"
-    },
-    {
-      "title": "Senior Software Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "12 - 15 years",
-      "skills": [
-        "Java",
-        "Spring Boot",
-        "Rest",
-        "API",
-        "Docker"
-      ],
-      "jobCode": "T500-24751",
-      "url": "https://talent500.com/jobs/costco/senior-software-engineer-hyderabad-T500-24751/"
     },
     {
       "title": "Senior Software Engineer",
