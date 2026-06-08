@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-06-07",
+  "verifiedAt": "2026-06-08",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 22,
+  "totalReportedByApi": 23,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -35,6 +35,21 @@
       ],
       "jobCode": "T500-25502",
       "url": "https://talent500.com/jobs/costco/devops-engineer-data-hyderabad-T500-25502/"
+    },
+    {
+      "title": "IT Reliability & Incident Lead",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "5 - 8 years",
+      "skills": [
+        "SQL",
+        "Javascript",
+        "Python",
+        "Incident Management"
+      ],
+      "jobCode": "T500-24989",
+      "url": "https://talent500.com/jobs/costco/it-reliability-incident-lead-hyderabad-T500-24989/"
     },
     {
       "title": "Platform Engineer",
