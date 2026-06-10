@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-06-09",
+  "verifiedAt": "2026-06-10",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 23,
+  "totalReportedByApi": 21,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -239,37 +239,6 @@
       ],
       "jobCode": "T500-26190",
       "url": "https://talent500.com/jobs/costco/software-engineer-3-front-end-hyderabad-T500-26190/"
-    },
-    {
-      "title": "Software Engineer 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "8 - 12 years",
-      "skills": [
-        "C#",
-        ".Net Core",
-        "CICD",
-        "Jenkins",
-        "Github Actions"
-      ],
-      "jobCode": "T500-26226",
-      "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-26226/"
-    },
-    {
-      "title": "Software Engineer 4 - Adobe -MarTech",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "MarTech",
-      "experience": "10 - 15 years",
-      "skills": [
-        "Adobe Experience",
-        "AEP",
-        "Adobe Journey Optimizer",
-        "AJO"
-      ],
-      "jobCode": "T500-25027",
-      "url": "https://talent500.com/jobs/costco/software-engineer-4-adobe-martech-hyderabad-T500-25027/"
     },
     {
       "title": "Software Engineer 4 (Martech/AdTech)",
