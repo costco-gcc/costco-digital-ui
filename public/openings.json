@@ -1,25 +1,9 @@
 {
-  "verifiedAt": "2026-06-10",
+  "verifiedAt": "2026-06-11",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 21,
+  "totalReportedByApi": 19,
   "openings": [
-    {
-      "title": "DevOps Engineer - Data",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Cloud",
-      "experience": "8 - 12 years",
-      "skills": [
-        "Devops",
-        "Git",
-        "Python",
-        "Terraform",
-        "GCP"
-      ],
-      "jobCode": "T500-25504",
-      "url": "https://talent500.com/jobs/costco/devops-engineer-data-hyderabad-T500-25504/"
-    },
     {
       "title": "DevOps Engineer - Data",
       "location": "Hyderabad",
@@ -257,20 +241,18 @@
       "url": "https://talent500.com/jobs/costco/software-engineer-4-martechadtech-hyderabad-T500-20230/"
     },
     {
-      "title": "Staff Software Engineer (Martech/AdTech)",
+      "title": "IT  Product Owner",
       "location": "Hyderabad",
       "type": "Full-time",
-      "category": "MarTech",
-      "experience": "15 - 20 years",
+      "category": "Product",
+      "experience": "8 - 15 years",
       "skills": [
-        "Adobe Expererince Platform",
-        "AEP",
-        "AE",
-        "QA",
-        "Automation Testing"
+        "Agile",
+        "Product Owner",
+        "Product Management"
       ],
-      "jobCode": "T500-25029",
-      "url": "https://talent500.com/jobs/costco/software-engineer-4-adobe-martech-hyderabad-T500-25029/"
+      "jobCode": "T500-26568",
+      "url": "https://talent500.com/jobs/costco/it-product-owner-hyderabad-T500-26568/"
     },
     {
       "title": "Quality Automation Engineer Level 3",
@@ -287,22 +269,6 @@
       ],
       "jobCode": "T500-24867",
       "url": "https://talent500.com/jobs/costco/quality-automation-engineer-hyderabad-T500-24867/"
-    },
-    {
-      "title": "Quality Engineer - International eCommerce",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Quality",
-      "experience": "8 - 12 years",
-      "skills": [
-        "Automation Testing",
-        "Selenium",
-        "Playwright",
-        "CI/CD",
-        "CICD"
-      ],
-      "jobCode": "T500-24788",
-      "url": "https://talent500.com/jobs/costco/quality-engineer-international-ecommerce-hyderabad-T500-24788/"
     },
     {
       "title": "Quality Engineer - International eCommerce",
