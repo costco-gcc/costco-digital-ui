@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-06-17",
+  "verifiedAt": "2026-06-18",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 18,
+  "totalReportedByApi": 16,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -193,22 +193,6 @@
       "url": "https://talent500.com/jobs/costco/senior-software-engineer-back-end-hyderabad-T500-26191/"
     },
     {
-      "title": "Software Engineer 2b, International eCommerce",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "4 - 6 years",
-      "skills": [
-        "Hybris",
-        "SAP Commerce",
-        "Git",
-        "AGILE",
-        "SQL"
-      ],
-      "jobCode": "T500-21471",
-      "url": "https://talent500.com/jobs/costco/software-engineer-2a-international-ecommerce-hyderabad-T500-21471/"
-    },
-    {
       "title": "Software Engineer 3",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -269,21 +253,6 @@
       ],
       "jobCode": "T500-26509",
       "url": "https://talent500.com/jobs/costco/quality-engineer-international-ecommerce-hyderabad-T500-26509/"
-    },
-    {
-      "title": "Security Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Security",
-      "experience": "5 - 9 years",
-      "skills": [
-        "Terraform",
-        "SQL",
-        "Java",
-        "CI/CD"
-      ],
-      "jobCode": "T500-24988",
-      "url": "https://talent500.com/jobs/costco/security-engineer-hyderabad-T500-24988/"
     }
   ]
 }
