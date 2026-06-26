@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-06-25",
+  "verifiedAt": "2026-06-26",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 17,
+  "totalReportedByApi": 16,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -66,22 +66,6 @@
       ],
       "jobCode": "T500-25375",
       "url": "https://talent500.com/jobs/costco/senior-platform-engineer-hyderabad-T500-25375/"
-    },
-    {
-      "title": "Data Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Data",
-      "experience": "5 - 8 years",
-      "skills": [
-        "GCP",
-        "ETL",
-        "ELT",
-        "Python",
-        "Big Query"
-      ],
-      "jobCode": "T500-25348",
-      "url": "https://talent500.com/jobs/costco/data-engineer-hyderabad-T500-25348/"
     },
     {
       "title": "Data Engineer 3",
