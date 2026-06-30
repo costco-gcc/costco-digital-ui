@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-06-29",
+  "verifiedAt": "2026-06-30",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 16,
@@ -84,7 +84,7 @@
       "url": "https://talent500.com/jobs/costco/data-engineer-3-hyderabad-T500-25583/"
     },
     {
-      "title": "Data Engineer,L3",
+      "title": "Data Engineer 3",
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Data",
