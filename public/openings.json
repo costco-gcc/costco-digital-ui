@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-06-30",
+  "verifiedAt": "2026-07-01",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 16,
+  "totalReportedByApi": 15,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -82,22 +82,6 @@
       ],
       "jobCode": "T500-25583",
       "url": "https://talent500.com/jobs/costco/data-engineer-3-hyderabad-T500-25583/"
-    },
-    {
-      "title": "Data Engineer 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Data",
-      "experience": "8 - 12 years",
-      "skills": [
-        "Python",
-        "Data Streaming",
-        "Pub/Sub",
-        "Kafka",
-        "Dataflow"
-      ],
-      "jobCode": "T500-25063",
-      "url": "https://talent500.com/jobs/costco/data-engineer-staff-hyderabad-T500-25063/"
     },
     {
       "title": "Data Engineering - Manager- MarTech",
