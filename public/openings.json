@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-07-03",
+  "verifiedAt": "2026-07-04",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 14,
@@ -81,22 +81,6 @@
       "url": "https://talent500.com/jobs/costco/data-engineering-manager-martech-hyderabad-T500-25026/"
     },
     {
-      "title": "Senior Data Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Data",
-      "experience": "8 - 14 years",
-      "skills": [
-        "GCP",
-        "Python",
-        "ELT",
-        "ETL",
-        "Big Query"
-      ],
-      "jobCode": "T500-25349",
-      "url": "https://talent500.com/jobs/costco/senior-data-engineer-hyderabad-T500-25349/"
-    },
-    {
       "title": "Engineering Manager - RMN",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -175,6 +159,22 @@
       ],
       "jobCode": "T500-26226",
       "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-26226/"
+    },
+    {
+      "title": "Software Engineer 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "12 - 18 years",
+      "skills": [
+        "C#",
+        ".Net Core",
+        "CICD",
+        "Jenkins",
+        "Github Actions"
+      ],
+      "jobCode": "T500-26065",
+      "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-26065/"
     },
     {
       "title": "Software Engineer 4 (Martech/AdTech)",
