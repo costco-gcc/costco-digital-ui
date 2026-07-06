@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-07-05",
+  "verifiedAt": "2026-07-06",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 14,
+  "totalReportedByApi": 13,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -165,7 +165,7 @@
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Engineering",
-      "experience": "12 - 18 years",
+      "experience": "8 - 12 years",
       "skills": [
         "C#",
         ".Net Core",
@@ -191,20 +191,6 @@
       ],
       "jobCode": "T500-20230",
       "url": "https://talent500.com/jobs/costco/software-engineer-4-martechadtech-hyderabad-T500-20230/"
-    },
-    {
-      "title": "IT  Product Owner",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Product",
-      "experience": "8 - 15 years",
-      "skills": [
-        "Agile",
-        "Product Owner",
-        "Product Management"
-      ],
-      "jobCode": "T500-26568",
-      "url": "https://talent500.com/jobs/costco/it-product-owner-hyderabad-T500-26568/"
     },
     {
       "title": "Quality Engineer - International eCommerce",
