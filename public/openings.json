@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-07-06",
+  "verifiedAt": "2026-07-07",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 13,
@@ -113,22 +113,6 @@
       "url": "https://talent500.com/jobs/costco/senior-software-engineer-java-hyderabad-T500-24865/"
     },
     {
-      "title": "Senior Software Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "8 - 12 years",
-      "skills": [
-        "Java",
-        "Spring Boot",
-        "Spring",
-        "GitHub",
-        "Jenkins"
-      ],
-      "jobCode": "T500-26191",
-      "url": "https://talent500.com/jobs/costco/senior-software-engineer-back-end-hyderabad-T500-26191/"
-    },
-    {
       "title": "Software Engineer 3",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -175,6 +159,22 @@
       ],
       "jobCode": "T500-26065",
       "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-26065/"
+    },
+    {
+      "title": "Software Engineer Level 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Spring",
+        "GitHub",
+        "Jenkins"
+      ],
+      "jobCode": "T500-26191",
+      "url": "https://talent500.com/jobs/costco/senior-software-engineer-back-end-hyderabad-T500-26191/"
     },
     {
       "title": "Software Engineer 4 (Martech/AdTech)",
