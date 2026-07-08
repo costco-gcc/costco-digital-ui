@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-07-07",
+  "verifiedAt": "2026-07-08",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 13,
+  "totalReportedByApi": 12,
   "openings": [
     {
       "title": "DevOps Engineer - Data",
@@ -34,22 +34,6 @@
       ],
       "jobCode": "T500-24989",
       "url": "https://talent500.com/jobs/costco/it-reliability-incident-lead-hyderabad-T500-24989/"
-    },
-    {
-      "title": "Platform Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Cloud",
-      "experience": "5 - 8 years",
-      "skills": [
-        "Terraform",
-        "GitHub Actions",
-        "GHA",
-        "GitHub Action",
-        "GCP Big query"
-      ],
-      "jobCode": "T500-25374",
-      "url": "https://talent500.com/jobs/costco/platform-engineer-hyderabad-T500-25374/"
     },
     {
       "title": "Senior Platform Engineer",
