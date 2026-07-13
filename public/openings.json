@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-07-12",
+  "verifiedAt": "2026-07-13",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 11,
+  "totalReportedByApi": 10,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -34,19 +34,6 @@
       ],
       "jobCode": "T500-25375",
       "url": "https://talent500.com/jobs/costco/senior-platform-engineer-hyderabad-T500-25375/"
-    },
-    {
-      "title": "Data Engineering - Manager- MarTech",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Data",
-      "experience": "14 - 22 years",
-      "skills": [
-        "GCP",
-        "Big Query"
-      ],
-      "jobCode": "T500-25026",
-      "url": "https://talent500.com/jobs/costco/data-engineering-manager-martech-hyderabad-T500-25026/"
     },
     {
       "title": "Engineering Manager - RMN",
