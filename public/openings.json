@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-07-13",
+  "verifiedAt": "2026-07-14",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 10,
@@ -52,7 +52,7 @@
       "url": "https://talent500.com/jobs/costco/engineering-manager-rmn-hyderabad-T500-25891/"
     },
     {
-      "title": "Senior Software Engineer",
+      "title": "Senior Software Engineer- Backend",
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Engineering",
@@ -116,7 +116,7 @@
       "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-26065/"
     },
     {
-      "title": "Software Engineer Level 3",
+      "title": "Software Engineer Level 3- Backend",
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Engineering",
