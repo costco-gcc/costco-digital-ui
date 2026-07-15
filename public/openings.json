@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-07-14",
+  "verifiedAt": "2026-07-15",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 10,
+  "totalReportedByApi": 11,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -52,6 +52,22 @@
       "url": "https://talent500.com/jobs/costco/engineering-manager-rmn-hyderabad-T500-25891/"
     },
     {
+      "title": "Front-end Software Engineer Level 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "NextJs",
+        "Typescript",
+        "AWS",
+        "GCP",
+        "Azure"
+      ],
+      "jobCode": "T500-26190",
+      "url": "https://talent500.com/jobs/costco/software-engineer-3-front-end-hyderabad-T500-26190/"
+    },
+    {
       "title": "Senior Software Engineer- Backend",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -66,22 +82,6 @@
       ],
       "jobCode": "T500-24865",
       "url": "https://talent500.com/jobs/costco/senior-software-engineer-java-hyderabad-T500-24865/"
-    },
-    {
-      "title": "Software Engineer 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "8 - 12 years",
-      "skills": [
-        "NextJs",
-        "Typescript",
-        "AWS",
-        "GCP",
-        "Azure"
-      ],
-      "jobCode": "T500-26190",
-      "url": "https://talent500.com/jobs/costco/software-engineer-3-front-end-hyderabad-T500-26190/"
     },
     {
       "title": "Software Engineer 3",
@@ -130,6 +130,22 @@
       ],
       "jobCode": "T500-26191",
       "url": "https://talent500.com/jobs/costco/senior-software-engineer-back-end-hyderabad-T500-26191/"
+    },
+    {
+      "title": "Software Engineer Senior - Backend",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "10 - 15 years",
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "JUnit",
+        "AWS"
+      ],
+      "jobCode": "T500-27572",
+      "url": "https://talent500.com/jobs/costco/software-engineer-senior-java-backend-hyderabad-T500-27572/"
     },
     {
       "title": "Software Engineer 4 (Martech/AdTech)",
