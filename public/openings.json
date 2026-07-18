@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-07-17",
+  "verifiedAt": "2026-07-18",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 11,
+  "totalReportedByApi": 10,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -50,22 +50,6 @@
       ],
       "jobCode": "T500-25891",
       "url": "https://talent500.com/jobs/costco/engineering-manager-rmn-hyderabad-T500-25891/"
-    },
-    {
-      "title": "Front-end Software Engineer Level 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "8 - 12 years",
-      "skills": [
-        "NextJs",
-        "Typescript",
-        "AWS",
-        "GCP",
-        "Azure"
-      ],
-      "jobCode": "T500-26190",
-      "url": "https://talent500.com/jobs/costco/software-engineer-3-front-end-hyderabad-T500-26190/"
     },
     {
       "title": "Senior Software Engineer- Backend",
