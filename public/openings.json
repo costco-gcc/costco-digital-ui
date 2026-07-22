@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-07-21",
+  "verifiedAt": "2026-07-22",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 10,
+  "totalReportedByApi": 8,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -18,38 +18,6 @@
       ],
       "jobCode": "T500-24989",
       "url": "https://talent500.com/jobs/costco/it-reliability-incident-lead-hyderabad-T500-24989/"
-    },
-    {
-      "title": "Senior Platform Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Cloud",
-      "experience": "8 - 14 years",
-      "skills": [
-        "Terraform",
-        "GitHub Actions",
-        "GHA",
-        "GitHub Action",
-        "CI/CD"
-      ],
-      "jobCode": "T500-25375",
-      "url": "https://talent500.com/jobs/costco/senior-platform-engineer-hyderabad-T500-25375/"
-    },
-    {
-      "title": "Back End -software Engineer Level 2b",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "8 - 12 years",
-      "skills": [
-        "Java",
-        "Spring Boot",
-        "Spring",
-        "GitHub",
-        "Jenkins"
-      ],
-      "jobCode": "T500-26191",
-      "url": "https://talent500.com/jobs/costco/senior-software-engineer-back-end-hyderabad-T500-26191/"
     },
     {
       "title": "Engineering Manager - RMN",
