@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-07-28",
+  "verifiedAt": "2026-07-29",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 9,
+  "totalReportedByApi": 8,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -34,22 +34,6 @@
       ],
       "jobCode": "T500-27873",
       "url": "https://talent500.com/jobs/costco/engineering-manager-gdx-hyderabad-T500-27873/"
-    },
-    {
-      "title": "Engineering Manager - RMN",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "14 - 22 years",
-      "skills": [
-        "GCP",
-        "CI/CD",
-        "Data Warehousing",
-        "DWH",
-        "SQL"
-      ],
-      "jobCode": "T500-25891",
-      "url": "https://talent500.com/jobs/costco/engineering-manager-rmn-hyderabad-T500-25891/"
     },
     {
       "title": "Senior Software Engineer- Backend",
