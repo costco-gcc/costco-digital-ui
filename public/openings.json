@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-08-07",
+  "verifiedAt": "2026-08-08",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 8,
+  "totalReportedByApi": 7,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -18,22 +18,6 @@
       ],
       "jobCode": "T500-24989",
       "url": "https://talent500.com/jobs/costco/it-reliability-incident-lead-hyderabad-T500-24989/"
-    },
-    {
-      "title": "Backend- Software Engineer Level 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "12 - 18 years",
-      "skills": [
-        "Java",
-        "Spring Boot",
-        "Spring",
-        "GitHub",
-        "Jenkins"
-      ],
-      "jobCode": "T500-24865",
-      "url": "https://talent500.com/jobs/costco/senior-software-engineer-java-hyderabad-T500-24865/"
     },
     {
       "title": "Engineering Manager - GDX",
