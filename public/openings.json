@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-08-11",
+  "verifiedAt": "2026-08-12",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 7,
+  "totalReportedByApi": 9,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -18,6 +18,22 @@
       ],
       "jobCode": "T500-24989",
       "url": "https://talent500.com/jobs/costco/it-reliability-incident-lead-hyderabad-T500-24989/"
+    },
+    {
+      "title": "Senior Data Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "8 - 12 years",
+      "skills": [
+        "GCP",
+        "ETL",
+        "ELT",
+        "Java",
+        "Python"
+      ],
+      "jobCode": "T500-25114",
+      "url": "https://talent500.com/jobs/costco/senior-data-engineer-hyderabad-T500-25114/"
     },
     {
       "title": "Engineering Manager - GDX",
@@ -82,6 +98,22 @@
       ],
       "jobCode": "T500-27572",
       "url": "https://talent500.com/jobs/costco/software-engineer-senior-java-backend-hyderabad-T500-27572/"
+    },
+    {
+      "title": "Software Engineer 3 (Martech/AdTech)",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "MarTech",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Rest APIs",
+        "APIs",
+        "SQL",
+        "GCP",
+        "Python"
+      ],
+      "jobCode": "T500-20145",
+      "url": "https://talent500.com/jobs/costco/software-engineer-3-martechadtech-hyderabad-T500-20145/"
     },
     {
       "title": "Software Engineer 4 (Martech/AdTech)",
