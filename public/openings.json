@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-08-18",
+  "verifiedAt": "2026-08-19",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 9,
+  "totalReportedByApi": 10,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -130,6 +130,22 @@
       ],
       "jobCode": "T500-20230",
       "url": "https://talent500.com/jobs/costco/software-engineer-4-martechadtech-hyderabad-T500-20230/"
+    },
+    {
+      "title": "Quality Automation Engineer 2b",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Quality",
+      "experience": "6 - 10 years",
+      "skills": [
+        "Playwright",
+        "Manual Testing",
+        "Java",
+        "Javascript",
+        "Automation Testing"
+      ],
+      "jobCode": "T500-26895",
+      "url": "https://talent500.com/jobs/costco/quality-automation-engineer-level-2b-hyderabad-T500-26895/"
     },
     {
       "title": "Quality Engineer - International eCommerce",
