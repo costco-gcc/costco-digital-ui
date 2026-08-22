@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-08-21",
+  "verifiedAt": "2026-08-22",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 17,
+  "totalReportedByApi": 16,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -82,22 +82,6 @@
       ],
       "jobCode": "T500-27572",
       "url": "https://talent500.com/jobs/costco/software-engineer-senior-java-backend-hyderabad-T500-27572/"
-    },
-    {
-      "title": "Software Engineer- Level 2b",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "4 - 8 years",
-      "skills": [
-        "C#",
-        ".Net Core",
-        "CICD",
-        "Jenkins",
-        "Github Actions"
-      ],
-      "jobCode": "T500-26226",
-      "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-26226/"
     },
     {
       "title": "Software Engineer- Level 2B",
