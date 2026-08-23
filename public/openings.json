@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-08-22",
+  "verifiedAt": "2026-08-23",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 16,
+  "totalReportedByApi": 15,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -194,22 +194,6 @@
       ],
       "jobCode": "T500-28725",
       "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-28725/"
-    },
-    {
-      "title": "Product Owner- Level 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Product",
-      "experience": "8 - 12 years",
-      "skills": [
-        "C#",
-        ".Net Core",
-        "CICD",
-        "Jenkins",
-        "Github Actions"
-      ],
-      "jobCode": "T500-28731",
-      "url": "https://talent500.com/jobs/costco/product-owner-level-3-hyderabad-T500-28731/"
     },
     {
       "title": "Quality Automation Engineer 2b",
