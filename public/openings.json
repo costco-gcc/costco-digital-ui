@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-08-24",
+  "verifiedAt": "2026-08-25",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 15,
@@ -96,8 +96,8 @@
         "Jenkins",
         "Github Actions"
       ],
-      "jobCode": "T500-28730",
-      "url": "https://talent500.com/jobs/costco/software-engineer-level-2b-hyderabad-T500-28730/"
+      "jobCode": "T500-28726",
+      "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-28726/"
     },
     {
       "title": "Software Engineer- Level 2B",
@@ -112,8 +112,8 @@
         "Jenkins",
         "Github Actions"
       ],
-      "jobCode": "T500-28726",
-      "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-28726/"
+      "jobCode": "T500-28730",
+      "url": "https://talent500.com/jobs/costco/software-engineer-level-2b-hyderabad-T500-28730/"
     },
     {
       "title": "Software Engineer- Level 3",
