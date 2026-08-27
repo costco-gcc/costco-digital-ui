@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-08-26",
+  "verifiedAt": "2026-08-27",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 15,
+  "totalReportedByApi": 14,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -226,22 +226,6 @@
       ],
       "jobCode": "T500-28728",
       "url": "https://talent500.com/jobs/costco/quality-engineer-level-2a-hyderabad-T500-28728/"
-    },
-    {
-      "title": "Quality Engineer- Level 2B",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Quality",
-      "experience": "4 - 8 years",
-      "skills": [
-        "C#",
-        ".Net Core",
-        "CICD",
-        "Jenkins",
-        "Github Actions"
-      ],
-      "jobCode": "T500-28852",
-      "url": "https://talent500.com/jobs/costco/quality-engineer-level-2b-hyderabad-T500-28852/"
     }
   ]
 }
