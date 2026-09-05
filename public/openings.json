@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-09-04",
+  "verifiedAt": "2026-09-05",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 14,
+  "totalReportedByApi": 15,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -36,6 +36,21 @@
       "url": "https://talent500.com/jobs/costco/senior-data-engineer-hyderabad-T500-25114/"
     },
     {
+      "title": "Talent Acquisition Lead",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Design",
+      "experience": "10 - 15 years",
+      "skills": [
+        "Talent Acquisition",
+        "Recruitment",
+        "Vendor Management",
+        "MSP"
+      ],
+      "jobCode": "T500-29180",
+      "url": "https://talent500.com/jobs/costco/talent-acquisition-lead-hyderabad-T500-29180/"
+    },
+    {
       "title": "Engineering Manager - GDX",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -50,6 +65,22 @@
       ],
       "jobCode": "T500-27873",
       "url": "https://talent500.com/jobs/costco/engineering-manager-gdx-hyderabad-T500-27873/"
+    },
+    {
+      "title": "HR Manager",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "10 - 15 years",
+      "skills": [
+        "Employee Engagement",
+        "EVP",
+        "HR Compliance",
+        "Labour Law",
+        "Labor Law"
+      ],
+      "jobCode": "T500-29181",
+      "url": "https://talent500.com/jobs/costco/hr-manager-hyderabad-T500-29181/"
     },
     {
       "title": "Software Engineer 3",
@@ -98,22 +129,6 @@
       ],
       "jobCode": "T500-28726",
       "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-28726/"
-    },
-    {
-      "title": "Software Engineer- Level 2B",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "4 - 8 years",
-      "skills": [
-        "C#",
-        ".Net Core",
-        "CICD",
-        "Jenkins",
-        "Github Actions"
-      ],
-      "jobCode": "T500-29115",
-      "url": "https://talent500.com/jobs/costco/software-engineer-level-2b-hyderabad-T500-29115/"
     },
     {
       "title": "Software Engineer- Level 3",
