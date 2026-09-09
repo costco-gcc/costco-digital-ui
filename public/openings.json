@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-09-08",
+  "verifiedAt": "2026-09-09",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 15,
+  "totalReportedByApi": 19,
   "openings": [
     {
       "title": "IT Reliability & Incident Lead",
@@ -18,6 +18,54 @@
       ],
       "jobCode": "T500-24989",
       "url": "https://talent500.com/jobs/costco/it-reliability-incident-lead-hyderabad-T500-24989/"
+    },
+    {
+      "title": "BI Engineer Level 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Power BI",
+        "Tableau",
+        "GCP",
+        "Java",
+        "Python"
+      ],
+      "jobCode": "T500-29267",
+      "url": "https://talent500.com/jobs/costco/bi-engineer-level-3-power-bi-tableau-hyderabad-T500-29267/"
+    },
+    {
+      "title": "Data Engineer Level 2b",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "4 - 8 years",
+      "skills": [
+        "GCP",
+        "Java",
+        "Python",
+        "Dataflows",
+        "BigQuery"
+      ],
+      "jobCode": "T500-29268",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
+    },
+    {
+      "title": "Data Engineer Level 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "8 - 12 years",
+      "skills": [
+        "GCP",
+        "Java",
+        "Python",
+        "Data Engineering",
+        "Data Engineer"
+      ],
+      "jobCode": "T500-29269",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-3-bigquerydataflows-hyderabad-T500-29269/"
     },
     {
       "title": "Senior Data Engineer",
@@ -65,6 +113,22 @@
       ],
       "jobCode": "T500-27873",
       "url": "https://talent500.com/jobs/costco/engineering-manager-gdx-hyderabad-T500-27873/"
+    },
+    {
+      "title": "Global Reporting Engineering Manager",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "12 - 16 years",
+      "skills": [
+        "GCP",
+        "Java",
+        "Python",
+        "BigQuery",
+        "Big Query"
+      ],
+      "jobCode": "T500-29270",
+      "url": "https://talent500.com/jobs/costco/global-reporting-engineering-manager-data-engineering-hyderabad-T500-29270/"
     },
     {
       "title": "HR Manager",
