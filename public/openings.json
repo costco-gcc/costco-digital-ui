@@ -1,9 +1,25 @@
 {
-  "verifiedAt": "2026-09-09",
+  "verifiedAt": "2026-09-10",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 19,
+  "totalReportedByApi": 22,
   "openings": [
+    {
+      "title": "Cloud Database Platform Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "5 - 8 years",
+      "skills": [
+        "GCP",
+        "Terraform",
+        "Bigquery",
+        "Big Query",
+        "SQL"
+      ],
+      "jobCode": "T500-29304",
+      "url": "https://talent500.com/jobs/costco/cloud-database-platform-engineer-hyderabad-T500-29304/"
+    },
     {
       "title": "IT Reliability & Incident Lead",
       "location": "Hyderabad",
@@ -34,6 +50,38 @@
       ],
       "jobCode": "T500-29267",
       "url": "https://talent500.com/jobs/costco/bi-engineer-level-3-power-bi-tableau-hyderabad-T500-29267/"
+    },
+    {
+      "title": "BI Platform Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Power BI",
+        "Powershell",
+        "Bash",
+        "Javascript",
+        "Python"
+      ],
+      "jobCode": "T500-29305",
+      "url": "https://talent500.com/jobs/costco/bi-platform-engineer-hyderabad-T500-29305/"
+    },
+    {
+      "title": "Data Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "5 - 8 years",
+      "skills": [
+        "GCP",
+        "ETL",
+        "ELT",
+        "BigQuery",
+        "Bigquery"
+      ],
+      "jobCode": "T500-29307",
+      "url": "https://talent500.com/jobs/costco/data-engineer-hyderabad-T500-29307/"
     },
     {
       "title": "Data Engineer Level 2b",
