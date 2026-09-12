@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-09-11",
+  "verifiedAt": "2026-09-12",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 22,
@@ -335,8 +335,8 @@
         "Jenkins",
         "Github Actions"
       ],
-      "jobCode": "T500-28727",
-      "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-28727/"
+      "jobCode": "T500-28728",
+      "url": "https://talent500.com/jobs/costco/quality-engineer-level-2a-hyderabad-T500-28728/"
     },
     {
       "title": "Quality Engineer- Level 2A",
@@ -351,8 +351,8 @@
         "Jenkins",
         "Github Actions"
       ],
-      "jobCode": "T500-28728",
-      "url": "https://talent500.com/jobs/costco/quality-engineer-level-2a-hyderabad-T500-28728/"
+      "jobCode": "T500-28727",
+      "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-28727/"
     }
   ]
 }
