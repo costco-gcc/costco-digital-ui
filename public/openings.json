@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-09-16",
+  "verifiedAt": "2026-09-17",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 22,
+  "totalReportedByApi": 23,
   "openings": [
     {
       "title": "Cloud Database Platform Engineer",
@@ -116,22 +116,6 @@
       "url": "https://talent500.com/jobs/costco/data-engineer-level-3-bigquerydataflows-hyderabad-T500-29269/"
     },
     {
-      "title": "Senior Data Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Data",
-      "experience": "8 - 12 years",
-      "skills": [
-        "GCP",
-        "ETL",
-        "ELT",
-        "Java",
-        "Python"
-      ],
-      "jobCode": "T500-25114",
-      "url": "https://talent500.com/jobs/costco/senior-data-engineer-hyderabad-T500-25114/"
-    },
-    {
       "title": "Talent Acquisition Lead",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -193,6 +177,37 @@
       ],
       "jobCode": "T500-29181",
       "url": "https://talent500.com/jobs/costco/hr-manager-hyderabad-T500-29181/"
+    },
+    {
+      "title": "Payroll & Compliance Specialist",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "7 - 10 years",
+      "skills": [
+        "Payroll",
+        "Payroll Processing",
+        "Payroll Management",
+        "Statutory Compliances"
+      ],
+      "jobCode": "T500-29423",
+      "url": "https://talent500.com/jobs/costco/payroll-compliance-specialist-hyderabad-T500-29423/"
+    },
+    {
+      "title": "Software Engineer 2a",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "GCP",
+        "ETL",
+        "ELT",
+        "Java",
+        "Python"
+      ],
+      "jobCode": "T500-25114",
+      "url": "https://talent500.com/jobs/costco/senior-data-engineer-hyderabad-T500-25114/"
     },
     {
       "title": "Software Engineer 3",
