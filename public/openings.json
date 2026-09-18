@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-09-17",
+  "verifiedAt": "2026-09-18",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 23,
+  "totalReportedByApi": 26,
   "openings": [
     {
       "title": "Cloud Database Platform Engineer",
@@ -131,6 +131,38 @@
       "url": "https://talent500.com/jobs/costco/talent-acquisition-lead-hyderabad-T500-29180/"
     },
     {
+      "title": "Data Scientist 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "GCP",
+        "SQL",
+        "Python",
+        "Pyspark",
+        "Vertex AI"
+      ],
+      "jobCode": "T500-29452",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29452/"
+    },
+    {
+      "title": "Data Scientist 4",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "12 - 15 years",
+      "skills": [
+        "GCP",
+        "Deep Learning",
+        "Python",
+        "Pyspark",
+        "AI/ML"
+      ],
+      "jobCode": "T500-29447",
+      "url": "https://talent500.com/jobs/costco/data-scientist-4-vertex-ai-hyderabad-T500-29447/"
+    },
+    {
       "title": "Engineering Manager - GDX",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -192,6 +224,22 @@
       ],
       "jobCode": "T500-29423",
       "url": "https://talent500.com/jobs/costco/payroll-compliance-specialist-hyderabad-T500-29423/"
+    },
+    {
+      "title": "Software Engineer - MLOps",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "GCP",
+        "MLOps",
+        "Vertex AI",
+        "Vertex",
+        "Python"
+      ],
+      "jobCode": "T500-29448",
+      "url": "https://talent500.com/jobs/costco/software-engineer-mlops-hyderabad-T500-29448/"
     },
     {
       "title": "Software Engineer 2a",
