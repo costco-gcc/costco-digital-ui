@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-09-20",
+  "verifiedAt": "2026-09-21",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 26,
+  "totalReportedByApi": 25,
   "openings": [
     {
       "title": "Cloud Database Platform Engineer",
@@ -240,22 +240,6 @@
       ],
       "jobCode": "T500-29448",
       "url": "https://talent500.com/jobs/costco/software-engineer-mlops-hyderabad-T500-29448/"
-    },
-    {
-      "title": "Software Engineer 2a",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "8 - 12 years",
-      "skills": [
-        "GCP",
-        "ETL",
-        "ELT",
-        "Java",
-        "Python"
-      ],
-      "jobCode": "T500-25114",
-      "url": "https://talent500.com/jobs/costco/senior-data-engineer-hyderabad-T500-25114/"
     },
     {
       "title": "Software Engineer 3",
