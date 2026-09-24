@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-09-23",
+  "verifiedAt": "2026-09-24",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 27,
@@ -12,10 +12,10 @@
       "experience": "12 - 16 years",
       "skills": [
         "GCP",
-        "Kubernates",
-        "Docker",
         "Python",
-        "Java"
+        "Java",
+        ".Net",
+        "DotNet"
       ],
       "jobCode": "T500-29587",
       "url": "https://talent500.com/jobs/costco/software-engineer-ai-innovation-engineering-hyderabad-T500-29587/"
