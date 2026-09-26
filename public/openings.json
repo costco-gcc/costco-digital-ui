@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-09-25",
+  "verifiedAt": "2026-09-26",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 27,
+  "totalReportedByApi": 28,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -240,6 +240,22 @@
       ],
       "jobCode": "T500-29423",
       "url": "https://talent500.com/jobs/costco/payroll-compliance-specialist-hyderabad-T500-29423/"
+    },
+    {
+      "title": "Procurement Manager",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "10 - 16 years",
+      "skills": [
+        "Sourcing",
+        "Procurement",
+        "Budget",
+        "Budgeting",
+        "Invoicing"
+      ],
+      "jobCode": "T500-29718",
+      "url": "https://talent500.com/jobs/costco/procurement-manager-hyderabad-T500-29718/"
     },
     {
       "title": "Software Engineer",
