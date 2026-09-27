@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-09-26",
+  "verifiedAt": "2026-09-27",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 28,
+  "totalReportedByApi": 27,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -130,21 +130,6 @@
       ],
       "jobCode": "T500-29269",
       "url": "https://talent500.com/jobs/costco/data-engineer-level-3-bigquerydataflows-hyderabad-T500-29269/"
-    },
-    {
-      "title": "Talent Acquisition Lead",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Design",
-      "experience": "10 - 15 years",
-      "skills": [
-        "Talent Acquisition",
-        "Recruitment",
-        "Vendor Management",
-        "MSP"
-      ],
-      "jobCode": "T500-29180",
-      "url": "https://talent500.com/jobs/costco/talent-acquisition-lead-hyderabad-T500-29180/"
     },
     {
       "title": "Data Scientist 3",
