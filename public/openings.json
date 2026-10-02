@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-01",
+  "verifiedAt": "2026-10-02",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 30,
+  "totalReportedByApi": 29,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -319,22 +319,6 @@
       ],
       "jobCode": "T500-26065",
       "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-26065/"
-    },
-    {
-      "title": "Software Engineer Level 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "10 - 15 years",
-      "skills": [
-        "Java",
-        "Spring Boot",
-        "Microservices",
-        "JUnit",
-        "AWS"
-      ],
-      "jobCode": "T500-27572",
-      "url": "https://talent500.com/jobs/costco/software-engineer-senior-java-backend-hyderabad-T500-27572/"
     },
     {
       "title": "Software Engineer- Level 2B",
