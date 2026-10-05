@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-04",
+  "verifiedAt": "2026-10-05",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 29,
+  "totalReportedByApi": 31,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -107,13 +107,13 @@
       "experience": "4 - 8 years",
       "skills": [
         "GCP",
-        "Java",
         "Python",
-        "Dataflows",
-        "BigQuery"
+        "BigQuery",
+        "Big Query",
+        "Data Engineer"
       ],
-      "jobCode": "T500-29268",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
+      "jobCode": "T500-29833",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
     },
     {
       "title": "Data Engineer Level 2b",
@@ -123,13 +123,13 @@
       "experience": "4 - 8 years",
       "skills": [
         "GCP",
+        "Java",
         "Python",
-        "BigQuery",
-        "Big Query",
-        "Data Engineer"
+        "Dataflows",
+        "BigQuery"
       ],
-      "jobCode": "T500-29833",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
+      "jobCode": "T500-29268",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
     },
     {
       "title": "Data Engineer Level 3",
@@ -162,6 +162,19 @@
       ],
       "jobCode": "T500-29269",
       "url": "https://talent500.com/jobs/costco/data-engineer-level-3-bigquerydataflows-hyderabad-T500-29269/"
+    },
+    {
+      "title": "Recruitment Specialist",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Design",
+      "experience": "6 - 8 years",
+      "skills": [
+        "Sourcing",
+        "IT Recruitment"
+      ],
+      "jobCode": "T500-29868",
+      "url": "https://talent500.com/jobs/costco/recruitment-specialist-hyderabad-T500-29868/"
     },
     {
       "title": "Data Scientist 3",
@@ -351,6 +364,22 @@
       ],
       "jobCode": "T500-28724",
       "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-28724/"
+    },
+    {
+      "title": "Finance Analyst",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Finance",
+      "experience": "6 - 8 years",
+      "skills": [
+        "Statutory Compliance",
+        "Reconciliations",
+        "TDS",
+        "GST",
+        "Payroll"
+      ],
+      "jobCode": "T500-29867",
+      "url": "https://talent500.com/jobs/costco/finance-analyst-hyderabad-T500-29867/"
     },
     {
       "title": "Software Engineer 3 (Martech/Adtech)",
