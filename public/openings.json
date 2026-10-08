@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-07",
+  "verifiedAt": "2026-10-08",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 31,
+  "totalReportedByApi": 33,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -50,6 +50,22 @@
       ],
       "jobCode": "T500-24989",
       "url": "https://talent500.com/jobs/costco/it-reliability-incident-lead-hyderabad-T500-24989/"
+    },
+    {
+      "title": "Platform Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "5 - 8 years",
+      "skills": [
+        "Terraform",
+        "GitHub",
+        "Shell",
+        "Python",
+        "Linux"
+      ],
+      "jobCode": "T500-29953",
+      "url": "https://talent500.com/jobs/costco/platform-engineer-hyderabad-T500-29953/"
     },
     {
       "title": "BI Engineer Level 3",
@@ -107,13 +123,13 @@
       "experience": "4 - 8 years",
       "skills": [
         "GCP",
+        "Java",
         "Python",
-        "BigQuery",
-        "Big Query",
-        "Data Engineer"
+        "Dataflows",
+        "BigQuery"
       ],
-      "jobCode": "T500-29833",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
+      "jobCode": "T500-29268",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
     },
     {
       "title": "Data Engineer Level 2b",
@@ -123,13 +139,13 @@
       "experience": "4 - 8 years",
       "skills": [
         "GCP",
-        "Java",
         "Python",
-        "Dataflows",
-        "BigQuery"
+        "BigQuery",
+        "Big Query",
+        "Data Engineer"
       ],
-      "jobCode": "T500-29268",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
+      "jobCode": "T500-29833",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
     },
     {
       "title": "Data Engineer Level 3",
@@ -191,6 +207,22 @@
       ],
       "jobCode": "T500-29452",
       "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29452/"
+    },
+    {
+      "title": "Data Scientist 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "GCP",
+        "SQL",
+        "Python",
+        "Pyspark",
+        "Vertex AI"
+      ],
+      "jobCode": "T500-29963",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
     },
     {
       "title": "Data Scientist 4",
