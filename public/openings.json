@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-08",
+  "verifiedAt": "2026-10-09",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 33,
+  "totalReportedByApi": 34,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -123,13 +123,13 @@
       "experience": "4 - 8 years",
       "skills": [
         "GCP",
-        "Java",
         "Python",
-        "Dataflows",
-        "BigQuery"
+        "BigQuery",
+        "Big Query",
+        "Data Engineer"
       ],
-      "jobCode": "T500-29268",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
+      "jobCode": "T500-29833",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
     },
     {
       "title": "Data Engineer Level 2b",
@@ -139,13 +139,13 @@
       "experience": "4 - 8 years",
       "skills": [
         "GCP",
+        "Java",
         "Python",
-        "BigQuery",
-        "Big Query",
-        "Data Engineer"
+        "Dataflows",
+        "BigQuery"
       ],
-      "jobCode": "T500-29833",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
+      "jobCode": "T500-29268",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
     },
     {
       "title": "Data Engineer Level 3",
@@ -287,6 +287,20 @@
       ],
       "jobCode": "T500-29181",
       "url": "https://talent500.com/jobs/costco/hr-manager-hyderabad-T500-29181/"
+    },
+    {
+      "title": "IT Manager",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "10 - 16 years",
+      "skills": [
+        "IT Operation support management",
+        "enterprise cloud environment",
+        "network infrastructure"
+      ],
+      "jobCode": "T500-29891",
+      "url": "https://talent500.com/jobs/costco/it-manager-hyderabad-T500-29891/"
     },
     {
       "title": "Payroll & Compliance Specialist",
