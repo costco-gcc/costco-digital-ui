@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-09",
+  "verifiedAt": "2026-10-10",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 34,
+  "totalReportedByApi": 33,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -271,22 +271,6 @@
       ],
       "jobCode": "T500-29270",
       "url": "https://talent500.com/jobs/costco/global-reporting-engineering-manager-data-engineering-hyderabad-T500-29270/"
-    },
-    {
-      "title": "HR Manager",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "10 - 15 years",
-      "skills": [
-        "Employee Engagement",
-        "EVP",
-        "HR Compliance",
-        "Labour Law",
-        "Labor Law"
-      ],
-      "jobCode": "T500-29181",
-      "url": "https://talent500.com/jobs/costco/hr-manager-hyderabad-T500-29181/"
     },
     {
       "title": "IT Manager",
