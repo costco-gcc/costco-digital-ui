@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-12",
+  "verifiedAt": "2026-10-13",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 33,
+  "totalReportedByApi": 36,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -50,6 +50,22 @@
       ],
       "jobCode": "T500-24989",
       "url": "https://talent500.com/jobs/costco/it-reliability-incident-lead-hyderabad-T500-24989/"
+    },
+    {
+      "title": "Platform Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "5 - 8 years",
+      "skills": [
+        "GitHub",
+        "Github",
+        "Oracle Golden Gate",
+        "OracleGoldenGate",
+        "Golden Gate"
+      ],
+      "jobCode": "T500-30087",
+      "url": "https://talent500.com/jobs/costco/platform-engineer-oracle-golden-gate-hyderabad-T500-30087/"
     },
     {
       "title": "Platform Engineer",
@@ -225,6 +241,22 @@
       "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
     },
     {
+      "title": "Data Scientist 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "GCP",
+        "SQL",
+        "Python",
+        "Pyspark",
+        "Vertex AI"
+      ],
+      "jobCode": "T500-30088",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-30088/"
+    },
+    {
       "title": "Data Scientist 4",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -346,6 +378,22 @@
       ],
       "jobCode": "T500-29448",
       "url": "https://talent500.com/jobs/costco/software-engineer-mlops-hyderabad-T500-29448/"
+    },
+    {
+      "title": "Software Engineer 2 - MLOps",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "4 - 8 years",
+      "skills": [
+        "GCP",
+        "MLOps",
+        "Vertex AI",
+        "Vertex",
+        "Python"
+      ],
+      "jobCode": "T500-30086",
+      "url": "https://talent500.com/jobs/costco/software-engineer-2-mlops-hyderabad-T500-30086/"
     },
     {
       "title": "Software Engineer 3",
