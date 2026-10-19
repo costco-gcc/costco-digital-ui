@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-18",
+  "verifiedAt": "2026-10-19",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 38,
@@ -58,22 +58,6 @@
       "category": "Cloud",
       "experience": "5 - 8 years",
       "skills": [
-        "GitHub",
-        "Github",
-        "Oracle Golden Gate",
-        "OracleGoldenGate",
-        "Golden Gate"
-      ],
-      "jobCode": "T500-30087",
-      "url": "https://talent500.com/jobs/costco/platform-engineer-oracle-golden-gate-hyderabad-T500-30087/"
-    },
-    {
-      "title": "Platform Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Cloud",
-      "experience": "5 - 8 years",
-      "skills": [
         "Terraform",
         "GitHub",
         "Shell",
@@ -82,6 +66,22 @@
       ],
       "jobCode": "T500-29953",
       "url": "https://talent500.com/jobs/costco/platform-engineer-hyderabad-T500-29953/"
+    },
+    {
+      "title": "Platform Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "5 - 8 years",
+      "skills": [
+        "GitHub",
+        "Github",
+        "Oracle Golden Gate",
+        "OracleGoldenGate",
+        "Golden Gate"
+      ],
+      "jobCode": "T500-30087",
+      "url": "https://talent500.com/jobs/costco/platform-engineer-oracle-golden-gate-hyderabad-T500-30087/"
     },
     {
       "title": "BI Engineer Level 3",
