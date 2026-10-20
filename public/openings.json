@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-19",
+  "verifiedAt": "2026-10-20",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 38,
+  "totalReportedByApi": 44,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -58,6 +58,22 @@
       "category": "Cloud",
       "experience": "5 - 8 years",
       "skills": [
+        "GitHub",
+        "Github",
+        "Oracle Golden Gate",
+        "OracleGoldenGate",
+        "Golden Gate"
+      ],
+      "jobCode": "T500-30087",
+      "url": "https://talent500.com/jobs/costco/platform-engineer-oracle-golden-gate-hyderabad-T500-30087/"
+    },
+    {
+      "title": "Platform Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "5 - 8 years",
+      "skills": [
         "Terraform",
         "GitHub",
         "Shell",
@@ -68,20 +84,20 @@
       "url": "https://talent500.com/jobs/costco/platform-engineer-hyderabad-T500-29953/"
     },
     {
-      "title": "Platform Engineer",
+      "title": "Release Manager - SAP Platform",
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Cloud",
-      "experience": "5 - 8 years",
+      "experience": "15 - 20 years",
       "skills": [
-        "GitHub",
-        "Github",
-        "Oracle Golden Gate",
-        "OracleGoldenGate",
-        "Golden Gate"
+        "SAP TM",
+        "SAP Transport Management",
+        "SAP Charm",
+        "Change Request Management",
+        "Project Management"
       ],
-      "jobCode": "T500-30087",
-      "url": "https://talent500.com/jobs/costco/platform-engineer-oracle-golden-gate-hyderabad-T500-30087/"
+      "jobCode": "T500-30227",
+      "url": "https://talent500.com/jobs/costco/release-manager-sap-platform-hyderabad-T500-30227/"
     },
     {
       "title": "BI Engineer Level 3",
@@ -155,13 +171,13 @@
       "experience": "4 - 8 years",
       "skills": [
         "GCP",
+        "Java",
         "Python",
-        "BigQuery",
-        "Big Query",
-        "Data Engineer"
+        "Dataflows",
+        "BigQuery"
       ],
-      "jobCode": "T500-29833",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
+      "jobCode": "T500-29268",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
     },
     {
       "title": "Data Engineer Level 2b",
@@ -171,13 +187,13 @@
       "experience": "4 - 8 years",
       "skills": [
         "GCP",
-        "Java",
         "Python",
-        "Dataflows",
-        "BigQuery"
+        "BigQuery",
+        "Big Query",
+        "Data Engineer"
       ],
-      "jobCode": "T500-29268",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
+      "jobCode": "T500-29833",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
     },
     {
       "title": "Data Engineer Level 3",
@@ -210,6 +226,22 @@
       ],
       "jobCode": "T500-29269",
       "url": "https://talent500.com/jobs/costco/data-engineer-level-3-bigquerydataflows-hyderabad-T500-29269/"
+    },
+    {
+      "title": "Engineer - SAP Linux",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Design",
+      "experience": "8 - 15 years",
+      "skills": [
+        "Ansible",
+        "Puppet",
+        "Red Hat",
+        "Red Hat Linux",
+        "RHEL"
+      ],
+      "jobCode": "T500-30225",
+      "url": "https://talent500.com/jobs/costco/engineer-sap-linux-hyderabad-T500-30225/"
     },
     {
       "title": "Recruitment Specialist",
@@ -253,8 +285,8 @@
         "Pyspark",
         "Vertex AI"
       ],
-      "jobCode": "T500-30088",
-      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-30088/"
+      "jobCode": "T500-29963",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
     },
     {
       "title": "Data Scientist 3",
@@ -269,8 +301,8 @@
         "Pyspark",
         "Vertex AI"
       ],
-      "jobCode": "T500-29963",
-      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
+      "jobCode": "T500-30088",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-30088/"
     },
     {
       "title": "Data Scientist 4",
@@ -335,6 +367,22 @@
       "url": "https://talent500.com/jobs/costco/it-manager-hyderabad-T500-29891/"
     },
     {
+      "title": "Manager - SAP",
+      "location": "Lucknow",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "15 - 20 years",
+      "skills": [
+        "SAP HANA",
+        "HANA",
+        "S/4 HANA",
+        "Platform",
+        "Platform Engineering"
+      ],
+      "jobCode": "T500-30226",
+      "url": "https://talent500.com/jobs/costco/manager-sap-lucknow-T500-30226/"
+    },
+    {
       "title": "Payroll & Compliance Specialist",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -364,6 +412,22 @@
       ],
       "jobCode": "T500-29718",
       "url": "https://talent500.com/jobs/costco/procurement-manager-hyderabad-T500-29718/"
+    },
+    {
+      "title": "SAP Basis Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "10 - 15 years",
+      "skills": [
+        "Platform Architect",
+        "Finance",
+        "BTP",
+        "HCM",
+        "SAP Basis"
+      ],
+      "jobCode": "T500-30228",
+      "url": "https://talent500.com/jobs/costco/sap-basis-engineer-hyderabad-T500-30228/"
     },
     {
       "title": "Software Engineer",
@@ -602,6 +666,34 @@
       ],
       "jobCode": "T500-28728",
       "url": "https://talent500.com/jobs/costco/quality-engineer-level-2a-hyderabad-T500-28728/"
+    },
+    {
+      "title": "SAP GRC",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Security",
+      "experience": "7 - 15 years",
+      "skills": [
+        "Risk Analysis",
+        "Risk Assessment",
+        "Risk Management",
+        "ARM",
+        "Access Request Management"
+      ],
+      "jobCode": "T500-30229",
+      "url": "https://talent500.com/jobs/costco/sap-grc-lucknow-T500-30229/"
+    },
+    {
+      "title": "SAP Security Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Security",
+      "experience": "8 - 15 years",
+      "skills": [
+        "sap security"
+      ],
+      "jobCode": "T500-30230",
+      "url": "https://talent500.com/jobs/costco/sap-security-engineer-hyderabad-T500-30230/"
     }
   ]
 }
