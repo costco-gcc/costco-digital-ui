@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-20",
+  "verifiedAt": "2026-10-21",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 44,
@@ -368,7 +368,7 @@
     },
     {
       "title": "Manager - SAP",
-      "location": "Lucknow",
+      "location": "Hyderabad",
       "type": "Full-time",
       "category": "Engineering",
       "experience": "15 - 20 years",
@@ -420,11 +420,11 @@
       "category": "Engineering",
       "experience": "10 - 15 years",
       "skills": [
-        "Platform Architect",
-        "Finance",
-        "BTP",
-        "HCM",
-        "SAP Basis"
+        "SAP Basis",
+        "SAP HANA",
+        "HANA",
+        "S/4 HANA",
+        "ECC"
       ],
       "jobCode": "T500-30228",
       "url": "https://talent500.com/jobs/costco/sap-basis-engineer-hyderabad-T500-30228/"
