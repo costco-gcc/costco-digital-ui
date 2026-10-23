@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-22",
+  "verifiedAt": "2026-10-23",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 44,
+  "totalReportedByApi": 47,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -353,20 +353,6 @@
       "url": "https://talent500.com/jobs/costco/global-reporting-engineering-manager-data-engineering-hyderabad-T500-29270/"
     },
     {
-      "title": "IT Manager",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "10 - 16 years",
-      "skills": [
-        "IT Operation support management",
-        "enterprise cloud environment",
-        "network infrastructure"
-      ],
-      "jobCode": "T500-29891",
-      "url": "https://talent500.com/jobs/costco/it-manager-hyderabad-T500-29891/"
-    },
-    {
       "title": "Manager - SAP",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -398,22 +384,6 @@
       "url": "https://talent500.com/jobs/costco/payroll-compliance-specialist-hyderabad-T500-29423/"
     },
     {
-      "title": "Procurement Manager",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "10 - 16 years",
-      "skills": [
-        "Sourcing",
-        "Procurement",
-        "Budget",
-        "Budgeting",
-        "Invoicing"
-      ],
-      "jobCode": "T500-29718",
-      "url": "https://talent500.com/jobs/costco/procurement-manager-hyderabad-T500-29718/"
-    },
-    {
       "title": "SAP Basis Engineer",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -428,6 +398,67 @@
       ],
       "jobCode": "T500-30228",
       "url": "https://talent500.com/jobs/costco/sap-basis-engineer-hyderabad-T500-30228/"
+    },
+    {
+      "title": "SAP Change Manager",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 15 years",
+      "skills": [
+        "Solman",
+        "SAP Change Management",
+        "CHARM"
+      ],
+      "jobCode": "T500-30338",
+      "url": "https://talent500.com/jobs/costco/sap-change-manager-hyderabad-T500-30338/"
+    },
+    {
+      "title": "SAP FICO Functional Analyst",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "10 - 15 years",
+      "skills": [
+        "SAP Finance Consultant",
+        "SAP FICO",
+        "S4 HANA",
+        "HANA"
+      ],
+      "jobCode": "T500-30336",
+      "url": "https://talent500.com/jobs/costco/sap-fico-functional-analyst-hyderabad-T500-30336/"
+    },
+    {
+      "title": "SAP PI - CI Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "10 - 15 years",
+      "skills": [
+        "SAP PI",
+        "SAP Platform Integration",
+        "Cloud Platform Integration",
+        "SAP CPI",
+        "CPI"
+      ],
+      "jobCode": "T500-30335",
+      "url": "https://talent500.com/jobs/costco/sap-pi-ci-engineer-hyderabad-T500-30335/"
+    },
+    {
+      "title": "SAP S4 HANA Fiori Developer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "10 - 15 years",
+      "skills": [
+        "SAP UI5",
+        "UI5",
+        "SAP HANA",
+        "HANA",
+        "SAP Fiori"
+      ],
+      "jobCode": "T500-30327",
+      "url": "https://talent500.com/jobs/costco/sap-s4-hana-fiori-developer-hyderabad-T500-30327/"
     },
     {
       "title": "Software Engineer",
@@ -618,6 +649,22 @@
       ],
       "jobCode": "T500-28725",
       "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-28725/"
+    },
+    {
+      "title": "Quality Assurance Analyst",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Quality",
+      "experience": "10 - 15 years",
+      "skills": [
+        "SAP",
+        "SAP ERP",
+        "ERP",
+        "SAP FICO",
+        "FICO"
+      ],
+      "jobCode": "T500-30324",
+      "url": "https://talent500.com/jobs/costco/quality-assurance-analyst-sap-hyderabad-T500-30324/"
     },
     {
       "title": "Quality Automation Engineer 2b",
