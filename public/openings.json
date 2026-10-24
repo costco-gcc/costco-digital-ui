@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-23",
+  "verifiedAt": "2026-10-24",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 47,
+  "totalReportedByApi": 49,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -98,6 +98,22 @@
       ],
       "jobCode": "T500-30227",
       "url": "https://talent500.com/jobs/costco/release-manager-sap-platform-hyderabad-T500-30227/"
+    },
+    {
+      "title": "BI Engineer Level 2b",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "4 - 8 years",
+      "skills": [
+        "Power BI",
+        "Tableau",
+        "GCP",
+        "Java",
+        "Python"
+      ],
+      "jobCode": "T500-30382",
+      "url": "https://talent500.com/jobs/costco/bi-engineer-level-2b-power-bi-tableau-hyderabad-T500-30382/"
     },
     {
       "title": "BI Engineer Level 3",
@@ -473,6 +489,21 @@
       ],
       "jobCode": "T500-29586",
       "url": "https://talent500.com/jobs/costco/software-engineer-ai-computer-vision-hyderabad-T500-29586/"
+    },
+    {
+      "title": "Software Engineer - Fullstack",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Angular",
+        ".NET",
+        "Java",
+        "Javascript"
+      ],
+      "jobCode": "T500-30373",
+      "url": "https://talent500.com/jobs/costco/software-engineer-fullstack-hyderabad-T500-30373/"
     },
     {
       "title": "Software Engineer - MLOps",
