@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-25",
+  "verifiedAt": "2026-10-26",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 49,
@@ -768,7 +768,10 @@
       "category": "Security",
       "experience": "8 - 15 years",
       "skills": [
-        "sap security"
+        "SAP Security",
+        "SAP ECC",
+        "SAP GRC",
+        "S4 HANA"
       ],
       "jobCode": "T500-30230",
       "url": "https://talent500.com/jobs/costco/sap-security-engineer-hyderabad-T500-30230/"
