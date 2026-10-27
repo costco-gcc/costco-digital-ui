@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-26",
+  "verifiedAt": "2026-10-27",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 49,
@@ -469,9 +469,9 @@
       "skills": [
         "SAP UI5",
         "UI5",
-        "SAP HANA",
-        "HANA",
-        "SAP Fiori"
+        "SAP Fiori",
+        "Fiori",
+        "SAP S4 HANA"
       ],
       "jobCode": "T500-30327",
       "url": "https://talent500.com/jobs/costco/sap-s4-hana-fiori-developer-hyderabad-T500-30327/"
@@ -768,10 +768,11 @@
       "category": "Security",
       "experience": "8 - 15 years",
       "skills": [
-        "SAP Security",
-        "SAP ECC",
         "SAP GRC",
-        "S4 HANA"
+        "GRC",
+        "SAP Governance Risk Compliance",
+        "SAP HANA",
+        "S/4 HANA"
       ],
       "jobCode": "T500-30230",
       "url": "https://talent500.com/jobs/costco/sap-security-engineer-hyderabad-T500-30230/"
