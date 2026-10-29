@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-28",
+  "verifiedAt": "2026-10-29",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 49,
+  "totalReportedByApi": 51,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -114,6 +114,22 @@
       ],
       "jobCode": "T500-30382",
       "url": "https://talent500.com/jobs/costco/bi-engineer-level-2b-power-bi-tableau-hyderabad-T500-30382/"
+    },
+    {
+      "title": "BI Engineer Level 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Power BI",
+        "Tableau",
+        "GCP",
+        "Java",
+        "Python"
+      ],
+      "jobCode": "T500-30517",
+      "url": "https://talent500.com/jobs/costco/bi-engineer-level-3-power-bi-tableau-hyderabad-T500-30517/"
     },
     {
       "title": "BI Engineer Level 3",
@@ -242,6 +258,22 @@
       ],
       "jobCode": "T500-29269",
       "url": "https://talent500.com/jobs/costco/data-engineer-level-3-bigquerydataflows-hyderabad-T500-29269/"
+    },
+    {
+      "title": "Data Engineer Level 3",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Data",
+      "experience": "8 - 12 years",
+      "skills": [
+        "GCP",
+        "Java",
+        "Python",
+        "Data Engineering",
+        "Data Engineer"
+      ],
+      "jobCode": "T500-30516",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-3-bigquerydataflows-hyderabad-T500-30516/"
     },
     {
       "title": "Engineer - SAP Linux",
