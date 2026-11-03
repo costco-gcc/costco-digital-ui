@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-11-02",
+  "verifiedAt": "2026-11-03",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 50,
+  "totalReportedByApi": 51,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -399,6 +399,22 @@
       ],
       "jobCode": "T500-30226",
       "url": "https://talent500.com/jobs/costco/manager-sap-lucknow-T500-30226/"
+    },
+    {
+      "title": "Marketing Specialist",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "7 - 10 years",
+      "skills": [
+        "Employer Value Proposition",
+        "EVP",
+        "Employer Branding",
+        "Branding",
+        "Brand Management"
+      ],
+      "jobCode": "T500-30591",
+      "url": "https://talent500.com/jobs/costco/marketing-specialist-employer-branding-hyderabad-T500-30591/"
     },
     {
       "title": "Payroll & Compliance Specialist",
