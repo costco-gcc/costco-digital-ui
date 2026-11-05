@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-11-04",
+  "verifiedAt": "2026-11-05",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 51,
+  "totalReportedByApi": 53,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -37,6 +37,38 @@
       "url": "https://talent500.com/jobs/costco/cloud-database-platform-engineer-hyderabad-T500-29304/"
     },
     {
+      "title": "Data Reliability Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "8 - 12 years",
+      "skills": [
+        "Python",
+        "Bash",
+        "SQL",
+        "ETL",
+        "ELT"
+      ],
+      "jobCode": "T500-30637",
+      "url": "https://talent500.com/jobs/costco/data-reliability-engineer-hyderabad-T500-30637/"
+    },
+    {
+      "title": "Data Reliability Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "5 - 8 years",
+      "skills": [
+        "Python",
+        "Bash",
+        "SQL",
+        "ETL",
+        "ELT"
+      ],
+      "jobCode": "T500-30638",
+      "url": "https://talent500.com/jobs/costco/data-reliability-engineer-hyderabad-T500-30638/"
+    },
+    {
       "title": "IT Reliability & Incident Lead",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -58,22 +90,6 @@
       "category": "Cloud",
       "experience": "5 - 8 years",
       "skills": [
-        "GitHub",
-        "Github",
-        "Oracle Golden Gate",
-        "OracleGoldenGate",
-        "Golden Gate"
-      ],
-      "jobCode": "T500-30087",
-      "url": "https://talent500.com/jobs/costco/platform-engineer-oracle-golden-gate-hyderabad-T500-30087/"
-    },
-    {
-      "title": "Platform Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Cloud",
-      "experience": "5 - 8 years",
-      "skills": [
         "Terraform",
         "GitHub",
         "Shell",
@@ -82,6 +98,22 @@
       ],
       "jobCode": "T500-29953",
       "url": "https://talent500.com/jobs/costco/platform-engineer-hyderabad-T500-29953/"
+    },
+    {
+      "title": "Platform Engineer",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Cloud",
+      "experience": "5 - 8 years",
+      "skills": [
+        "GitHub",
+        "Github",
+        "Oracle Golden Gate",
+        "OracleGoldenGate",
+        "Golden Gate"
+      ],
+      "jobCode": "T500-30087",
+      "url": "https://talent500.com/jobs/costco/platform-engineer-oracle-golden-gate-hyderabad-T500-30087/"
     },
     {
       "title": "Release Manager - SAP Platform",
@@ -203,13 +235,13 @@
       "experience": "4 - 8 years",
       "skills": [
         "GCP",
-        "Java",
         "Python",
-        "Dataflows",
-        "BigQuery"
+        "BigQuery",
+        "Big Query",
+        "Data Engineer"
       ],
-      "jobCode": "T500-29268",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
+      "jobCode": "T500-29833",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
     },
     {
       "title": "Data Engineer Level 2b",
@@ -219,13 +251,13 @@
       "experience": "4 - 8 years",
       "skills": [
         "GCP",
+        "Java",
         "Python",
-        "BigQuery",
-        "Big Query",
-        "Data Engineer"
+        "Dataflows",
+        "BigQuery"
       ],
-      "jobCode": "T500-29833",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
+      "jobCode": "T500-29268",
+      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
     },
     {
       "title": "Data Engineer Level 3",
@@ -317,8 +349,8 @@
         "Pyspark",
         "Vertex AI"
       ],
-      "jobCode": "T500-29963",
-      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
+      "jobCode": "T500-30088",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-30088/"
     },
     {
       "title": "Data Scientist 3",
@@ -333,8 +365,8 @@
         "Pyspark",
         "Vertex AI"
       ],
-      "jobCode": "T500-30088",
-      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-30088/"
+      "jobCode": "T500-29963",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
     },
     {
       "title": "Data Scientist 4",
