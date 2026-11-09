@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-11-08",
+  "verifiedAt": "2026-11-09",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 53,
+  "totalReportedByApi": 52,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -242,22 +242,6 @@
       ],
       "jobCode": "T500-29268",
       "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29268/"
-    },
-    {
-      "title": "Data Engineer Level 2b",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Data",
-      "experience": "4 - 8 years",
-      "skills": [
-        "GCP",
-        "Python",
-        "BigQuery",
-        "Big Query",
-        "Data Engineer"
-      ],
-      "jobCode": "T500-29833",
-      "url": "https://talent500.com/jobs/costco/data-engineer-level-2b-hyderabad-T500-29833/"
     },
     {
       "title": "Data Engineer Level 3",
