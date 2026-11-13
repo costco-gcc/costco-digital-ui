@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-11-12",
+  "verifiedAt": "2026-11-13",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 54,
+  "totalReportedByApi": 53,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -328,7 +328,7 @@
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Design",
-      "experience": "6 - 8 years",
+      "experience": "4 - 6 years",
       "skills": [
         "Sourcing",
         "IT Recruitment"
@@ -736,7 +736,8 @@
       "category": "Product",
       "experience": "8 - 12 years",
       "skills": [
-        "Product owner",
+        "Product Owner",
+        "Product Management",
         "Scrum"
       ],
       "jobCode": "T500-30733",
@@ -773,22 +774,6 @@
       ],
       "jobCode": "T500-30324",
       "url": "https://talent500.com/jobs/costco/quality-assurance-analyst-sap-hyderabad-T500-30324/"
-    },
-    {
-      "title": "Quality Automation Engineer 2b",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Quality",
-      "experience": "6 - 10 years",
-      "skills": [
-        "Playwright",
-        "Manual Testing",
-        "Java",
-        "Javascript",
-        "Automation Testing"
-      ],
-      "jobCode": "T500-26895",
-      "url": "https://talent500.com/jobs/costco/quality-automation-engineer-level-2b-hyderabad-T500-26895/"
     },
     {
       "title": "Quality Engineer- Level 2A",
