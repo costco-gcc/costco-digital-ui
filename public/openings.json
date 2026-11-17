@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-11-16",
+  "verifiedAt": "2026-11-17",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 53,
@@ -160,8 +160,8 @@
         "Java",
         "Python"
       ],
-      "jobCode": "T500-30517",
-      "url": "https://talent500.com/jobs/costco/bi-engineer-level-3-power-bi-tableau-hyderabad-T500-30517/"
+      "jobCode": "T500-29267",
+      "url": "https://talent500.com/jobs/costco/bi-engineer-level-3-power-bi-tableau-hyderabad-T500-29267/"
     },
     {
       "title": "BI Engineer Level 3",
@@ -176,8 +176,8 @@
         "Java",
         "Python"
       ],
-      "jobCode": "T500-29267",
-      "url": "https://talent500.com/jobs/costco/bi-engineer-level-3-power-bi-tableau-hyderabad-T500-29267/"
+      "jobCode": "T500-30517",
+      "url": "https://talent500.com/jobs/costco/bi-engineer-level-3-power-bi-tableau-hyderabad-T500-30517/"
     },
     {
       "title": "BI Platform Engineer",
@@ -349,8 +349,8 @@
         "Pyspark",
         "Vertex AI"
       ],
-      "jobCode": "T500-29963",
-      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
+      "jobCode": "T500-30088",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-30088/"
     },
     {
       "title": "Data Scientist 3",
@@ -365,8 +365,8 @@
         "Pyspark",
         "Vertex AI"
       ],
-      "jobCode": "T500-30088",
-      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-30088/"
+      "jobCode": "T500-29963",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
     },
     {
       "title": "Data Scientist 4",
