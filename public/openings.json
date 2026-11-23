@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-11-22",
+  "verifiedAt": "2026-11-23",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
-  "totalReportedByApi": 52,
+  "totalReportedByApi": 51,
   "openings": [
     {
       "title": "Software Engineer - AI - Innovation Engineering",
@@ -19,22 +19,6 @@
       ],
       "jobCode": "T500-29587",
       "url": "https://talent500.com/jobs/costco/software-engineer-ai-innovation-engineering-hyderabad-T500-29587/"
-    },
-    {
-      "title": "Cloud Database Platform Engineer",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Cloud",
-      "experience": "5 - 8 years",
-      "skills": [
-        "GCP",
-        "Terraform",
-        "Bigquery",
-        "Big Query",
-        "SQL"
-      ],
-      "jobCode": "T500-29304",
-      "url": "https://talent500.com/jobs/costco/cloud-database-platform-engineer-hyderabad-T500-29304/"
     },
     {
       "title": "Data Reliability Engineer",
@@ -333,8 +317,8 @@
         "Pyspark",
         "Vertex AI"
       ],
-      "jobCode": "T500-29963",
-      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
+      "jobCode": "T500-30088",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-30088/"
     },
     {
       "title": "Data Scientist 3",
@@ -349,8 +333,8 @@
         "Pyspark",
         "Vertex AI"
       ],
-      "jobCode": "T500-30088",
-      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-30088/"
+      "jobCode": "T500-29963",
+      "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
     },
     {
       "title": "Data Scientist 4",
