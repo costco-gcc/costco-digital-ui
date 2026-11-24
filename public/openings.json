@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-11-23",
+  "verifiedAt": "2026-11-24",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 51,
@@ -53,7 +53,7 @@
       "url": "https://talent500.com/jobs/costco/data-reliability-engineer-hyderabad-T500-30638/"
     },
     {
-      "title": "IT Reliability & Incident Lead",
+      "title": "IT Reliability and Incident Lead",
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Cloud",
@@ -570,22 +570,6 @@
       "url": "https://talent500.com/jobs/costco/software-engineer-2-mlops-hyderabad-T500-30086/"
     },
     {
-      "title": "Software Engineer 3",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "8 - 12 years",
-      "skills": [
-        "C#",
-        ".Net Core",
-        "CICD",
-        "Jenkins",
-        "Github Actions"
-      ],
-      "jobCode": "T500-26065",
-      "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-26065/"
-    },
-    {
       "title": "Software Engineer 3 -Full Stack",
       "location": "Hyderabad",
       "type": "Full-time",
@@ -616,6 +600,22 @@
       ],
       "jobCode": "T500-28726",
       "url": "https://talent500.com/jobs/costco/software-engineer-3-c-net-core-hyderabad-T500-28726/"
+    },
+    {
+      "title": "Software Engineer- Level 2B",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "6 - 8 years",
+      "skills": [
+        "C#",
+        ".Net Core",
+        "CICD",
+        "Jenkins",
+        "Github Actions"
+      ],
+      "jobCode": "T500-26065",
+      "url": "https://talent500.com/jobs/costco/senior-software-engineer-c-net-core-hyderabad-T500-26065/"
     },
     {
       "title": "Software Engineer- Level 3",
