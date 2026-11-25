@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-11-24",
+  "verifiedAt": "2026-11-25",
   "source": "https://talent500.com/jobs/costco/",
   "api": "https://prod-warmachine.talent500.co/api/v3/jobs/search/",
   "totalReportedByApi": 51,
@@ -305,7 +305,23 @@
       "url": "https://talent500.com/jobs/costco/recruitment-specialist-hyderabad-T500-29868/"
     },
     {
-      "title": "Data Scientist 3",
+      "title": "Data Scientist",
+      "location": "Hyderabad",
+      "type": "Full-time",
+      "category": "Engineering",
+      "experience": "12 - 15 years",
+      "skills": [
+        "GCP",
+        "Deep Learning",
+        "Python",
+        "Pyspark",
+        "AI/ML"
+      ],
+      "jobCode": "T500-29447",
+      "url": "https://talent500.com/jobs/costco/data-scientist-4-vertex-ai-hyderabad-T500-29447/"
+    },
+    {
+      "title": "Data Scientist",
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Engineering",
@@ -321,7 +337,7 @@
       "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-30088/"
     },
     {
-      "title": "Data Scientist 3",
+      "title": "Data Scientist",
       "location": "Hyderabad",
       "type": "Full-time",
       "category": "Engineering",
@@ -335,22 +351,6 @@
       ],
       "jobCode": "T500-29963",
       "url": "https://talent500.com/jobs/costco/data-scientist-3-vertex-ai-hyderabad-T500-29963/"
-    },
-    {
-      "title": "Data Scientist 4",
-      "location": "Hyderabad",
-      "type": "Full-time",
-      "category": "Engineering",
-      "experience": "12 - 15 years",
-      "skills": [
-        "GCP",
-        "Deep Learning",
-        "Python",
-        "Pyspark",
-        "AI/ML"
-      ],
-      "jobCode": "T500-29447",
-      "url": "https://talent500.com/jobs/costco/data-scientist-4-vertex-ai-hyderabad-T500-29447/"
     },
     {
       "title": "Engineering Manager - GDX",
